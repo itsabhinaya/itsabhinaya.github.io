@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <meta charset="utf-8">
+    <title>ScrollMagic #1 Setup</title>
+        <style>
+/*    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #container {
+    margin: 55vh 0;
+    padding: 50px;
+    outline: 1px dashed orange;
+}
+
+#block {
+    padding: 10px;
+    border: 1px solid black;
+    font-family: Helvetica;
+}*/
+
+/*
+	Demo Styles: NOT REQUIRED
+*/
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Sofia';
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+section {
+  text-align: center;
+  color: #EFEFEF;
+}
+
+.full-screen {
+  height: 100%; /* makes panels the entire window height */
+  font-family: 'Oxygen';
+
+}
+
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.three_things{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.three_categories h1{
+	font-size: 500%;
+}
+
+.intro {
+	background-color: #E94D23;
+	color: white;
+}
+
+.intro h1{
+		font-size: 100px;
+}
+.red {
+	background-color: #cf3535;
+}
+.orange {
+	background-color: #E94D23;
+}
+.three_things {
+	background-color: white;
+	color: #54666C;
+}
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+<main class="full-screen" role="main">
+	  <section class="full-screen intro">
+	    <div>
+	      <h1>Startup Guide: Best Midwest Cities</h1>
+	      <p>Elements are pinned for their respective pixel value set as the duration and released again.</p>
+	    </div>
+	  </section>
+
+	  <div class = "three_categories">
+
+	<div class="row text-center">
+	  		<div class="col-md-12">
+     	 <h1>Three Categories</h1>
+     	</div>
+     </div>
+ </div>
+	  
+
+
+	  <section class="full-screen three_things">
+	  
+
+		<div class="row text-center">
+                <div class="col-lg-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-lg-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-lg-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+  </section>
+
+    <section id="pinned-trigger1" class="full-screen orange">
+    <div id="pinned-element1">
+      <p>This element will be pinned once it's trigger hits the top of the viewport and will have a duration of window height minus 100</p>
+    </div> 
+  </section>
+
+
+    <section id="pinned-trigger2" class="full-screen red">
+    <div id="pinned-element2">
+      <p>This element will be pinned for a duration of 150px</p>
+    </div>
+  </section>
+  <section class="full-screen blue">
+    <div>
+      <p>Section Four!</p>
+    </div>
+  </section>
+</main>
+
+<script>
+	// init ScrollMagic Controller
+var controller = new ScrollMagic.Controller();
+
+// Scene Handler
+var scene = new ScrollMagic.Scene({
+  triggerElement: "#pinned-trigger1", // point of execution
+  duration: $(window).height() - 100, // pin element for the window height - 1
+  triggerHook: 0, // don't trigger until #pinned-trigger1 hits the top of the viewport
+  reverse: true // allows the effect to trigger when scrolled in the reverse direction
+})
+.setPin("#pinned-element1"); // the element we want to pin
+
+// Scene2 Handler
+var scene2 = new ScrollMagic.Scene({
+  triggerElement: "#pinned-trigger2", // point of execution
+  duration: 400 // pin the element for a total of 400px
+})
+.setPin("#pinned-element2"); // the element we want to pin
+
+// Add Scenes to ScrollMagic Controller
+controller.addScene([
+  scene,
+  scene2
+]);
+</script>
+
+
+   <!--  This is my page
+    <div id="container">
+	    <div id="block">
+	        Hi there !
+	    </div>
+
+	    <script>
+	// $(function() {
+	//   var controller = new ScrollMagic.Controller();
+
+	//   var blockTween = new TweenMax.to('#block', 1.5, {
+	//     backgroundColor: 'red'
+	//   });
+
+	//   var containerScene = new ScrollMagic.Scene({
+	//       triggerElement: '#container'
+	//     })
+	//     .setTween(blockTween)
+	//     .addIndicators()
+	//     .addTo(controller);
+	// });
+			$(function() {
+				var controller = new ScrollMagic.Controller();
+
+				var containerScene = new ScrollMagic.Scene({
+					triggerElement: '#container',
+					duration: 500
+				})
+				.setPin('#block')
+				.addIndicators()
+				.addTo(controller);
+			});
+		</script>
+	</div>
+    <div id="container2">
+	    <div id="block2">
+	        Hi there !
+	    </div>
+
+	    <script>
+			$(function() {
+				var controller2 = new ScrollMagic.Controller();
+
+				var containerScene2 = new ScrollMagic.Scene({
+					triggerElement: '#container2',
+					duration: 500
+				})
+				.setPin('#block2')
+				.addIndicators()
+				.addTo(controller2);
+			});
+		</script>
+	</div> -->
+
+</body>
+</html>

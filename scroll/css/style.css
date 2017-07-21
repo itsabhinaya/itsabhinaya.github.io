@@ -1,0 +1,152 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700,700italic";
+body {
+  background: #3883D8;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 13px;
+  tap-highlight-color: transparent;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.noselect * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+  position: relative;
+  width: 100%;
+}
+
+.card{
+  margin-top:105px; 
+  vertical-align: middle;
+}
+
+#content-wrapper {
+  height: 100%;
+  min-height: 500px;
+  width: 100%;
+}
+
+.scroll-magic-section {
+  height: 100%;
+}
+
+#pin {
+  overflow: hidden;
+  width: 100%;
+}
+#pin h3 {
+  margin: -40px 0 0 0;
+  position: relative;
+  top: 50%;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #EFEFEF;
+}
+
+#wipe {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  background: #2e639e;
+}
+#wipe h3 {
+  color: white;
+}
+
+#second-wipe {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  background: red;
+}
+
+#third-wipe {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  background: green;
+}
+
+#slide {
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  background: #c7e1ff;
+}
+#slide h3 {
+  position: absolute;
+  width: 100%;
+  color: black;
+}
+
+#slide-dos {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  width: 100%;
+  background: tan;
+}
+
+#unpin {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: maroon;
+}
