@@ -1,13 +1,15 @@
 var map = new Datamap({
                       element: document.getElementById('map_container'),
+                      responsive: true,
                       scope: 'usa',
                       // projection: 'albersUsa',
                       setProjection: function(element) {
                       var projection = d3.geo.albersUsa()
                         // .center([-75, 40])
                         // .rotate([0, 0])
-                        .scale(1320)
-                        .translate([90,260]);
+                        .scale(element.offsetWidth*2.3)
+                        .translate([element.offsetWidth / 3, element.offsetHeight*.8]);
+                        // .translate([90,260]);
                       var path = d3.geo.path()
                         .projection(projection);
 
@@ -33,6 +35,9 @@ var map = new Datamap({
                         purple: 'purple'
                       }
                   });
+ window.addEventListener('resize', function() {
+        map.resize();
+    });
                   map.bubbles(data_all,{
                     popupTemplate: function(geo, data) {
                     return ['<div class="hoverinfo">' +  data.name,
@@ -43,5 +48,4 @@ var map = new Datamap({
                            '</div>'].join('');
                 }});
                   map.labels({fontFamily: 'Oxygen', fontSize: 9});
-                  map.legend();
 

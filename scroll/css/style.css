@@ -1,7 +1,6 @@
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700,700italic";
 body {
-  background: #3883D8;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  background: #E94D23;
+  font-family: "Oxygen";
   font-size: 13px;
   tap-highlight-color: transparent;
 }
@@ -15,7 +14,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Josefin Slab", serif;
+  font-family: "Oxygen";
   font-weight: bold;
 }
 
@@ -66,16 +65,6 @@ header {
   height: 100%;
 }
 
-#map_container{
-  margin-right: 100px;
-/*  position: relative; 
-  width: 100%; 
-  height: 100%;*/
-}
-/* @media (min-width: 544px) {  
-    .two{ height: 180%; }
-    }
-*/
 
 .viewport {
     height: 100%;
@@ -97,10 +86,10 @@ header {
   width: 100%;
 }
 #pin h3 {
-  margin: -40px 0 0 0;
+  margin: 0px 0 0 0;
   position: relative;
   top: 50%;
-  font-size: 80px;
+  font-size: 4em;
   line-height: 80px;
   text-align: center;
   color: #EFEFEF;
@@ -115,10 +104,10 @@ header {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   width: 100%;
-  background: #2e639e;
+  background: white;
 }
 #wipe h3 {
-  color: white;
+  color: #E94D23;
 }
 
 #second-wipe {
@@ -130,7 +119,7 @@ header {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   width: 100%;
-  background: red;
+  background: #E94D23;
 }
 
 #third-wipe {
@@ -142,7 +131,42 @@ header {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   width: 100%;
-  background: green;
+  background: white;
+}
+
+#third-wipe h3 {
+  color: #E94D23;
+}
+
+.fa-circle {
+  color: #E94D23;
+}
+
+#fourth-wipe {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  background: #E94D23;
+}
+
+#fifth-wipe {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+  background: white;
+}
+#fifth-wipe h3 {
+  color: #E94D23;
 }
 
 #slide {

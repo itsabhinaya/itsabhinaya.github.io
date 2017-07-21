@@ -8,7 +8,9 @@ var controller = new ScrollMagic.Controller({
 var pinani = new TimelineMax()
     .add(TweenMax.to("#wipe", 1, {transform: "translateY(0)"}))
     .add(TweenMax.to("#second-wipe", 1, {transform: "translateY(0)"}))
-    .add(TweenMax.to("#third-wipe", 1, {transform: "translateY(0)"}));
+    .add(TweenMax.to("#third-wipe", 1, {transform: "translateY(0)"}))
+    .add(TweenMax.to("#fourth-wipe", 1, {transform: "translateY(0)"}))
+    .add(TweenMax.to("#fifth-wipe", 1, {transform: "translateY(0)"}));
 
 
 new ScrollMagic.Scene({
@@ -30,8 +32,8 @@ new ScrollMagic.Scene({
                       var projection = d3.geo.albersUsa()
                         // .center([-75, 40])
                         // .rotate([0, 0])
-                        .scale(1100)
-                        .translate([140,260]);
+                        .scale(element.offsetWidth*2.3)
+                        .translate([element.offsetWidth / 3, element.offsetHeight*.8]);
                       var path = d3.geo.path()
                         .projection(projection);
 
@@ -77,8 +79,8 @@ new ScrollMagic.Scene({
                       var projection = d3.geo.albersUsa()
                         // .center([-75, 40])
                         // .rotate([0, 0])
-                        .scale(1100)
-                        .translate([140,260]);
+                        .scale(element.offsetWidth*2.3)
+                        .translate([element.offsetWidth / 3, element.offsetHeight*.8]);
                       var path = d3.geo.path()
                         .projection(projection);
 
