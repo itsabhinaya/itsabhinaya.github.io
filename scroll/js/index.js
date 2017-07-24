@@ -1,12 +1,14 @@
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
-      triggerHook: "onLeave"
+      triggerHook: "onLeave",
+      duration: 900,
+      duration: '100%'
   }
 });
 
 
 var pinani = new TimelineMax()
-    .add(TweenMax.to("#wipe", 1, {transform: "translateY(0)"}))
+    .add(TweenMax.to("#wipe", 2, {transform: "translateY(0)"}))
     .add(TweenMax.to("#second-wipe", 1, {transform: "translateY(0)"}))
     .add(TweenMax.to("#third-wipe", 1, {transform: "translateY(0)"}))
     .add(TweenMax.to("#fourth-wipe", 1, {transform: "translateY(0)"}))
