@@ -392,10 +392,3 @@ body {
  .menu ul { display:inline-table; }
  .menu li { display:inline; }
 
-
- .menu_white { text-align: center; color: #777777; }
- .menu_white ul { display:inline-table; }
- .menu_white li { display:inline; }
- 
-/*.menu_white .legend li{ color: #777777;  }*/
-
