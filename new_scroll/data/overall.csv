@@ -1,0 +1,54 @@
+City,Includes,latitude,longitude,State,Rakings,Altered Radius,Fillkey
+Chicago,"Includes Evanston, Aurora, Joliet, Elgin, Naperville",41.928881,-87.81381,Illinois,1,17.7,green
+Minneapolis,Includes Saint Paul,44.979265,-93.273024,Minnesota,2,17.3,green
+Pittsburgh,Includes Elkhart,40.434436,-80.024817,Pennsylvania,3,17.0,green
+Cincinnati,"Includes Covington, KY",39.166759,-84.53822,Ohio,4,16.7,green
+Cleveland,Includes Akron,41.523401,-81.599648,Ohio,5,16.3,green
+St. Louis ,0,38.631501,-90.19231,Missouri,6,16.0,green
+Columbus,0,40.040113,-82.897222,Ohio,7,15.7,green
+Indianapolis,"Includes Fishers, Carmel, Noblesville, Westfield, Zionsville",39.775092,-86.13216,Indiana,8,15.3,green
+Madison,0,43.06956,-89.423861,Wisconsin,9,15.0,green
+Milwaukee,0,43.011264,-87.958409,Wisconsin,10,14.7,green
+Ann Arbor,0,42.266638,-83.849042,Michigan,11,14.3,blue
+Kansas City,"Includes Olathe, Kansas City, Independence, Overland Park",39.102404,-94.598583,Missouri,12,14.0,blue
+Omaha,0,41.291736,-96.171104,Nebraska,13,13.7,blue
+Detroit,"Includes Warren, Sterling Heights, Troy and Livonia",42.239933,-83.150823,Michigan,14,13.3,blue
+Louisvillle,0,38.188962,-85.676819,Kentucky,15,13.0,blue
+Champaign,Includes Urbana,40.101777,-88.197166,Illinois,16,12.7,blue
+Grand Rapids,0,42.984226,-85.629101,Michigan,17,12.3,blue
+Lincoln,0,40.865142,-96.823133,Nebraska,18,12.0,blue
+Lexington,0,38.016674,-84.486043,Kentucky,19,11.7,blue
+Lafayette,Includes West Lafayette,40.39905,-86.830286,Indiana,20,11.3,blue
+Dayton,0,39.750471,-84.268593,Ohio,21,11.0,blue
+Fargo,0,46.92536,-96.990615,North Dakota,22,10.7,blue
+South Bend,Includes Elkhart,41.673383,-86.251654,Indiana,23,10.3,blue
+Bloomington,0,40.462041,-88.850396,Indiana,24,10.0,blue
+Wichita,0,37.651974,-97.258997,Kansas,25,9.7,blue
+Des Moines,0,41.672687,-93.572173,Iowa,26,9.3,purple
+Iowa City,0,41.648207,-91.541579,Iowa,27,9.0,purple
+Fort Wayne,0,41.093763,-85.070713,Indiana,28,8.7,purple
+Athens,0,39.339279,-82.013803,Ohio,29,8.3,purple
+State College,0,40.881935,-77.867822,Pennsylvania,30,8.0,purple
+Lansing,Includes East Lansing,42.599184,-84.371973,Michigan,31,7.7,purple
+Ames ,0,42.037879,-93.600254,Iowa,32,7.3,purple
+Evansville,0,37.997128,-87.574963,Indiana,33,7.0,purple
+Duluth ,0,47.005566,-92.001934,Minesota,34,6.7,purple
+Green Bay,0,44.494385,-87.976051,Wisconsin,35,6.3,purple
+Columbia,0,38.894165,-92.274145,Missouri,36,6.0,purple
+Eau Claire,0,44.75653,-91.473097,Wisconsin,37,5.7,purple
+Springfield,0,39.820839,-89.598978,Missouri,38,5.3,purple
+Erie,0,42.087337,-80.087341,Pennsylvania,39,5.0,purple
+Youngstown,0,41.017082,-80.802854,Ohio,40,5.0,purple
+Toledo,0,41.720684,-83.569359,Ohio,41,5.0,purple
+Bloomington,Includes Normal,39.07881,-86.435094,Illinois,42,5.0,purple
+Rochester,0,44.075285,-92.516916,Minnesota,43,5.0,purple
+Peoria,0,40.693137,-89.589847,Illinois,44,5.0,purple
+Sioux Falls,0,43.546358,-96.69063,South Dakota,45,5.0,purple
+Quad Cities,"Includes Davenport, Bettendorf, Rock Island, East Moline and Moline",41.516667,-90.533333,Iowa,46,5.0,purple
+Bowling Green,0,37.017407,-86.451752,Kentucky,47,5.0,purple
+Cedar Rapids,0,41.976612,-91.657578,Iowa,48,5.0,purple
+Flint,0,42.965926,-83.780835,Michigan,49,5.0,purple
+Rockford,0,42.33342,-89.157198,Illinois,50,5.0,purple
+Springfield,0,37.25807,-93.343673,Illinois,51,5.0,purple
+Topeka,0,38.988075,-95.780662,Kansas,52,5.0,purple
+Wheeling,0,40.102703,-80.647599,West Virginia,53,5.0,purple

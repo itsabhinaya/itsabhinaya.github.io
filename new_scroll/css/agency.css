@@ -294,7 +294,7 @@ section h3.section-subheading {
     padding: 80px 0;
   }
 }
-.categories-heading {
+.methdology-heading {
   margin: 15px 0;
   text-transform: none;
 }
@@ -391,3 +391,11 @@ body {
  .menu { text-align: center; color: lemonchiffon; }
  .menu ul { display:inline-table; }
  .menu li { display:inline; }
+
+
+ .menu_white { text-align: center; color: #777777; }
+ .menu_white ul { display:inline-table; }
+ .menu_white li { display:inline; }
+ 
+/*.menu_white .legend li{ color: #777777;  }*/
+

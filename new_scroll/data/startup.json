@@ -1,0 +1,532 @@
+[
+  {
+    "City": "Chicago",
+    "Includes": "Includes Evanston, Aurora, Joliet, Elgin, Naperville",
+    "State": "Illinois",
+    "latitude": 41.928881,
+    "longitude": -87.81381,
+    "Rankings": 1,
+    "Altered Radius": 17.67,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Minneapolis",
+    "Includes": "Includes Saint Paul",
+    "State": "Minnesota",
+    "latitude": 44.979265,
+    "longitude": -93.273024,
+    "Rankings": 2,
+    "Altered Radius": 17,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Pittsburgh",
+    "Includes": 0,
+    "State": "Pennsylvania",
+    "latitude": 40.434436,
+    "longitude": -80.024817,
+    "Rankings": 3,
+    "Altered Radius": 16.67,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Cincinnati",
+    "Includes": "Includes Covington, KY",
+    "State": "Ohio",
+    "latitude": 39.166759,
+    "longitude": -84.53822,
+    "Rankings": 4,
+    "Altered Radius": 16.33,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Cleveland",
+    "Includes": "Includes Akron",
+    "State": "Ohio",
+    "latitude": 41.523401,
+    "longitude": -81.599648,
+    "Rankings": 5,
+    "Altered Radius": 16,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Indianapolis",
+    "Includes": "Includes Fishers, Carmel, Noblesville, Westfield, Zionsville",
+    "State": "Indiana",
+    "latitude": 39.775092,
+    "longitude": -86.13216,
+    "Rankings": 6,
+    "Altered Radius": 15.67,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Milwaukee",
+    "Includes": 0,
+    "State": "Wisconsin",
+    "latitude": 43.011264,
+    "longitude": -87.958409,
+    "Rankings": 7,
+    "Altered Radius": 15.33,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Columbus",
+    "Includes": 0,
+    "State": "Ohio",
+    "latitude": 40.040113,
+    "longitude": -82.897222,
+    "Rankings": 8,
+    "Altered Radius": 15,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Ann Arbor",
+    "Includes": 0,
+    "State": "Michigan",
+    "latitude": 42.266638,
+    "longitude": -83.849042,
+    "Rankings": 9,
+    "Altered Radius": 14.67,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Louisvillle",
+    "Includes": 0,
+    "State": "Kentucky",
+    "latitude": 38.188962,
+    "longitude": -85.676819,
+    "Rankings": 10,
+    "Altered Radius": 14.33,
+    "Fillkey": "green"
+  },
+  {
+    "City": "Omaha",
+    "Includes": 0,
+    "State": "Nebraska",
+    "latitude": 41.291736,
+    "longitude": -96.171104,
+    "Rankings": 11,
+    "Altered Radius": 14,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "South Bend",
+    "Includes": "Includes Elkhart",
+    "State": "Indiana",
+    "latitude": 41.673383,
+    "longitude": -86.251654,
+    "Rankings": 12,
+    "Altered Radius": 13.67,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Madison",
+    "Includes": 0,
+    "State": "Wisconsin",
+    "latitude": 43.06956,
+    "longitude": -89.423861,
+    "Rankings": 13,
+    "Altered Radius": 13.33,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Grand Rapids",
+    "Includes": 0,
+    "State": "Michigan",
+    "latitude": 42.984226,
+    "longitude": -85.629101,
+    "Rankings": 14,
+    "Altered Radius": 13,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Kansas City",
+    "Includes": "Includes Olathe, Kansas City, Independence, Overland Park",
+    "State": "Missouri",
+    "latitude": 39.102404,
+    "longitude": -94.598583,
+    "Rankings": 15,
+    "Altered Radius": 12.67,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Wichita",
+    "Includes": 0,
+    "State": "Kansas",
+    "latitude": 37.651974,
+    "longitude": -97.258997,
+    "Rankings": 16,
+    "Altered Radius": 12.33,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Fargo",
+    "Includes": 0,
+    "State": "North Dakota",
+    "latitude": 46.92536,
+    "longitude": -96.990615,
+    "Rankings": 17,
+    "Altered Radius": 12,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Iowa City",
+    "Includes": 0,
+    "State": "Iowa",
+    "latitude": 41.648207,
+    "longitude": -91.541579,
+    "Rankings": 18,
+    "Altered Radius": 11.67,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Dayton",
+    "Includes": 0,
+    "State": "Ohio",
+    "latitude": 39.750471,
+    "longitude": -84.268593,
+    "Rankings": 19,
+    "Altered Radius": 11.33,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Ames",
+    "Includes": 0,
+    "State": "Iowa",
+    "latitude": 42.037879,
+    "longitude": -93.600254,
+    "Rankings": 20,
+    "Altered Radius": 11,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Youngstown",
+    "Includes": 0,
+    "State": "Ohio",
+    "latitude": 41.017082,
+    "longitude": -80.802854,
+    "Rankings": 21,
+    "Altered Radius": 10.67,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Quad Cities",
+    "Includes": "Includes Davenport, Bettendorf, Rock Island, East Moline and Moline",
+    "State": "Iowa",
+    "latitude": 41.516667,
+    "longitude": -90.533333,
+    "Rankings": 22,
+    "Altered Radius": 10.33,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Champaign",
+    "Includes": "Includes Urbana",
+    "State": "Illinois",
+    "latitude": 40.101777,
+    "longitude": -88.197166,
+    "Rankings": 23,
+    "Altered Radius": 10,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Lafayette",
+    "Includes": "Includes West Lafayette",
+    "State": "Indiana",
+    "latitude": 40.39905,
+    "longitude": -86.830286,
+    "Rankings": 24,
+    "Altered Radius": 9.67,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Green Bay",
+    "Includes": 0,
+    "State": "Wisconsin",
+    "latitude": 44.494385,
+    "longitude": -87.976051,
+    "Rankings": 25,
+    "Altered Radius": 9.33,
+    "Fillkey": "blue"
+  },
+  {
+    "City": "Erie",
+    "Includes": 0,
+    "State": "Pennsylvania",
+    "latitude": 42.087337,
+    "longitude": -80.087341,
+    "Rankings": 26,
+    "Altered Radius": 9,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Lexington",
+    "Includes": 0,
+    "State": "Kentucky",
+    "latitude": 38.016674,
+    "longitude": -84.486043,
+    "Rankings": 27,
+    "Altered Radius": 8.67,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Wheeling",
+    "Includes": 0,
+    "State": "West Virginia",
+    "latitude": 40.102703,
+    "longitude": -80.647599,
+    "Rankings": 28,
+    "Altered Radius": 8.33,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Detroit",
+    "Includes": "Includes Warren, Sterling Heights, Troy and Livonia",
+    "State": "Michigan",
+    "latitude": 42.239933,
+    "longitude": -83.150823,
+    "Rankings": 29,
+    "Altered Radius": 8,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Springfield",
+    "Includes": 0,
+    "State": "Missouri",
+    "latitude": 39.820839,
+    "longitude": -89.598978,
+    "Rankings": 30,
+    "Altered Radius": 7.67,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Peoria",
+    "Includes": 0,
+    "State": "Illinois",
+    "latitude": 40.693137,
+    "longitude": -89.589847,
+    "Rankings": 31,
+    "Altered Radius": 7.33,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Eau Claire",
+    "Includes": 0,
+    "State": "Wisconsin",
+    "latitude": 44.75653,
+    "longitude": -91.473097,
+    "Rankings": 32,
+    "Altered Radius": 7,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Sioux Falls",
+    "Includes": 0,
+    "State": "South Dakota",
+    "latitude": 43.546358,
+    "longitude": -96.69063,
+    "Rankings": 33,
+    "Altered Radius": 6.67,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "State College",
+    "Includes": 0,
+    "State": "Pennsylvania",
+    "latitude": 40.881935,
+    "longitude": -77.867822,
+    "Rankings": 34,
+    "Altered Radius": 6.33,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Bloomington",
+    "Includes": "Includes Normal",
+    "State": "Illinois",
+    "latitude": 40.462041,
+    "longitude": -88.850396,
+    "Rankings": 35,
+    "Altered Radius": 6,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Flint",
+    "Includes": 0,
+    "State": "Michigan",
+    "latitude": 42.965926,
+    "longitude": -83.780835,
+    "Rankings": 36,
+    "Altered Radius": 5.67,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Lincoln",
+    "Includes": 0,
+    "State": "Nebraska",
+    "latitude": 40.865142,
+    "longitude": -96.823133,
+    "Rankings": 37,
+    "Altered Radius": 5.33,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Athens",
+    "Includes": 0,
+    "State": "Ohio",
+    "latitude": 39.339279,
+    "longitude": -82.013803,
+    "Rankings": 38,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "St. Louis",
+    "Includes": 0,
+    "State": "Missouri",
+    "latitude": 38.631501,
+    "longitude": -90.19231,
+    "Rankings": 39,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Duluth",
+    "Includes": 0,
+    "State": "Minesota",
+    "latitude": 47.005566,
+    "longitude": -92.001934,
+    "Rankings": 40,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Rochester",
+    "Includes": 0,
+    "State": "Minnesota",
+    "latitude": 44.075285,
+    "longitude": -92.516916,
+    "Rankings": 41,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Fort Wayne",
+    "Includes": 0,
+    "State": "Indiana",
+    "latitude": 41.093763,
+    "longitude": -85.070713,
+    "Rankings": 42,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Evansville",
+    "Includes": 0,
+    "State": "Indiana",
+    "latitude": 37.997128,
+    "longitude": -87.574963,
+    "Rankings": 43,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Columbia",
+    "Includes": 0,
+    "State": "Missouri",
+    "latitude": 38.894165,
+    "longitude": -92.274145,
+    "Rankings": 44,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Toledo",
+    "Includes": 0,
+    "State": "Ohio",
+    "latitude": 41.720684,
+    "longitude": -83.569359,
+    "Rankings": 45,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Bloomington",
+    "Includes": 0,
+    "State": "Indiana",
+    "latitude": 39.07881,
+    "longitude": -86.435094,
+    "Rankings": 46,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Des Moines",
+    "Includes": 0,
+    "State": "Iowa",
+    "latitude": 41.672687,
+    "longitude": -93.572173,
+    "Rankings": 47,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Cedar Rapids",
+    "Includes": 0,
+    "State": "Iowa",
+    "latitude": 41.976612,
+    "longitude": -91.657578,
+    "Rankings": 48,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Lansing",
+    "Includes": "Includes East Lansing",
+    "State": "Michigan",
+    "latitude": 42.599184,
+    "longitude": -84.371973,
+    "Rankings": 49,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Rockford",
+    "Includes": 0,
+    "State": "Illinois",
+    "latitude": 42.33342,
+    "longitude": -89.157198,
+    "Rankings": 50,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Springfield",
+    "Includes": 0,
+    "State": "Illinois",
+    "latitude": 37.25807,
+    "longitude": -93.343673,
+    "Rankings": 51,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Topeka",
+    "Includes": 0,
+    "State": "Kansas",
+    "latitude": 38.988075,
+    "longitude": -95.780662,
+    "Rankings": 52,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  },
+  {
+    "City": "Bowling Green",
+    "Includes": 0,
+    "State": "Kentucky",
+    "latitude": 37.017407,
+    "longitude": -86.451752,
+    "Rankings": 53,
+    "Altered Radius": 5,
+    "Fillkey": "purple"
+  }
+]
