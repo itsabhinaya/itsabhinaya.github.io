@@ -2,7 +2,7 @@ var data_all =
 [
   {
     "city": "Indianapolis",
-    "includes": "Fishers, Carmel, Noblesville, Westfield, Zionsville",
+    "includes": "Fishers, Carmel, Noblesville, Westfield, Zionsville, Greenwood, Avon",
     "state": "Indiana",
     "latitude": 39.775092,
     "longitude": -86.13216,
@@ -16,7 +16,7 @@ var data_all =
   },
   {
     "city": "Columbus",
-    "includes": 0,
+    "includes": "Gahanna, Westerville, Dublin, Grove City",
     "state": "Ohio",
     "latitude": 40.040113,
     "longitude": -82.897222,
@@ -44,7 +44,7 @@ var data_all =
   },
   {
     "city": "Milwaukee",
-    "includes": 0,
+    "includes": "Racine, Waukesha, Menomonee Falls, Oak Creek",
     "state": "Wisconsin",
     "latitude": 43.011264,
     "longitude": -87.958409,
@@ -72,7 +72,7 @@ var data_all =
   },
   {
     "city": "Omaha",
-    "includes": 0,
+    "includes": "Bellevue, La Vista, Council Bluffs, IA",
     "state": "Nebraska",
     "latitude": 41.291736,
     "longitude": -96.171104,
@@ -86,7 +86,7 @@ var data_all =
   },
   {
     "city": "Cleveland",
-    "includes": 0,
+    "includes": "Parma, Elyria, Shaker Heights, Lorain, Lakewood, Cleveland Heights",
     "state": "Ohio",
     "latitude": 41.523401,
     "longitude": -81.599648,
@@ -100,7 +100,7 @@ var data_all =
   },
   {
     "city": "Minneapolis",
-    "includes": "Saint Paul",
+    "includes": "Saint Paul, Bloomington, Burnsville, Minnetonka, Edina, Maple Grove, Coon Rapids",
     "state": "Minnesota",
     "latitude": 44.979265,
     "longitude": -93.273024,
@@ -128,7 +128,7 @@ var data_all =
   },
   {
     "city": "St. Louis",
-    "includes": 0,
+    "includes": "Clayton, Chesterfield, Florissant, St. Charles, Creve Coeur, Maryland Heights, Hazelwood, Ferguson and Belleville, IL",
     "state": "Missouri",
     "latitude": 38.631501,
     "longitude": -90.19231,
@@ -142,7 +142,7 @@ var data_all =
   },
   {
     "city": "Cincinnati",
-    "includes": "Covington, KY",
+    "includes": "Hamilton, Mason, Northgate, Sharonville, Covington, KY and Newport, KY",
     "state": "Ohio",
     "latitude": 39.166759,
     "longitude": -84.53822,
@@ -156,7 +156,7 @@ var data_all =
   },
   {
     "city": "Toledo",
-    "includes": 0,
+    "includes": "Maumee, Sylvania",
     "state": "Ohio",
     "latitude": 41.720684,
     "longitude": -83.569359,
@@ -198,7 +198,7 @@ var data_all =
   },
   {
     "city": "Des Moines",
-    "includes": 0,
+    "includes": "West Des Moines, Ankeny, Urbandale, Clive",
     "state": "Iowa",
     "latitude": 41.672687,
     "longitude": -93.572173,
@@ -226,7 +226,7 @@ var data_all =
   },
   {
     "city": "Grand Rapids",
-    "includes": 0,
+    "includes": "Wyoming",
     "state": "Michigan",
     "latitude": 42.984226,
     "longitude": -85.629101,
@@ -254,7 +254,7 @@ var data_all =
   },
   {
     "city": "Rockford",
-    "includes": 0,
+    "includes": "Loves Park, Belvidere",
     "state": "Illinois",
     "latitude": 42.33342,
     "longitude": -89.157198,
@@ -268,7 +268,7 @@ var data_all =
   },
   {
     "city": "Dayton",
-    "includes": 0,
+    "includes": "Beavercreek",
     "state": "Ohio",
     "latitude": 39.750471,
     "longitude": -84.268593,
@@ -296,7 +296,7 @@ var data_all =
   },
   {
     "city": "Cedar Rapids",
-    "includes": 0,
+    "includes": "Marion",
     "state": "Iowa",
     "latitude": 41.976612,
     "longitude": -91.657578,
@@ -338,7 +338,7 @@ var data_all =
   },
   {
     "city": "Peoria",
-    "includes": 0,
+    "includes": "East Peoria",
     "state": "Illinois",
     "latitude": 40.693137,
     "longitude": -89.589847,
@@ -506,7 +506,7 @@ var data_all =
   },
   {
     "city": "Madison",
-    "includes": 0,
+    "includes": "Fitchburg, Sun Prairie, Middleton",
     "state": "Wisconsin",
     "latitude": 43.06956,
     "longitude": -89.423861,
@@ -534,7 +534,7 @@ var data_all =
   },
   {
     "city": "Iowa City",
-    "includes": 0,
+    "includes": "Coralville",
     "state": "Iowa",
     "latitude": 41.648207,
     "longitude": -91.541579,
@@ -618,7 +618,7 @@ var data_all =
   },
   {
     "city": "Louisvillle",
-    "includes": 0,
+    "includes": "Jeffersontown, Jeffersonville, IN, Clarksville, IN and New Albany, IN",
     "state": "Kentucky",
     "latitude": 38.188962,
     "longitude": -85.676819,
@@ -660,7 +660,7 @@ var data_all =
   },
   {
     "city": "Duluth",
-    "includes": 0,
+    "includes": "Superior, WI",
     "state": "Minesota",
     "latitude": 47.005566,
     "longitude": -92.001934,
@@ -688,7 +688,7 @@ var data_all =
   },
   {
     "city": "Youngstown",
-    "includes": 0,
+    "includes": "Austintown, Boardman, Warren",
     "state": "Ohio",
     "latitude": 41.017082,
     "longitude": -80.802854,
@@ -716,7 +716,7 @@ var data_all =
   },
   {
     "city": "Pittsburgh",
-    "includes": 0,
+    "includes": "Monroeville, Moon, Mt Lebanon, Bethel Park, Penn Hills",
     "state": "Pennsylvania",
     "latitude": 40.434436,
     "longitude": -80.024817,
@@ -730,7 +730,7 @@ var data_all =
   },
   {
     "city": "Akron",
-    "includes": 0,
+    "includes": "Canton, Cuyahoga Falls, Massillon and Kent",
     "state": "Ohio",
     "latitude": 41.074778,
     "longitude": -81.5184497,
@@ -744,7 +744,7 @@ var data_all =
   },
   {
     "city": "Chicago",
-    "includes": "Evanston, Aurora, Joliet, Elgin, Naperville",
+    "includes": "Evanston, Aurora, Joliet, Elgin, Naperville, Schaumburg, Orland Park, Downers Grove, Arlington Heights, Waukegan, Hammond, IN and Gary, IN",
     "state": "Illinois",
     "latitude": 41.928881,
     "longitude": -87.81381,

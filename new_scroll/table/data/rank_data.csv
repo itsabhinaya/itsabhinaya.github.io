@@ -1,29 +1,29 @@
 City,Includes,State,Overall Rank,Startup,Resources,Economics & Demographics,College Town
-Indianapolis,"Fishers, Carmel, Noblesville, Westfield, Zionsville",Indiana,8,6,12,10,0
-Columbus,0,Ohio,7,8,8,13,0
+Indianapolis,"Fishers, Carmel, Noblesville, Westfield, Zionsville, Greenwood, Avon",Indiana,8,6,12,10,0
+Columbus,"Gahanna, Westerville, Dublin, Grove City",Ohio,7,8,8,13,0
 Detroit,"Warren, Sterling Heights, Troy and Livonia",Michigan,14,30,11,31,0
-Milwaukee,0,Wisconsin,10,7,9,41,0
+Milwaukee,"Racine, Waukesha, Menomonee Falls, Oak Creek",Wisconsin,10,7,9,41,0
 Kansas City,"Olathe, Kansas City, Independence, Overland Park",Missouri,12,14,13,29,0
-Omaha,0,Nebraska,13,11,14,22,0
-Cleveland,0,Ohio,5,4,7,35,0
-Minneapolis,Saint Paul,Minnesota,2,2,2,49,0
+Omaha,"Bellevue, La Vista, Council Bluffs, IA",Nebraska,13,11,14,22,0
+Cleveland,"Parma, Elyria, Shaker Heights, Lorain, Lakewood, Cleveland Heights",Ohio,5,4,7,35,0
+Minneapolis,"Saint Paul, Bloomington, Burnsville, Minnetonka, Edina, Maple Grove, Coon Rapids",Minnesota,2,2,2,49,0
 Wichita,0,Kansas,25,16,37,18,0
-St. Louis ,0,Missouri,6,40,4,16,0
-Cincinnati,"Covington, KY",Ohio,4,5,5,19,0
-Toledo,0,Ohio,41,47,34,30,0
+St. Louis ,"Clayton, Chesterfield, Florissant, St. Charles, Creve Coeur, Maryland Heights, Hazelwood, Ferguson and Belleville, IL",Missouri,6,40,4,16,0
+Cincinnati,"Hamilton, Mason, Northgate, Sharonville, Covington, KY and Newport, KY",Ohio,4,5,5,19,0
+Toledo,"Maumee, Sylvania",Ohio,41,47,34,30,0
 Fort Wayne,0,Indiana,29,42,33,2,0
 Lincoln,0,Nebraska,18,38,15,28,0
-Des Moines,0,Iowa,27,48,21,26,0
+Des Moines,"West Des Moines, Ankeny, Urbandale, Clive",Iowa,27,48,21,26,0
 Springfield,0,Missouri,39,32,52,1,0
-Grand Rapids,0,Michigan,17,15,24,4,0
+Grand Rapids,Wyoming,Michigan,17,15,24,4,0
 Sioux Falls,0,South Dakota,46,35,46,37,0
-Rockford,0,Illinois,51,51,50,20,0
-Dayton,0,Ohio,21,19,19,33,6
+Rockford,"Loves Park, Belvidere",Illinois,51,51,50,20,0
+Dayton,Beavercreek,Ohio,21,19,19,33,6
 Topeka,0,Kansas,53,53,48,27,0
-Cedar Rapids,0,Iowa,49,49,39,44,0
+Cedar Rapids,Marion,Iowa,49,49,39,44,0
 Evansville,0,Indiana,34,41,45,5,0
 Springfield,0,Illinois,52,52,44,36,0
-Peoria,0,Illinois,45,31,38,52,0
+Peoria,East Peoria,Illinois,45,31,38,52,0
 Lansing,East Lansing,Michigan,32,50,31,15,12
 Ann Arbor,0,Michigan,11,9,10,48,2
 Columbia,0,Missouri,37,46,29,40,0
@@ -35,21 +35,21 @@ South Bend,Elkhart,Indiana,23,12,40,11,7
 Quad Cities,"Davenport, Bettendorf, Rock Island, East Moline and Moline",Iowa,47,24,51,32,0
 Lafayette,West Lafayette,Indiana,20,25,22,3,5
 Bloomington,0,Indiana,24,45,23,7,8
-Madison,0,Wisconsin,9,13,6,53,1
+Madison,"Fitchburg, Sun Prairie, Middleton",Wisconsin,9,13,6,53,1
 Champaign,Urbana,Illinois,16,23,16,17,3
-Iowa City,0,Iowa,28,20,25,46,9
+Iowa City,Coralville,Iowa,28,20,25,46,9
 Ames ,0,Iowa,33,21,35,47,13
 State College,0,Pennsylvania,31,34,28,43,11
 Athens,0,Ohio,30,39,20,50,10
 Bloomington,Normal,Illinois,43,36,36,45,14
 Lexington,0,Kentucky,19,28,17,24,4
-Louisvillle,0,Kentucky,15,10,26,6,0
+Louisvillle,"Jeffersontown, Jeffersonville, IN, Clarksville, IN and New Albany, IN",Kentucky,15,10,26,6,0
 Bowling Green,0,Kentucky,48,54,43,8,0
 Eau Claire,0,Wisconsin,38,33,42,25,0
-Duluth ,0,Minesota,36,43,30,38,0
+Duluth ,"Superior, WI",Minesota,36,43,30,38,0
 Wheeling,0,West Virginia,54,29,54,14,0
-Youngstown,0,Ohio,40,22,49,21,0
+Youngstown,"Austintown, Boardman, Warren",Ohio,40,22,49,21,0
 Erie,0,Pennsylvania,42,27,41,34,0
-Pittsburgh,0,Pennsylvania,3,3,3,23,0
-Akron,0,Ohio,26,18,27,39,0
-Chicago,"Evanston, Aurora, Joliet, Elgin, Naperville",Illinois,1,1,1,54,0
+Pittsburgh,"Monroeville, Moon, Mt Lebanon, Bethel Park, Penn Hills",Pennsylvania,3,3,3,23,0
+Akron,"Canton, Cuyahoga Falls, Massillon and Kent",Ohio,26,18,27,39,0
+Chicago,"Evanston, Aurora, Joliet, Elgin, Naperville, Schaumburg, Orland Park, Downers Grove, Arlington Heights, Waukegan, Hammond, IN and Gary, IN",Illinois,1,1,1,54,0
