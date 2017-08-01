@@ -699,8 +699,8 @@ var map = new Datamap({
     var projection = d3.geo.albersUsa()
     // .center([-75, 40])
     // .rotate([0, 0])
-    .scale(element.offsetWidth*2.3)
-    .translate([element.offsetWidth / 3, element.offsetHeight*.8]);
+    .scale(element.offsetWidth*2.5)
+    .translate([element.offsetWidth / 2.7, element.offsetHeight*.8]);
     // .translate([90,260]);
     var path = d3.geo.path()
     .projection(projection);
@@ -708,6 +708,7 @@ var map = new Datamap({
     return {path: path, projection: projection};
   },
   geographyConfig: {
+    // dataUrl: ,
     highlightOnHover: false,
     popupOnHover: false,
     hideHawaiiAndAlaska: true
