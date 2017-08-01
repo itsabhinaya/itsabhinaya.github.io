@@ -1,54 +1,54 @@
-City,Includes,State,Overall Rank,Startup,Resources,Demographics
-Chicago,"Evanston, Aurora, Joliet, Elgin, Naperville",Illinois,1,1,1,52
-Minneapolis,Saint Paul,Minnesota,2,2,2,53
-Pittsburgh,Elkhart,Pennsylvania,3,3,3,44
-Cincinnati,"Covington, KY",Ohio,4,4,5,40
-Cleveland,Akron,Ohio,5,5,7,48
-St. Louis ,0,Missouri,6,39,4,41
-Columbus,0,Ohio,7,8,9,38
-Indianapolis,"Fishers, Carmel, Noblesville, Westfield, Zionsville",Indiana,8,6,12,36
-Madison,0,Wisconsin,9,13,6,51
-Milwaukee,0,Wisconsin,10,7,8,49
-Ann Arbor,0,Michigan,11,9,10,45
-Kansas City,"Olathe, Kansas City, Independence, Overland Park",Missouri,12,15,13,47
-Omaha,0,Nebraska,13,11,14,29
-Detroit,"Warren, Sterling Heights, Troy and Livonia",Michigan,14,29,11,50
-Louisvillle,0,Kentucky,15,10,26,24
-Champaign,Urbana,Illinois,16,23,16,8
-Grand Rapids,0,Michigan,17,14,25,17
-Lincoln,0,Nebraska,18,37,15,16
-Lexington,0,Kentucky,19,27,17,21
-Lafayette,West Lafayette,Indiana,20,24,22,3
-Dayton,0,Ohio,21,19,19,43
-Fargo,0,North Dakota,22,17,18,35
-South Bend,Elkhart,Indiana,23,12,39,9
-Bloomington,0,Indiana,24,46,23,1
-Wichita,0,Kansas,25,16,36,13
-Des Moines,0,Iowa,26,47,21,37
-Iowa City,0,Iowa,27,18,24,31
-Fort Wayne,0,Indiana,28,42,32,3
-Athens,0,Ohio,29,38,20,20
-State College,0,Pennsylvania,30,34,27,39
-Lansing,East Lansing,Michigan,31,49,30,18
-Ames ,0,Iowa,32,20,33,22
-Evansville,0,Indiana,33,43,44,6
-Duluth ,0,Minesota,34,40,29,30
-Green Bay,0,Wisconsin,35,25,46,13
-Columbia,0,Missouri,36,44,28,24
-Eau Claire,0,Wisconsin,37,32,41,11
-Springfield,0,Missouri,38,30,50,5
-Erie,0,Pennsylvania,39,26,40,19
-Youngstown,0,Ohio,40,21,48,26
-Toledo,0,Ohio,41,45,34,27
-Bloomington,Normal,Illinois,42,35,35,32
-Rochester,0,Minnesota,43,41,31,34
-Peoria,0,Illinois,44,31,37,45
-Sioux Falls,0,South Dakota,45,33,45,28
+City,Includes,State,Overall Rank,Startup,Resources,Economics & Demographics
+Indianapolis,"Fishers, Carmel, Noblesville, Westfield, Zionsville",Indiana,8,6,12,10
+Columbus,0,Ohio,7,8,9,13
+Detroit,"Warren, Sterling Heights, Troy and Livonia",Michigan,14,29,11,30
+Milwaukee,0,Wisconsin,10,7,8,40
+Kansas City,"Olathe, Kansas City, Independence, Overland Park",Missouri,12,15,13,29
+Omaha,0,Nebraska,13,11,14,21
+Cleveland,Akron,Ohio,5,5,7,38
+Minneapolis,Saint Paul,Minnesota,2,2,2,48
+Wichita,0,Kansas,25,16,36,18
+St. Louis ,0,Missouri,6,39,4,16
+Cincinnati,"Covington, KY",Ohio,4,4,5,19
+Toledo,0,Ohio,41,45,34,31
+Fort Wayne,0,Indiana,28,42,32,2
+Lincoln,0,Nebraska,18,37,15,28
+Des Moines,0,Iowa,26,47,21,25
+Springfield,0,Missouri,38,30,50,1
+Grand Rapids,0,Michigan,17,14,25,4
+Sioux Falls,0,South Dakota,45,33,45,36
+Rockford,0,Illinois,50,50,49,20
+Dayton,0,Ohio,21,19,19,32
+Topeka,0,Kansas,52,52,47,27
+Cedar Rapids,0,Iowa,48,48,38,43
+Evansville,0,Indiana,33,43,44,5
+Springfield,0,Illinois,51,51,43,35
+Peoria,0,Illinois,44,31,37,51
+Lansing,East Lansing,Michigan,31,49,30,15
+Ann Arbor,0,Michigan,11,9,10,47
+Columbia,0,Missouri,36,44,28,39
+Rochester,0,Minnesota,43,41,31,50
+Fargo,0,North Dakota,22,17,18,42
+Green Bay,0,Wisconsin,35,25,46,12
+Flint,0,Michigan,49,36,52,9
+South Bend,Elkhart,Indiana,23,12,39,11
 Quad Cities,"Davenport, Bettendorf, Rock Island, East Moline and Moline",Iowa,46,22,51,33
-Bowling Green,0,Kentucky,47,53,42,2
-Cedar Rapids,0,Iowa,48,48,38,42
-Flint,0,Michigan,49,36,52,7
-Rockford,0,Illinois,50,50,49,12
-Springfield,0,Illinois,51,51,43,22
-Topeka,0,Kansas,52,52,47,10
-Wheeling,0,West Virginia,53,28,53,15
+Lafayette,West Lafayette,Indiana,20,24,22,3
+Bloomington,0,Indiana,24,46,23,7
+Madison,0,Wisconsin,9,13,6,52
+Champaign,Urbana,Illinois,16,23,16,17
+Iowa City,0,Iowa,27,18,24,45
+Ames ,0,Iowa,32,20,33,46
+State College,0,Pennsylvania,30,34,27,41
+Athens,0,Ohio,29,38,20,49
+Bloomington,Normal,Illinois,42,35,35,44
+Lexington,0,Kentucky,19,27,17,24
+Louisvillle,0,Kentucky,15,10,26,6
+Bowling Green,0,Kentucky,47,53,42,8
+Eau Claire,0,Wisconsin,37,32,41,26
+Duluth ,0,Minesota,34,40,29,37
+Wheeling,0,West Virginia,53,28,53,14
+Youngstown,0,Ohio,40,21,48,22
+Erie,0,Pennsylvania,39,26,40,34
+Pittsburgh,0,Pennsylvania,3,3,3,23
+Chicago,"Evanston, Aurora, Joliet, Elgin, Naperville",Illinois,1,1,1,53
