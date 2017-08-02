@@ -1,55 +1,55 @@
-City,Includes,State,Overall Rank,Startup,Resources,Economics & Demographics
-Chicago,"Evanston, Aurora, Joliet, Elgin, Naperville, Schaumburg, Orland Park, Downers Grove, Arlington Heights, Waukegan, Hammond, IN and Gary, IN",Illinois,1,1,1,54
-Madison,"Fitchburg, Sun Prairie, Middleton",Wisconsin,9,13,6,53
-Peoria,East Peoria,Illinois,45,31,38,52
-Rochester,N/A,Minnesota,44,44,32,51
-Athens,N/A,Ohio,30,39,20,50
-Minneapolis,"Saint Paul, Bloomington, Burnsville, Minnetonka, Edina, Maple Grove, Coon Rapids",Minnesota,2,2,2,49
-Ann Arbor,N/A,Michigan,11,9,10,48
-Ames ,N/A,Iowa,33,21,35,47
-Iowa City,Coralville,Iowa,28,20,25,46
-Bloomington,Normal,Illinois,43,36,36,45
-Cedar Rapids,Marion,Iowa,49,49,39,44
-State College,N/A,Pennsylvania,31,34,28,43
-Fargo,N/A,North Dakota,22,17,18,42
-Milwaukee,"Racine, Waukesha, Menomonee Falls, Oak Creek",Wisconsin,10,7,9,41
-Columbia,N/A,Missouri,37,46,29,40
-Akron,"Canton, Cuyahoga Falls, Massillon and Kent",Ohio,26,18,27,39
-Duluth ,"Superior, WI",Minesota,36,43,30,38
-Sioux Falls,N/A,South Dakota,46,35,46,37
-Springfield,N/A,Illinois,52,52,44,36
-Cleveland,"Parma, Elyria, Shaker Heights, Lorain, Lakewood, Cleveland Heights",Ohio,5,4,7,35
-Erie,N/A,Pennsylvania,42,27,41,34
-Dayton,Beavercreek,Ohio,21,19,19,33
-Quad Cities,"Davenport, Bettendorf, Rock Island, East Moline and Moline",Iowa,47,24,51,32
-Detroit,"Warren, Sterling Heights, Troy and Livonia",Michigan,14,30,11,31
-Toledo,"Maumee, Sylvania",Ohio,41,47,34,30
-Kansas City,"Olathe, Kansas City, Independence, Overland Park",Missouri,12,14,13,29
-Lincoln,N/A,Nebraska,18,38,15,28
-Topeka,N/A,Kansas,53,53,48,27
-Des Moines,"West Des Moines, Ankeny, Urbandale, Clive",Iowa,27,48,21,26
-Eau Claire,N/A,Wisconsin,38,33,42,25
-Lexington,N/A,Kentucky,19,28,17,24
-Pittsburgh,"Monroeville, Moon, Mt Lebanon, Bethel Park, Penn Hills",Pennsylvania,3,3,3,23
-Omaha,"Bellevue, La Vista, Council Bluffs, IA",Nebraska,13,11,14,22
-Youngstown,"Austintown, Boardman, Warren",Ohio,40,22,49,21
-Rockford,"Loves Park, Belvidere",Illinois,51,51,50,20
-Cincinnati,"Hamilton, Mason, Northgate, Sharonville, Covington, KY and Newport, KY",Ohio,4,5,5,19
-Wichita,N/A,Kansas,25,16,37,18
-Champaign,Urbana,Illinois,16,23,16,17
-St. Louis ,"Clayton, Chesterfield, Florissant, St. Charles, Creve Coeur, Maryland Heights, Hazelwood, Ferguson and Belleville, IL",Missouri,6,40,4,16
-Lansing,East Lansing,Michigan,32,50,31,15
-Wheeling,N/A,West Virginia,54,29,54,14
-Columbus,"Gahanna, Westerville, Dublin, Grove City",Ohio,7,8,8,13
-Green Bay,N/A,Wisconsin,35,26,47,12
-South Bend,Elkhart,Indiana,23,12,40,11
-Indianapolis,"Fishers, Carmel, Noblesville, Westfield, Zionsville, Greenwood, Avon",Indiana,8,6,12,10
-Flint,N/A,Michigan,50,37,53,9
-Bowling Green,N/A,Kentucky,48,54,43,8
-Bloomington,N/A,Indiana,24,45,23,7
-Louisvillle,"Jeffersontown, Jeffersonville, IN, Clarksville, IN and New Albany, IN",Kentucky,15,10,26,6
-Evansville,N/A,Indiana,34,41,45,5
-Grand Rapids,Wyoming,Michigan,17,15,24,4
-Lafayette,West Lafayette,Indiana,20,25,22,3
-Fort Wayne,N/A,Indiana,29,42,33,2
-Springfield,N/A,Missouri,39,32,52,1
+City,State,Overall Rank,Startup,Resources,Economics & Demographics,Includes
+Indianapolis,Indiana,8,7,12,10,"Fishers, Carmel, Noblesville, Westfield, Zionsville, Greenwood, Avon"
+Columbus,Ohio,7,10,8,13,"Gahanna, Westerville, Dublin, Grove City"
+Detroit,Michigan,13,31,11,31,"Warren, Sterling Heights, Troy and Livonia"
+Milwaukee,Wisconsin,9,8,9,41,"Racine, Waukesha, Menomonee Falls, Oak Creek"
+Kansas City,Missouri,12,15,13,29,"Olathe, Kansas City, Independence, Overland Park"
+Omaha,Nebraska,14,13,14,22,"Bellevue, La Vista, Council Bluffs, IA"
+Cleveland,Ohio,6,5,7,35,"Parma, Elyria, Shaker Heights, Lorain, Lakewood, Cleveland Heights"
+Minneapolis,Minnesota,2,2,2,49,"Saint Paul, Bloomington, Burnsville, Minnetonka, Edina, Maple Grove, Coon Rapids"
+Wichita,Kansas,25,17,37,18,N/A
+St. Louis ,Missouri,4,4,4,16,"Clayton, Chesterfield, Florissant, St. Charles, Creve Coeur, Maryland Heights, Hazelwood, Ferguson and Belleville, IL"
+Cincinnati,Ohio,5,6,5,19,"Hamilton, Mason, Northgate, Sharonville, Covington, KY and Newport, KY"
+Toledo,Ohio,41,47,34,30,"Maumee, Sylvania"
+Fort Wayne,Indiana,29,42,33,2,N/A
+Lincoln,Nebraska,18,39,15,28,N/A
+Des Moines,Iowa,27,48,21,26,"West Des Moines, Ankeny, Urbandale, Clive"
+Springfield,Missouri,39,34,52,1,N/A
+Grand Rapids,Michigan,17,16,24,4,Wyoming
+Sioux Falls,South Dakota,46,36,46,37,N/A
+Rockford,Illinois,51,51,50,20,"Loves Park, Belvidere"
+Dayton,Ohio,21,20,19,33,Beavercreek
+Topeka,Kansas,53,53,48,27,N/A
+Cedar Rapids,Iowa,49,49,39,44,Marion
+Evansville,Indiana,33,41,45,5,N/A
+Springfield,Illinois,52,52,44,36,N/A
+Peoria,Illinois,45,32,38,52,East Peoria
+Lansing,Michigan,32,50,31,15,East Lansing
+Ann Arbor,Michigan,11,9,10,48,N/A
+Columbia,Missouri,38,46,29,40,N/A
+Rochester,Minnesota,44,44,32,51,N/A
+Fargo,North Dakota,22,18,18,42,N/A
+Green Bay,Wisconsin,35,27,47,12,N/A
+Flint,Michigan,50,37,53,9,N/A
+South Bend,Indiana,23,12,40,11,Elkhart
+Quad Cities,Iowa,47,25,51,32,"Davenport, Bettendorf, Rock Island, East Moline and Moline"
+Lafayette,Indiana,20,26,22,3,West Lafayette
+Bloomington,Indiana,24,45,23,7,N/A
+Madison,Wisconsin,10,14,6,53,"Fitchburg, Sun Prairie, Middleton"
+Champaign,Illinois,16,24,16,17,Urbana
+Iowa City,Iowa,28,21,25,46,Coralville
+Ames ,Iowa,34,22,35,47,N/A
+State College,Pennsylvania,31,35,28,43,N/A
+Athens,Ohio,30,40,20,50,N/A
+Bloomington,Illinois,43,38,36,45,Normal
+Lexington,Kentucky,19,30,17,24,N/A
+Louisvillle,Kentucky,15,11,26,6,"Jeffersontown, Jeffersonville, IN, Clarksville, IN and New Albany, IN"
+Bowling Green,Kentucky,48,54,43,8,N/A
+Eau Claire,Wisconsin,37,33,42,25,N/A
+Duluth ,Minesota,36,43,30,38,"Superior, WI"
+Wheeling,West Virginia,54,28,54,14,N/A
+Youngstown,Ohio,40,23,49,21,"Austintown, Boardman, Warren"
+Erie,Pennsylvania,42,29,41,34,N/A
+Pittsburgh,Pennsylvania,3,3,3,23,"Monroeville, Moon, Mt Lebanon, Bethel Park, Penn Hills"
+Akron,Ohio,26,19,27,39,"Canton, Cuyahoga Falls, Massillon and Kent"
+Chicago,Illinois,1,1,1,54,"Evanston, Aurora, Joliet, Elgin, Naperville, Schaumburg, Orland Park, Downers Grove, Arlington Heights, Waukegan, Hammond, IN and Gary, IN"
