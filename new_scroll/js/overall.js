@@ -11,8 +11,7 @@ var data_all =
     "overall_rankings": 8,
     "startup": 6,
     "resources": 12,
-    "demographics": 10,
-    "college": 0
+    "demographics": 10
   },
   {
     "city": "Columbus",
@@ -25,8 +24,7 @@ var data_all =
     "overall_rankings": 7,
     "startup": 8,
     "resources": 8,
-    "demographics": 13,
-    "college": 0
+    "demographics": 13
   },
   {
     "city": "Detroit",
@@ -39,8 +37,7 @@ var data_all =
     "overall_rankings": 14,
     "startup": 30,
     "resources": 11,
-    "demographics": 31,
-    "college": 0
+    "demographics": 31
   },
   {
     "city": "Milwaukee",
@@ -53,8 +50,7 @@ var data_all =
     "overall_rankings": 10,
     "startup": 7,
     "resources": 9,
-    "demographics": 41,
-    "college": 0
+    "demographics": 41
   },
   {
     "city": "Kansas City",
@@ -67,8 +63,7 @@ var data_all =
     "overall_rankings": 12,
     "startup": 14,
     "resources": 13,
-    "demographics": 29,
-    "college": 0
+    "demographics": 29
   },
   {
     "city": "Omaha",
@@ -81,8 +76,7 @@ var data_all =
     "overall_rankings": 13,
     "startup": 11,
     "resources": 14,
-    "demographics": 22,
-    "college": 0
+    "demographics": 22
   },
   {
     "city": "Cleveland",
@@ -95,8 +89,7 @@ var data_all =
     "overall_rankings": 5,
     "startup": 4,
     "resources": 7,
-    "demographics": 35,
-    "college": 0
+    "demographics": 35
   },
   {
     "city": "Minneapolis",
@@ -109,8 +102,7 @@ var data_all =
     "overall_rankings": 2,
     "startup": 2,
     "resources": 2,
-    "demographics": 49,
-    "college": 0
+    "demographics": 49
   },
   {
     "city": "Wichita",
@@ -123,8 +115,7 @@ var data_all =
     "overall_rankings": 25,
     "startup": 16,
     "resources": 37,
-    "demographics": 18,
-    "college": 0
+    "demographics": 18
   },
   {
     "city": "St. Louis",
@@ -137,8 +128,7 @@ var data_all =
     "overall_rankings": 6,
     "startup": 40,
     "resources": 4,
-    "demographics": 16,
-    "college": 0
+    "demographics": 16
   },
   {
     "city": "Cincinnati",
@@ -151,8 +141,7 @@ var data_all =
     "overall_rankings": 4,
     "startup": 5,
     "resources": 5,
-    "demographics": 19,
-    "college": 0
+    "demographics": 19
   },
   {
     "city": "Toledo",
@@ -165,8 +154,7 @@ var data_all =
     "overall_rankings": 41,
     "startup": 47,
     "resources": 34,
-    "demographics": 30,
-    "college": 0
+    "demographics": 30
   },
   {
     "city": "Fort Wayne",
@@ -179,8 +167,7 @@ var data_all =
     "overall_rankings": 29,
     "startup": 42,
     "resources": 33,
-    "demographics": 2,
-    "college": 0
+    "demographics": 2
   },
   {
     "city": "Lincoln",
@@ -193,8 +180,7 @@ var data_all =
     "overall_rankings": 18,
     "startup": 38,
     "resources": 15,
-    "demographics": 28,
-    "college": 0
+    "demographics": 28
   },
   {
     "city": "Des Moines",
@@ -207,8 +193,7 @@ var data_all =
     "overall_rankings": 27,
     "startup": 48,
     "resources": 21,
-    "demographics": 26,
-    "college": 0
+    "demographics": 26
   },
   {
     "city": "Springfield",
@@ -221,8 +206,7 @@ var data_all =
     "overall_rankings": 39,
     "startup": 32,
     "resources": 52,
-    "demographics": 1,
-    "college": 0
+    "demographics": 1
   },
   {
     "city": "Grand Rapids",
@@ -235,8 +219,7 @@ var data_all =
     "overall_rankings": 17,
     "startup": 15,
     "resources": 24,
-    "demographics": 4,
-    "college": 0
+    "demographics": 4
   },
   {
     "city": "Sioux Falls",
@@ -249,8 +232,7 @@ var data_all =
     "overall_rankings": 46,
     "startup": 35,
     "resources": 46,
-    "demographics": 37,
-    "college": 0
+    "demographics": 37
   },
   {
     "city": "Rockford",
@@ -263,8 +245,7 @@ var data_all =
     "overall_rankings": 51,
     "startup": 51,
     "resources": 50,
-    "demographics": 20,
-    "college": 0
+    "demographics": 20
   },
   {
     "city": "Dayton",
@@ -277,8 +258,7 @@ var data_all =
     "overall_rankings": 21,
     "startup": 19,
     "resources": 19,
-    "demographics": 33,
-    "college": 6
+    "demographics": 33
   },
   {
     "city": "Topeka",
@@ -291,8 +271,7 @@ var data_all =
     "overall_rankings": 53,
     "startup": 53,
     "resources": 48,
-    "demographics": 27,
-    "college": 0
+    "demographics": 27
   },
   {
     "city": "Cedar Rapids",
@@ -305,8 +284,7 @@ var data_all =
     "overall_rankings": 49,
     "startup": 49,
     "resources": 39,
-    "demographics": 44,
-    "college": 0
+    "demographics": 44
   },
   {
     "city": "Evansville",
@@ -319,8 +297,7 @@ var data_all =
     "overall_rankings": 34,
     "startup": 41,
     "resources": 45,
-    "demographics": 5,
-    "college": 0
+    "demographics": 5
   },
   {
     "city": "Springfield",
@@ -333,8 +310,7 @@ var data_all =
     "overall_rankings": 52,
     "startup": 52,
     "resources": 44,
-    "demographics": 36,
-    "college": 0
+    "demographics": 36
   },
   {
     "city": "Peoria",
@@ -347,8 +323,7 @@ var data_all =
     "overall_rankings": 45,
     "startup": 31,
     "resources": 38,
-    "demographics": 52,
-    "college": 0
+    "demographics": 52
   },
   {
     "city": "Lansing",
@@ -361,8 +336,7 @@ var data_all =
     "overall_rankings": 32,
     "startup": 50,
     "resources": 31,
-    "demographics": 15,
-    "college": 12
+    "demographics": 15
   },
   {
     "city": "Ann Arbor",
@@ -375,8 +349,7 @@ var data_all =
     "overall_rankings": 11,
     "startup": 9,
     "resources": 10,
-    "demographics": 48,
-    "college": 2
+    "demographics": 48
   },
   {
     "city": "Columbia",
@@ -389,8 +362,7 @@ var data_all =
     "overall_rankings": 37,
     "startup": 46,
     "resources": 29,
-    "demographics": 40,
-    "college": 0
+    "demographics": 40
   },
   {
     "city": "Rochester",
@@ -403,8 +375,7 @@ var data_all =
     "overall_rankings": 44,
     "startup": 44,
     "resources": 32,
-    "demographics": 51,
-    "college": 0
+    "demographics": 51
   },
   {
     "city": "Fargo",
@@ -417,8 +388,7 @@ var data_all =
     "overall_rankings": 22,
     "startup": 17,
     "resources": 18,
-    "demographics": 42,
-    "college": 0
+    "demographics": 42
   },
   {
     "city": "Green Bay",
@@ -431,8 +401,7 @@ var data_all =
     "overall_rankings": 35,
     "startup": 26,
     "resources": 47,
-    "demographics": 12,
-    "college": 0
+    "demographics": 12
   },
   {
     "city": "Flint",
@@ -445,8 +414,7 @@ var data_all =
     "overall_rankings": 50,
     "startup": 37,
     "resources": 53,
-    "demographics": 9,
-    "college": 0
+    "demographics": 9
   },
   {
     "city": "South Bend",
@@ -459,8 +427,7 @@ var data_all =
     "overall_rankings": 23,
     "startup": 12,
     "resources": 40,
-    "demographics": 11,
-    "college": 7
+    "demographics": 11
   },
   {
     "city": "Quad Cities",
@@ -473,8 +440,7 @@ var data_all =
     "overall_rankings": 47,
     "startup": 24,
     "resources": 51,
-    "demographics": 32,
-    "college": 0
+    "demographics": 32
   },
   {
     "city": "Lafayette",
@@ -487,8 +453,7 @@ var data_all =
     "overall_rankings": 20,
     "startup": 25,
     "resources": 22,
-    "demographics": 3,
-    "college": 5
+    "demographics": 3
   },
   {
     "city": "Bloomington",
@@ -501,8 +466,7 @@ var data_all =
     "overall_rankings": 24,
     "startup": 45,
     "resources": 23,
-    "demographics": 7,
-    "college": 8
+    "demographics": 7
   },
   {
     "city": "Madison",
@@ -515,8 +479,7 @@ var data_all =
     "overall_rankings": 9,
     "startup": 13,
     "resources": 6,
-    "demographics": 53,
-    "college": 1
+    "demographics": 53
   },
   {
     "city": "Champaign",
@@ -529,8 +492,7 @@ var data_all =
     "overall_rankings": 16,
     "startup": 23,
     "resources": 16,
-    "demographics": 17,
-    "college": 3
+    "demographics": 17
   },
   {
     "city": "Iowa City",
@@ -543,8 +505,7 @@ var data_all =
     "overall_rankings": 28,
     "startup": 20,
     "resources": 25,
-    "demographics": 46,
-    "college": 9
+    "demographics": 46
   },
   {
     "city": "Ames",
@@ -557,8 +518,7 @@ var data_all =
     "overall_rankings": 33,
     "startup": 21,
     "resources": 35,
-    "demographics": 47,
-    "college": 13
+    "demographics": 47
   },
   {
     "city": "State College",
@@ -571,8 +531,7 @@ var data_all =
     "overall_rankings": 31,
     "startup": 34,
     "resources": 28,
-    "demographics": 43,
-    "college": 11
+    "demographics": 43
   },
   {
     "city": "Athens",
@@ -585,8 +544,7 @@ var data_all =
     "overall_rankings": 30,
     "startup": 39,
     "resources": 20,
-    "demographics": 50,
-    "college": 10
+    "demographics": 50
   },
   {
     "city": "Bloomington",
@@ -599,8 +557,7 @@ var data_all =
     "overall_rankings": 43,
     "startup": 36,
     "resources": 36,
-    "demographics": 45,
-    "college": 14
+    "demographics": 45
   },
   {
     "city": "Lexington",
@@ -613,8 +570,7 @@ var data_all =
     "overall_rankings": 19,
     "startup": 28,
     "resources": 17,
-    "demographics": 24,
-    "college": 4
+    "demographics": 24
   },
   {
     "city": "Louisvillle",
@@ -627,8 +583,7 @@ var data_all =
     "overall_rankings": 15,
     "startup": 10,
     "resources": 26,
-    "demographics": 6,
-    "college": 0
+    "demographics": 6
   },
   {
     "city": "Bowling Green",
@@ -641,8 +596,7 @@ var data_all =
     "overall_rankings": 48,
     "startup": 54,
     "resources": 43,
-    "demographics": 8,
-    "college": 0
+    "demographics": 8
   },
   {
     "city": "Eau Claire",
@@ -655,8 +609,7 @@ var data_all =
     "overall_rankings": 38,
     "startup": 33,
     "resources": 42,
-    "demographics": 25,
-    "college": 0
+    "demographics": 25
   },
   {
     "city": "Duluth",
@@ -669,8 +622,7 @@ var data_all =
     "overall_rankings": 36,
     "startup": 43,
     "resources": 30,
-    "demographics": 38,
-    "college": 0
+    "demographics": 38
   },
   {
     "city": "Wheeling",
@@ -683,8 +635,7 @@ var data_all =
     "overall_rankings": 54,
     "startup": 29,
     "resources": 54,
-    "demographics": 14,
-    "college": 0
+    "demographics": 14
   },
   {
     "city": "Youngstown",
@@ -697,8 +648,7 @@ var data_all =
     "overall_rankings": 40,
     "startup": 22,
     "resources": 49,
-    "demographics": 21,
-    "college": 0
+    "demographics": 21
   },
   {
     "city": "Erie",
@@ -711,8 +661,7 @@ var data_all =
     "overall_rankings": 42,
     "startup": 27,
     "resources": 41,
-    "demographics": 34,
-    "college": 0
+    "demographics": 34
   },
   {
     "city": "Pittsburgh",
@@ -725,8 +674,7 @@ var data_all =
     "overall_rankings": 3,
     "startup": 3,
     "resources": 3,
-    "demographics": 23,
-    "college": 0
+    "demographics": 23
   },
   {
     "city": "Akron",
@@ -739,8 +687,7 @@ var data_all =
     "overall_rankings": 26,
     "startup": 18,
     "resources": 27,
-    "demographics": 39,
-    "college": 0
+    "demographics": 39
   },
   {
     "city": "Chicago",
@@ -753,8 +700,7 @@ var data_all =
     "overall_rankings": 1,
     "startup": 1,
     "resources": 1,
-    "demographics": 54,
-    "college": 0
+    "demographics": 54
   }
 ]
 var map = new Datamap({
@@ -844,30 +790,13 @@ window.addEventListener('resize', function() {
 });
 map.bubbles(data_all,{
   popupTemplate: function(geo, data) {
-    if (data.includes != 0 && data.college != 0){
+  if (data.includes != 0){
     return ['<div class="hoverinfo"><strong><i>' +  data.city +'</i></strong>' +
     '<br/><strong>Includes:</strong> ' +  data.includes +
     '<br/><strong>Overall Rank:</strong> ' +  data.overall_rankings +
     '<br/><strong>Startup Activity:</strong> ' +  data.startup +
     '<br/><strong>Access to Resources:</strong> ' +  data.resources +
     '<br/><strong>Economics & Demographics:</strong> ' +  data.demographics +
-    '<br/><strong>College Town:</strong> ' +  data.college +
-    '</div>'].join('');
-}else if (data.includes != 0){
-    return ['<div class="hoverinfo"><strong><i>' +  data.city +'</i></strong>' +
-    '<br/><strong>Includes:</strong> ' +  data.includes +
-    '<br/><strong>Overall Rank:</strong> ' +  data.overall_rankings +
-    '<br/><strong>Startup Activity:</strong> ' +  data.startup +
-    '<br/><strong>Access to Resources:</strong> ' +  data.resources +
-    '<br/><strong>Economics & Demographics:</strong> ' +  data.demographics +
-    '</div>'].join('');
-}else if (data.college != 0){
-    return ['<div class="hoverinfo"><strong><i>' +  data.city +'</i></strong>' +
-    '<br/><strong>Overall Rank:</strong> ' +  data.overall_rankings +
-    '<br/><strong>Startup Activity:</strong> ' +  data.startup +
-    '<br/><strong>Access to Resources:</strong> ' +  data.resources +
-    '<br/><strong>Economics & Demographics:</strong> ' +  data.demographics +
-    '<br/><strong>College Town:</strong> ' +  data.college +
     '</div>'].join('');
 }else {
       return ['<div class="hoverinfo"><strong><i>' +  data.city +
