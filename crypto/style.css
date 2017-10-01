@@ -35,3 +35,7 @@ input {
   padding-right: 0;
   padding-left: 0;
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}
