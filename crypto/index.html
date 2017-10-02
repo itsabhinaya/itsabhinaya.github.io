@@ -22,7 +22,7 @@
 			</div>
 		</div>		
 		<div class="row no-gutter">
-				<h2 class="text-left"> <input type="text" class="name" placeholder="apple" value="Overstock" autocomplete="on"/></h2>
+				<h2 class="text-left"> <input type="text" class="name" onclick="this.focus();this.select()" placeholder="Apple" value="Expedia" autocomplete="on"/></h2>
 			</div>
 		<div class="row">
 				<div class="col">
@@ -70,6 +70,7 @@ $(".submit-btn").click(function(){
 	 $.get('crypto.csv', function(data) {
 		var build = '';
 		var type = '';
+		var verified = '';
 		var check = 0;
 		var rows = data.split("\n");
 
@@ -79,9 +80,14 @@ $(".submit-btn").click(function(){
 		if (nameValue == columns[0].toLowerCase()) {
 			type = columns[3].toLowerCase();
 			check = 1;
+			verified = columns[1].toLowerCase();
 		}})
 		$('#wrap').html(" "); //clears the div
-		if (check == 1){
+		if (check == 1 && verified=="yes"){
+			build = "<h1>" + nameValue.charAt(0).toUpperCase() + nameValue.slice(1) +"* "+" accepts "+" "+ type.charAt(0).toUpperCase() + type.slice(1) + "."+ "</h1>";
+			build += "<h6>* Verified</h6>";
+			$('#wrap').append(build);	
+		}else if (check == 1){
 			build = "<h1>" + nameValue.charAt(0).toUpperCase() + nameValue.slice(1) +" "+" accepts "+" "+ type.charAt(0).toUpperCase() + type.slice(1) + "."+ "</h1>";
 			$('#wrap').append(build);	
 		}else{
