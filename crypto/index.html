@@ -9,9 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript">
 	</script>
-
-    <script type="text/javascript" src="scripts/d3.min.js"></script>
-    <script type="text/javascript" src="scripts/autocomplete.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
 
 	 <link rel="stylesheet" href="style.css">
 
@@ -47,18 +45,34 @@
 
 <script type="text/javascript">
 
-// new autoComplete({
-//     selector: 'input[name="q"]',
-//     source: function(term, response){
-//         $.get('crypto.csv', function(data){ 
-//         	response(data); });
-//     }
-// });
+//csv data into an array
+$(function() {
+	function processData(allText) {
+		var allTextLines = allText.split(/\r\n|\n/);
+		var lines = [];
+		while (allTextLines.length > 0) {
+			var entry = {};
+			entry = allTextLines.shift().split(',');
+			lines.push(entry[0].toLowerCase());
+		}
+		$("#c_name").autocomplete({
+			source: lines
+		});
+	}
+
+
+	var lists = [];
+
+	$.get("crypto.csv", function(data) {
+		lists = processData(data);
+	});
+
+});
 
 var callback = function() {
 	event.preventDefault();
 	var nameValue = $("input.name").val().toLowerCase();
-	 $.get('crypto.csv', function(data) {
+	$.get('crypto.csv', function(data) {
 		var build = '';
 		var type = '';
 		var verified = '';
@@ -67,12 +81,12 @@ var callback = function() {
 
 		rows.forEach( function getvalues(thisRow) {
 
-		var columns = thisRow.split(",");
-		if (nameValue == columns[0].toLowerCase()) {
-			type = columns[3].toLowerCase();
-			check = 1;
-			verified = columns[1].toLowerCase();
-		}})
+			var columns = thisRow.split(",");
+			if (nameValue == columns[0].toLowerCase()) {
+				type = columns[3].toLowerCase();
+				check = 1;
+				verified = columns[1].toLowerCase();
+			}})
 		$('#wrap').html(" "); //clears the div
 		if (check == 1 && verified=="yes"){
 			build = "<h1>" + nameValue.charAt(0).toUpperCase() + nameValue.slice(1) +"* "+" accepts "+" "+ type.charAt(0).toUpperCase() + type.slice(1) + "."+ "</h1>";
@@ -86,13 +100,13 @@ var callback = function() {
 			build += "<h6>Let us know if they do accept cryptocurrency curreny here.</h6>"
 			$('#wrap').append(build);	
 		}
-	 });
+	});
 };
 
 $(".submit-btn").click(callback);
 
 $("input").keypress(function() {
-    if (event.which == 13) callback();
+	if (event.which == 13) callback();
 });
 
 </script>
