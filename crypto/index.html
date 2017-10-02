@@ -9,9 +9,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript">
 	</script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
 
-	 <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
 
 
 </head>
@@ -24,10 +26,13 @@
 			</div>
 		</div>		
 		<div class="row no-gutter">
+			<div class="ui-widget">
+
 				<h2 class="text-left"> <input type="text" id ="c_name" class="name" onclick="this.focus();this.select()" placeholder="Apple" value="Expedia" autocomplete="on"/></h2>
 			</div>
+		</div>
 		<div class="row">
-				<div class="col">
+			<div class="col">
 				<h2 class="text-left">accept cryptocurrency?</h2>
 			</div>
 		</div>
@@ -43,7 +48,7 @@
 		</div>
 	</div>
 
-<script type="text/javascript">
+	<script type="text/javascript">
 
 //csv data into an array
 $(function() {
@@ -55,17 +60,27 @@ $(function() {
 			entry = allTextLines.shift().split(',');
 			lines.push(entry[0].toLowerCase());
 		}
-		$("#c_name").autocomplete({
-			source: lines
-		});
-	}
+		// $("#c_name").autocomplete({
+		// 	source: lines
+		// });
 
-
-	var lists = [];
-
-	$.get("crypto.csv", function(data) {
-		lists = processData(data);
+	$("#c_name").autocomplete({ 
+		maxResults: 10,
+		source: function(request, response) {
+			var results = $.ui.autocomplete.filter(lines, request.term);
+			response(results.slice(0, this.options.maxResults));
+		}
 	});
+
+
+}
+
+
+var lists = [];
+
+$.get("crypto.csv", function(data) {
+	lists = processData(data);
+});
 
 });
 

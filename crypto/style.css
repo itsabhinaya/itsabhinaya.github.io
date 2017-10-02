@@ -39,3 +39,14 @@ input {
 textarea:focus, input:focus{
     outline: none;
 }
+
+/*.ui-menu .ui-menu-item a{
+    background:red;
+    height:10px;
+    font-size:8px;
+}
+
+.ui-autocomplete {
+    background: #4a4a4a;
+    border-radius: 0px;*/
+}
