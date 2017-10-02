@@ -9,6 +9,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript">
 	</script>
+
+    <script type="text/javascript" src="scripts/d3.min.js"></script>
+    <script type="text/javascript" src="scripts/autocomplete.js"></script>
+
 	 <link rel="stylesheet" href="style.css">
 
 
@@ -22,7 +26,7 @@
 			</div>
 		</div>		
 		<div class="row no-gutter">
-				<h2 class="text-left"> <input type="text" class="name" onclick="this.focus();this.select()" placeholder="Apple" value="Expedia" autocomplete="on"/></h2>
+				<h2 class="text-left"> <input type="text" id ="c_name" class="name" onclick="this.focus();this.select()" placeholder="Apple" value="Expedia" autocomplete="on"/></h2>
 			</div>
 		<div class="row">
 				<div class="col">
@@ -43,28 +47,15 @@
 
 <script type="text/javascript">
 
-$(document).ready(function() {
-  $.ajax({
-    type: "GET",
-    url: "crypto.csv",
-    dataType: "text/csv",
-    success: function(data) {processData(data);}
- });
-});
+// new autoComplete({
+//     selector: 'input[name="q"]',
+//     source: function(term, response){
+//         $.get('crypto.csv', function(data){ 
+//         	response(data); });
+//     }
+// });
 
-var a = [];
-function processData(myTxt) {
-    var myLines = myTxt.split(/\r\n|\n/);
-    for (var i=1; i<myLines.length; i++) {
-          a.push(myLines[i]);
-        }
-        console.log(a);
-        $( "#name" ).autocomplete({
-            source: a
-        });
-};
-
-$(".submit-btn").click(function(){
+var callback = function() {
 	event.preventDefault();
 	var nameValue = $("input.name").val().toLowerCase();
 	 $.get('crypto.csv', function(data) {
@@ -96,7 +87,14 @@ $(".submit-btn").click(function(){
 			$('#wrap').append(build);	
 		}
 	 });
+};
+
+$(".submit-btn").click(callback);
+
+$("input").keypress(function() {
+    if (event.which == 13) callback();
 });
+
 </script>
 
 </body>
