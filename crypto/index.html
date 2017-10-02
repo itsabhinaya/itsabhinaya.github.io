@@ -22,7 +22,7 @@
 			</div>
 		</div>		
 		<div class="row no-gutter">
-				<h2 class="text-left"> <input type="text" class="name" placeholder="apple" value="Overstock" /></h2>
+				<h2 class="text-left"> <input type="text" class="name" placeholder="apple" value="Overstock" autocomplete="on"/></h2>
 			</div>
 		<div class="row">
 				<div class="col">
@@ -43,10 +43,30 @@
 
 <script type="text/javascript">
 
+$(document).ready(function() {
+  $.ajax({
+    type: "GET",
+    url: "crypto.csv",
+    dataType: "text/csv",
+    success: function(data) {processData(data);}
+ });
+});
+
+var a = [];
+function processData(myTxt) {
+    var myLines = myTxt.split(/\r\n|\n/);
+    for (var i=1; i<myLines.length; i++) {
+          a.push(myLines[i]);
+        }
+        console.log(a);
+        $( "#name" ).autocomplete({
+            source: a
+        });
+};
+
 $(".submit-btn").click(function(){
-	
 	event.preventDefault();
-	var nameValue = $("input.name").val();
+	var nameValue = $("input.name").val().toLowerCase();
 	 $.get('crypto.csv', function(data) {
 		var build = '';
 		var type = '';
@@ -56,18 +76,17 @@ $(".submit-btn").click(function(){
 		rows.forEach( function getvalues(thisRow) {
 
 		var columns = thisRow.split(",");
-		if (nameValue == columns[0]) {
-			type = columns[2];
+		if (nameValue == columns[0].toLowerCase()) {
+			type = columns[3].toLowerCase();
 			check = 1;
 		}})
-
-
 		$('#wrap').html(" "); //clears the div
 		if (check == 1){
-			build = "<h1>" +nameValue +" "+" accepts "+" "+type + "</h1>";
+			build = "<h1>" + nameValue.charAt(0).toUpperCase() + nameValue.slice(1) +" "+" accepts "+" "+ type.charAt(0).toUpperCase() + type.slice(1) + "."+ "</h1>";
 			$('#wrap').append(build);	
 		}else{
-			build = "<h1>" +nameValue+" "+" doesn't accept any crypto" + "</h1>";
+			build = "<h1>" +nameValue.charAt(0).toUpperCase() + nameValue.slice(1)+" "+" doesn't accept any cryptocurrency." + "</h1>";
+			build += "<h6>Let us know if they do accept cryptocurrency curreny here.</h6>"
 			$('#wrap').append(build);	
 		}
 	 });
