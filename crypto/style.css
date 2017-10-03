@@ -13,7 +13,7 @@ input {
 
 }
 
-.submit-btn {
+#mine_button, .submit-btn {
     margin-top: 20px;
     height: 50px;
     background-color: #FFD300;
@@ -22,7 +22,7 @@ input {
 
 }
 
-.submit-btn:hover {
+#mine_button, .submit-btn:hover {
     background-color: #FBEC5D;
 }
 
@@ -30,6 +30,10 @@ input {
 textarea:focus, input:focus{
     outline: none;
 }
+/*#border_mine{
+  border: 10px solid orange;
+  background: transparent;
+}*/
 
 /*.ui-menu .ui-menu-item a{
     background:red;
