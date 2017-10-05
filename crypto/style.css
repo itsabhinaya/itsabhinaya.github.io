@@ -25,6 +25,14 @@ ul.ui-autocomplete.ui-menu{
 text-align: center;
 }
 
+.btn.sharp {
+  border-radius:0;
+    border: 3px solid black;
+  background-color: #fdd900;
+color: black;
+}
+
+
 /*.ui-menu .ui-menu-item a{
     color: #96f226;
 }
