@@ -1,6 +1,7 @@
 body{
 	background-color: #fdd900;
     padding: 0 15px;
+font-family: 'Muli', sans-serif;
 
 }
 .container {
@@ -20,7 +21,14 @@ input {
   background-color: #fdd900;
 
 }
+ul.ui-autocomplete.ui-menu{
+text-align: center;
+}
 
+/*.ui-menu .ui-menu-item a{
+    color: #96f226;
+}
+*/
 #mine_button, .submit-btn {
     margin-top: 20px;
     height: 50px;
