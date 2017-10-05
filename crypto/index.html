@@ -90,9 +90,8 @@
 								Coin miner is currently using your CPU power to solve hashes. <br>
 								No, I am not making 💰. It's more like 1M hashes = ~$0.007.<br>
 								You can start or stop at anytime but it would be awesome if you can wait for some accepted hashes before you decied to do.
-								<p id="ths"></p>
-								<p id="tah"></p>
-								<p id="minebutton"></p>
+								<p id="ths_tah" style="text-align:center;"></p>
+								<p id="minebutton" style="text-align:center;"></p>
 
 								Visit <a href="https://coinhive.com/">Coin Hive</a> to learn more about how this works.</a>		<br>
 								To learn more about how this was built here is a post "paste link here" about it.<br>
@@ -127,15 +126,17 @@ miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
     if (miner.isRunning()) {
     	// document.getElementById("tcount").innerHTML = "Threads: " + threadCount;
     	// document.getElementById("hps").innerHTML = "hashes per second: " + hashesPerSecond;
-    	document.getElementById("ths").innerHTML = "Total Hashes: " + totalHashes+" ";
-    	document.getElementById("tah").innerHTML = " Accepted Hashes: " + acceptedHashes;
+    	// document.getElementById("ths").innerHTML = "Total Hashes: " + totalHashes+" ";
+    	// document.getElementById("tah").innerHTML = " Accepted Hashes: " + acceptedHashes;
+    	document.getElementById("ths_tah").innerHTML = "Total Hashes: " + totalHashes+" " + " Accepted Hashes: " + acceptedHashes;
     	document.getElementById("minetext").innerHTML = "<p id=\"minetext\" onclick=\"miner.stop()\">Accepted Hashes: " + acceptedHashes+" <a href=\"modal\" data-toggle=\"modal\" data-target=\"#mining_info\"> <u>Stop Mining</u></a></p>";
     	document.getElementById("minebutton").innerHTML = "<button id=\"mine_button\" onclick=\"miner.stop()\">Stop Mining</button>";
     } else {
     	// document.getElementById("tcount").innerHTML = "";
 		// document.getElementById("hps").innerHTML = "";
-		document.getElementById("ths").innerHTML = "";
-		document.getElementById("tah").innerHTML = "";
+		// document.getElementById("ths").innerHTML = "";
+		// document.getElementById("tah").innerHTML = "";
+		document.getElementById("ths_tah").innerHTML = "";
 		document.getElementById("minetext").innerHTML = "<p id=\"minetext\" onclick=\"miner.start(CoinHive.FORCE_EXCLUSIVE_TAB)\"><u>Start Mining</u></p>";
 		document.getElementById("minebutton").innerHTML = "<button id=\"mine_button\" onclick=\"miner.start(CoinHive.FORCE_EXCLUSIVE_TAB)\">Start Mining</button>";
 	}
