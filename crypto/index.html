@@ -229,7 +229,7 @@ var callback = function() {
 		nameValue = nameValue.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
 		
 		if (columns[2] !="no"){
-			nameValue = "<a href="+columns[2]+">"+nameValue+"</a>";
+			nameValue = "<a href="+columns[2]+"target=\"_blank\">"+nameValue+"</a>";
 		}
 
 		if (check == 1 && verified=="yes" && accepts == "yes"){
