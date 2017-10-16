@@ -265,7 +265,7 @@ Munro Plumbing and Heating,,no,no,no,,Bitcoin
 Museum of the Coastal Bend,,no,no,no,,Bitcoin
 Mypashmina,,no,no,no,,Bitcoin
 NakedRunner,,no,no,no,,Bitcoin
-NameCheap,yes,https://www.namecheap.com/,no,no,yes,Bitcoin
+NameCheap,yes,https://www.namecheap.com/,yes,no,yes,Bitcoin
 Natural Flow,,no,no,no,,Bitcoin
 Naughty America,,no,no,no,,Bitcoin
 NCR Silver,,no,no,no,,Bitcoin
@@ -394,7 +394,7 @@ Steam,yes,http://store.steampowered.com/,no,Bitpay,yes,Bitcoin
 StopLeak,,no,no,no,,Bitcoin
 strappingfellow,,no,no,no,,bitcoin
 Straub Auto Repairs,,no,no,no,,Bitcoin
-Stripe,,no,no,no,,Bitcoin
+Stripe,yes,https://stripe.com/bitcoin,yes,no,,Bitcoin
 Stunt Asylum,,no,no,no,,Bitcoin
 Subway,,no,no,no,,Bitcoin
 Suntimes,,no,no,no,,Bitcoin
