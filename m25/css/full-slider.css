@@ -19,7 +19,18 @@ section {
     padding-top: 80px;
     margin-top: -70px;
 }
-.divbutton {
-    height: 100px;
-    background: #0000ff;
+
+
+.gallery-image-a {
+  display: block;
+  height: 360px;
+  min-width: 100px;
+  background-position: center center;
+  transition: ease all 950ms;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: 10px solid #fff;
+  background-size: cover;
+  background-image: url('http://animalpetdoctor.homestead.com/acat1.jpg');
 }
+
