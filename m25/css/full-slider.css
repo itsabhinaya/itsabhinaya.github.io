@@ -1,4 +1,6 @@
-
+/*html, body {
+  min-width: 1000px;
+} */
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -21,16 +23,16 @@ section {
 }
 
 
-.gallery-image-a {
-  display: block;
-  height: 360px;
-  min-width: 100px;
-  background-position: center center;
-  transition: ease all 950ms;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  border: 10px solid #fff;
-  background-size: cover;
-  background-image: url('http://animalpetdoctor.homestead.com/acat1.jpg');
+.team-item img{
+    height: 200px;
+    width: 200px;
 }
 
+
+
+@media (min-width: 1200px) {
+    .container-size{
+        max-width: 1000px;
+        margin-left: 20%;
+    }
+}

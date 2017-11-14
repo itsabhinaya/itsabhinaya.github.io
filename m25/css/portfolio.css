@@ -156,6 +156,12 @@ section h3.section-subheading {
 
 
 
+.portfolio-item:hover .img-responsive {
+  opacity: 0.5;
+}
+
+
+
 
 @media (min-width:767px) {
     #portfolio .portfolio-item {
