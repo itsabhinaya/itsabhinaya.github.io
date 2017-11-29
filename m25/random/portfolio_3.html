@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<!-- saved from url=(0049)http://everyonelovessharing.com/misc/isotopedemo/ -->
 <html lang="en" class="csstransforms csstransforms3d csstransitions gr__everyonelovessharing_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-  <title>M25 Portfolio</title> 
+  <title>Isotope Combination Filter Demo</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="vendor/bootstrap/css/bootstrap_portfolio.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet"> -->
+      <!-- <link href="./Isotope Combination Filter Demo_files/bootstrap.min.css" rel="stylesheet"> -->
 
   <style type="text/css">
   #options-wrap.affix {
@@ -30,13 +33,6 @@
     display: block;
     max-width: 100%;
   }
-
-  /*#filters .item:hover img {*/
-  img:focus, img:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-  }
-
   #filters p {
     margin: 0;
   }
@@ -99,14 +95,20 @@
   a.funds:hover, label.funds:hover, 
   a.state:hover, label.state:hover, 
   a.industry:hover, label.industry:hover, 
-  a.business:hover, label.business:hover{cursor: hand !important; cursor: pointer !important;}
-  a.funds, a.state, a.industry, a.business, a.clone {
+  a.business:hover, label.business:hover,
+  a.subject:hover, label.subject:hover,
+  a.price:hover, label.price:hover,
+  a.sale:hover, label.sale:hover {cursor: hand !important; cursor: pointer !important;}
+  a.funds, a.state, a.industry, a.business, a.subject, a.price, a.sale, a.clone {
     padding: 5px; 
     }
     label.funds, label.state, label.business, 
-    label.industry{
+    label.industry, label.subject, label.price,
+    label.sale {
       margin-top: 5px; 
       margin-bottom: 5px;
+      /*color: red;*/
+      /*background-color: white;*/
     }
     
 
@@ -114,14 +116,25 @@
     a.disabled:hover, 
     a.disabled:active {
       color: gray;
+      /*background-color: blue;*/
       text-decoration: line-through !important;
     }
 
+/*    a {
+      background-color: green;
+    }
+*/
+
+
+
     .data-counter {
       float: right;
+      /*padding-right: 200px;*/
     }
      #reset-filters {
       float: left;
+/*            margin-top: 5px;
+*/
     }
 
     #reset-filters:hover {
@@ -147,16 +160,6 @@
     color: white;
     background-color: #e66432;
     border-color: #e66432;
-}
-
-
-.btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active,
-.show > .btn-outline-warning.dropdown-toggle {
-  color: #fff;
-  background-color: #e66432;
-  border-color: #e66432;
-  box-shadow: 0 0 0 0.2rem #e66432;
-
 }
 
 
@@ -201,6 +204,9 @@
               <li class="nav-item state state-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#state" class="nav-link" data-toggle="tab">States</a></li>
               <li class="nav-item business business-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#business" class="nav-link" data-toggle="tab">Business</a></li>
               <li class="nav-item industry industry-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#industry" class="nav-link" data-toggle="tab">Industry</a></li>
+              <li class="nav-item subject subject-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#subject" class="nav-link" data-toggle="tab">Subject</a></li>
+              <li class="nav-item price price-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#price" class="nav-link" data-toggle="tab">Price</a></li>
+              <li class="nav-item sale sale-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#sale" class="nav-link" data-toggle="tab">Sale Items</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade show active" id="funds">
@@ -247,6 +253,31 @@
                     <a class="industry industry_transportation" id="industry_transportation" data-filter-value=".industry_transportation"><label class="industry" for="industry_transportation">Transportation & Logistics</label></a>
                   </div>
                 </div>
+                <div class="option-combo subject tab-pane" id="subject">
+                  <div class="filter option-set" data-filter-group="subject">
+                    <a class="subject subject-abstract" id="subject-abstract" data-filter-value=".subject-abstract"><label class="subject" for="subject-abstract">abstract</label></a>
+                    <a class="subject subject-figurative" id="subject-figurative" data-filter-value=".subject-figurative"><label class="subject" for="subject-figurative">figurative</label></a>
+                    <a class="subject subject-landscape" id="subject-landscape" data-filter-value=".subject-landscape"><label class="subject" for="subject-landscape">landscape</label></a>
+                    <a class="subject subject-floral" id="subject-floral" data-filter-value=".subject-floral"><label class="subject" for="subject-floral">floral</label></a>
+                    <a class="subject subject-architectural" id="subject-architectural" data-filter-value=".subject-architectural"><label class="subject" for="subject-architectural">architectural</label></a>
+                  </div>
+                </div>
+                
+                <div class="option-combo subject tab-pane" id="price">
+                  <div class="filter option-set" data-filter-group="price">
+                    <a class="price price-below-150" id="price-below-150" data-filter-value=".price-below-150"><label class="price" for="price-below-150">&lt; $150</label></a>
+                    <a class="price price-150-499" id="price-150-499" data-filter-value=".price-150-499"><label class="price" for="price-150-499">$150-$499</label></a>
+                    <a class="price price-500-999" id="price-500-999" data-filter-value=".price-500-999"><label class="price" for="price-500-999">$500-$999</label></a>
+                    <a class="price price-1000-1500" id="price-1000-1500" data-filter-value=".price-1000-1500"><label class="price" for="price-1000-1500">$1000-$1500</label></a>
+                    <a class="price price-above-1500" id="price-above-1500" data-filter-value=".price-above-1500"><label class="price" for="price-above-1500">$1500+</label></a>
+                  </div>
+                </div>
+                
+                <div class="option-combo sale tab-pane" id="sale">
+                  <div class="filter option-set" data-filter-group="sale">
+                    <a class="sale sale-on" id="sale-on" data-filter-value=".sale-on"><label class="sale" for="sale-on">on sale</label></a>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
@@ -259,17 +290,66 @@
         <hr>
       <div id="filter-container" style="position: relative; overflow: hidden; height: 2205px; width: 909px;" class="isotope">
         <div id="art">
-          <a href="https://www.app-press.com/" target="_blank">
-            <img class="item funds1 business_B2B state_IN industry_enterprise isotope-item" src="img/portfolio/AppPress.jpg" style="position: absolute; left: 0px; top: 0px;">
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state_IL business-red industry_enterprise subject-abstract price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 384px, 0px);">
           </a>
-           <a href="https://www.app-press.com/" target="_blank">
-            <img class="item funds2 business_B2B state_IL industry_enterprise isotope-item" src="img/portfolio/PageVault.jpg" style="position: absolute; left: 0px; top: 0px;">
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state_IL business-red industry_enterprise subject-figurative price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 233px, 0px);">
           </a>
-
-
-          
-
-
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state_IL business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 1072px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state1 business_B2C industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 1847px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state1 business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 775px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state1 business-red industry_enterprise subject-floral price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 1729px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state1 business-yellow industry_enterprise subject-figurative sale-on price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 1432px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state1 business-red industry_enterprise subject-figurative price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 0px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state1 business_B2B business_B2C industry_enterprise subject-architectural price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 0px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state1 business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 635px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state1 business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state_MI business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 1519px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state1 business-red industry_education subject-landscape price-150-499 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 1023px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state1 business-red industry_enterprise subject-architectural price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 1908px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state1 business-red industry_entertainment sale subject-floral price-500-999 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 1532px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state1 business-red industry_enterprise subject-abstract price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 1143px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state1 business-red industry_ecommerce subject-landscape price-1000-1500 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 1277px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state1 business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 398px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state_KY business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 837px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state_IN business-red industry_enterprise subject-figurative price-above-1500 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 598px, 0px);">
+          </a>
         </div>
       </div>
     </div>
@@ -285,12 +365,15 @@
 </footer>
 
 <!-- js stuff --> 
-<script src="vendor/isotope/jquery-1.10.2.min.js"></script>
-<script src="vendor/isotope/bootstrap.min.js"></script>
-<script src="vendor/isotope/holder.js"></script>
-<script src="vendor/isotope/jquery.isotope.min.js"></script>
-<script src="vendor/isotope/spin.min.js"></script>
-<script src="vendor/isotope/jquery.spin.js"></script>
+<!-- <script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<script src="./Isotope Combination Filter Demo_files/jquery-1.10.2.min.js"></script>
+<script src="./Isotope Combination Filter Demo_files/bootstrap.min.js"></script>
+
+<script src="./Isotope Combination Filter Demo_files/holder.js"></script>
+<script src="./Isotope Combination Filter Demo_files/jquery.isotope.min.js"></script>
+<script src="./Isotope Combination Filter Demo_files/spin.min.js"></script>
+<script src="./Isotope Combination Filter Demo_files/jquery.spin.js"></script>
 
 
 <script>
@@ -341,11 +424,11 @@
       $container.imagesLoaded( function(){
       $container.isotope({
           itemSelector : '.item',
-          sortBy : 'original-order'
+          sortBy : 'random'
       });
     });
     var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
-    $filterDisplay.append( '<span class="filter-label data-counter pull-right">&nbsp;'+numItemsDisp+'&nbsp;Portcos</span>' );
+    $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying all&nbsp;'+numItemsDisp+'&nbsp;portfolios</span>' );
     var group = '';
       // filter on click
       $('.filter a').click(function(){
@@ -480,6 +563,72 @@
           }
         }
       });
+      // subject
+      $('a.subject:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('subject') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
+      // price
+      $('a.price:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('price') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
+      // sale
+      $('a.sale:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('sale') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
       // update filter display
         var arrLbl = [];
         arrLbl = comboFilter.split('.');
@@ -504,28 +653,57 @@
       if ( comboFilter.indexOf('state') == -1 
         && comboFilter.indexOf('business') == -1 
         && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
         && comboFilter.indexOf('funds') > 0 ){
             $('a.funds:not(.clone)').removeClass('disabled');
         }
       if ( comboFilter.indexOf('funds') == -1 
         && comboFilter.indexOf('business') == -1 
         && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
         && comboFilter.indexOf('state') > 0 ){
             $('a.state:not(.clone)').removeClass('disabled');
         }
       if ( comboFilter.indexOf('funds') == -1 
         && comboFilter.indexOf('state') == -1 
         && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
         && comboFilter.indexOf('business') > 0 ){
             $('a.business:not(.clone)').removeClass('disabled');
         }
       if ( comboFilter.indexOf('funds') == -1 
         && comboFilter.indexOf('state') == -1 
         && comboFilter.indexOf('business') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
         && comboFilter.indexOf('industry') > 0 ){
             $('a.industry:not(.clone)').removeClass('disabled');
         }
-
+        if ( comboFilter.indexOf('funds') == -1 
+        && comboFilter.indexOf('state') == -1 
+        && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('business') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
+        && comboFilter.indexOf('subject') > 0 ){
+            $('a.subject:not(.clone)').removeClass('disabled');
+        }
+        if ( comboFilter.indexOf('funds') == -1 
+        && comboFilter.indexOf('state') == -1 
+        && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('business') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('sale') == -1 
+        && comboFilter.indexOf('price') > 0 ){
+            $('a.price:not(.clone)').removeClass('disabled');
+        }
       // filter display count
       var numItemsHidden = $('img.item.isotope-hidden').length;
       var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
@@ -534,25 +712,24 @@
       if(numItemsHidden != 0 && numItemsDisp != 1) {
         // clear filter
         
-        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Portcos</span>' );
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;works&nbsp;&nbsp;</span>' );
         $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
       }
       else if (numItemsHidden != 0 && numItemsDisp === 1) {
         
-        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Portco</span>' );
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+' work&nbsp;&nbsp;</span>' );
         $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
       }
       else if (numItemsHidden === 0 && activeCheck > 0) {
-        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Portcos</span>' );
         $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
-
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying all portfolios ('+numItemsDisp+')&nbsp;&nbsp;</span>' );
       }
       else if (numItemsHidden === 0 && activeCheck === 0) {
-        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Portcos</span>' );
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying all&nbsp;'+numItemsDisp+'&nbsp;portfolios</span>' );
       }
       else{ // strictly fall-back - this should never get triggered 
 
-        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Portcos</span>' );
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;works&nbsp;&nbsp;</span>' );
         $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
         //console.log("else was triggered"); // <-- uncomment for debugging
       }
@@ -596,7 +773,7 @@
     $('a.active').trigger('click');
     $('#filter-display').empty();
     var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
-    $('#filter-display').append( '<span class="filter-label data-counter pull-right">&nbsp;'+numItemsDisp+'&nbsp;Portcos</span>' );
+    $('#filter-display').append( '<span class="filter-label data-counter pull-right">Displaying all&nbsp;'+numItemsDisp+'&nbsp;portfolios</span>' );
   }
 </script>
 
