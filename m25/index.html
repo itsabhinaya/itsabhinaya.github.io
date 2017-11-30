@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Full Slider - Start Bootstrap Template</title>
+    <title>M25</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,6 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="css/full-slider.css" rel="stylesheet">
     <!-- <link href="css/hexagons.css" rel="stylesheet"> -->
+    <link href="vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
 
@@ -111,15 +112,55 @@
       <h1>Team</h1>
       <div class="row team-thumb">
         <div class="col-lg-3 col-md-4 col-sm-6 text-center team-item">
-          <a href="#teamModal1" class="team-link" data-toggle="modal">
-            <img src="img/architecture1.jpg" class="img-responsive" alt="">
+          <a href="#teamModal1" class="team-link" data-toggle="modal" data-target="#teamModal1">
+            <img src="img/team/victor.jpg" class="img-responsive" alt="">
           </a>
           <div class="team-caption">
             <h4>Victor Gutwein</h4>
             <p class="text-muted">Managing Director</p>
           </div>
           <!-- Modal -->
-          <div class="modal fade" id="teamModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="teamModal1" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Victor Gutwein</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Victor grew up in northwestern Indiana before moving to Chicago to study economics at the University of Chicago. Victor has a passionate history with startups, including a vending machine business and kick scooter company, along with being on the board of UChicago’s first student-run venture fund. A Kauffman Fellow (Class 22) and former leader in Hyde Park Angels, Victor founded M25 in 2015 and quickly grew it to become one of the most active venture firms in the region. Victor lives with his wife on the South Side of Chicago and loves staying active with running, biking, swimming, backpacking and any team sport you’ll let him join. If he can’t convince you to break a sweat with him though, he’ll usually succeed in getting you to try out a Euro-style board game (like Settlers of Catan) with his friends.</p>
+                <p>
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                  </span>
+                </p>
+                </div>
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-primary" onclick="showModal('teamModal2')">Next</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 text-center team-item">
+          <a href="#teamModal2" class="team-link" data-toggle="modal" data-target="#teamModal2">
+            <img src="img/team/mike.jpg" class="img-responsive" alt="">
+          </a>
+          <div class="team-caption">
+            <h4>Mike Asem</h4>
+            <p class="text-muted">Director</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="teamModal2" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -129,162 +170,17 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  ...rtert wert 
+                  <p>While earning his B.A. at Purdue University, Mike championed The Anvil, which is now the largest student-run coworking space and startup incubator in the world. While at Purdue, Mike was also a Student Fellow for Chicago Ventures, and was the first and only student to be named OnePurdue Scholar for making the largest impact to the Purdue community by a single student. After graduating, Mike led business development at a nanotech startup born out of Purdue. Most recently, Mike served as Director of Collaborative Relationships for the Purdue Foundry, where he supported business development and talent related activities for startups in the Foundry’s portfolio. Aside from his passion for working with startups, Mike can often be found making fruit wine, rooting for Chicago sports, and hunting down great sushi.</p>
                 </div>
                 <div class="modal-footer">
+                   <button type="button" class="btn btn-primary" onclick="showModal('teamModal1')">Prev</button>
+                   <button type="button" class="btn btn-primary" onclick="showModal('teamModal3')">Next</button>
                   <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 text-center team-item">
-          <a href="#teamModal1" class="team-link" data-toggle="modal">
-            <img src="img/architecture1.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="team-caption">
-            <h4>Victor Gutwein</h4>
-            <p class="text-muted">Managing Director</p>
-          </div>
-          <!-- Modal -->
-          <div class="modal fade" id="teamModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...rtert wert 
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 text-center team-item">
-          <a href="#teamModal1" class="team-link" data-toggle="modal">
-            <img src="img/architecture1.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="team-caption">
-            <h4>Victor Gutwein</h4>
-            <p class="text-muted">Managing Director</p>
-          </div>
-          <!-- Modal -->
-          <div class="modal fade" id="teamModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...rtert wert 
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 text-center team-item">
-          <a href="#teamModal1" class="team-link" data-toggle="modal">
-            <img src="img/architecture1.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="team-caption">
-            <h4>Victor Gutwein</h4>
-            <p class="text-muted">Managing Director</p>
-          </div>
-          <!-- Modal -->
-          <div class="modal fade" id="teamModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...rtert wert 
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 text-center team-item">
-          <a href="#teamModal1" class="team-link" data-toggle="modal">
-            <img src="img/architecture1.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="team-caption">
-            <h4>Victor Gutwein</h4>
-            <p class="text-muted">Managing Director</p>
-          </div>
-          <!-- Modal -->
-          <div class="modal fade" id="teamModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...rtert wert 
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 text-center team-item">
-          <a href="#teamModal1" class="team-link" data-toggle="modal">
-            <img src="img/architecture1.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="team-caption">
-            <h4>Victor Gutwein</h4>
-            <p class="text-muted">Managing Director</p>
-          </div>
-          <!-- Modal -->
-          <div class="modal fade" id="teamModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...rtert wert 
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
 
       </div>
       </div>
