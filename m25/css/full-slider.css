@@ -52,17 +52,24 @@ section {
 .icon-medium {
     color: black;
 }
-/*.map svg{
-  height: 50%;
-}*/
+
+.icon-orange {
+    color: #e66432;
+}
+
+.icon-red {
+    color: #8f0014;
+}
+
+.icon-gray {
+    color: #888888;
+}
+
+
 .datamaps-legend{
   position: static;
   font-size: 50px;
 }
-
-/*#map_container{
-padding-right: 20%
-}*/
 
 .map_container iframe{
   width: 800px;
