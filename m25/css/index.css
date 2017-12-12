@@ -1,0 +1,33 @@
+body{
+font-family: 'Oxygen', sans-serif;
+}
+#myNavbar{
+  background-color: white;
+  border-bottom: 3px solid #e66432;
+
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #8f0014;
+}
+
+.btn-m25 { 
+	color: white; 
+	background-color: #e66432;
+
+}
+
+.btn-m25:hover { 
+	color: white; 
+	background-color: #e66432; 
+}
+
+.btn-gray{
+	color: white; 
+	background-color: #888888;
+}
+
+
+.btn-gray:hover { 
+	color: white; 
+	background-color: #888888; 
+}

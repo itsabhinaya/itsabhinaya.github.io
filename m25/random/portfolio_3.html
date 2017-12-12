@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://everyonelovessharing.com/misc/isotopedemo/ -->
+<html lang="en" class="csstransforms csstransforms3d csstransitions gr__everyonelovessharing_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Isotope Combination Filter Demo</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="vendor/bootstrap/css/bootstrap_portfolio.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet"> -->
+      <!-- <link href="./Isotope Combination Filter Demo_files/bootstrap.min.css" rel="stylesheet"> -->
+
+  <style type="text/css">
+  #options-wrap.affix {
+    top: 51px;
+    width: 100%;
+  }
+  #options-wrap {
+    z-index: 999999;
+  }
+  #options {
+    background-color: #fff;
+    width: 100%;
+    padding-top: 20px;
+  }
+  #filter-container {
+    margin: 0 auto;
+    padding: 0;
+  }
+  #filters .item {
+    margin: 10px;
+    float: left;
+  }
+  #filters .item img {
+    display: block;
+    max-width: 100%;
+  }
+  #filters p {
+    margin: 0;
+  }
+  #filters #filter-display, 
+  #filter-counter {
+    font-industry: 18px;
+    /*padding: 0.5em;*/
+    color: #666;
+  }
+  div.filter-display-container {
+    display: block;
+    min-height: 45px;
+    max-height: 45px;
+    overflow: hidden;
+    padding: 0px;
+
+  }
+  .tab-pane {
+    padding-top: 20px;
+  }
+  /* Start: Recommended Isotope styles */
+  /**** Isotope Filtering ****/
+  .isotope-item {
+    z-index: 2;
+  }
+  .isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+  }
+  /**** Isotope CSS3 transitions ****/
+  .isotope,
+  .isotope .isotope-item {
+    -webkit-transition-duration: 0.1s;
+       -moz-transition-duration: 0.1s;
+         -o-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+  }
+  .isotope {
+    -webkit-transition-property: height, width;
+       -moz-transition-property: height, width;
+         -o-transition-property: height, width;
+            transition-property: height, width;
+  }
+  .isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:         top, left, opacity;
+            transition-property:         transform, opacity;
+  }
+  /**** disabling Isotope CSS3 transitions ****/
+  .isotope.no-transition,
+  .isotope.no-transition .isotope-item,
+  .isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+       -moz-transition-duration: 0s;
+         -o-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+  /* End: Recommended Isotope styles */
+  a.funds:hover, label.funds:hover, 
+  a.state:hover, label.state:hover, 
+  a.industry:hover, label.industry:hover, 
+  a.business:hover, label.business:hover,
+  a.subject:hover, label.subject:hover,
+  a.price:hover, label.price:hover,
+  a.sale:hover, label.sale:hover {cursor: hand !important; cursor: pointer !important;}
+  a.funds, a.state, a.industry, a.business, a.subject, a.price, a.sale, a.clone {
+    padding: 5px; 
+    }
+    label.funds, label.state, label.business, 
+    label.industry, label.subject, label.price,
+    label.sale {
+      margin-top: 5px; 
+      margin-bottom: 5px;
+      /*color: red;*/
+      /*background-color: white;*/
+    }
+    
+
+    a.disabled, 
+    a.disabled:hover, 
+    a.disabled:active {
+      color: gray;
+      /*background-color: blue;*/
+      text-decoration: line-through !important;
+    }
+
+/*    a {
+      background-color: green;
+    }
+*/
+
+
+
+    .data-counter {
+      float: right;
+      /*padding-right: 200px;*/
+    }
+     #reset-filters {
+      float: left;
+/*            margin-top: 5px;
+*/
+    }
+
+    #reset-filters:hover {
+      cursor: hand !important;
+      cursor: pointer !important;
+    }
+    #myTab .active a {
+      background-color: #e66432 !important;
+      color: white;
+    }
+    #myTab a {
+      color: black;
+    }
+
+    .btn-outline-warning {
+    color: black;
+    background-color: transparent;
+    background-image: none;
+    border-color: #e66432;
+}
+
+    .btn-outline-warning:hover {
+    color: white;
+    background-color: #e66432;
+    border-color: #e66432;
+}
+
+
+  </style>
+<style type="text/css"></style><style id="holderjs-style" type="text/css"></style></head>
+<body class="" id="" data-gr-c-s-loaded="true" style="" data-spy="scroll" data-target="#myNavbar" data-offset="80">
+  <!-- Navigation -->
+    <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white;border-bottom: 3px solid red;">
+      <div class="container ">
+        <a class="navbar-brand" href="#">    
+          <img src="img/M25_Logo.png" width="50" height="50" alt="M25 Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home<a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#team">Team</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#map">Map</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+  <div class="container" style="margin-top: 100px"> 
+
+    <div id="filters" style="background-color: #fff; position: relative;">
+      <div id="options-wrap">
+        <div id="options">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item active funds funds-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#funds" class="nav-link" data-toggle="tab" >Funds</a></li>
+              <li class="nav-item state state-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#state" class="nav-link" data-toggle="tab">States</a></li>
+              <li class="nav-item business business-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#business" class="nav-link" data-toggle="tab">Business</a></li>
+              <li class="nav-item industry industry-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#industry" class="nav-link" data-toggle="tab">Industry</a></li>
+              <li class="nav-item subject subject-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#subject" class="nav-link" data-toggle="tab">Subject</a></li>
+              <li class="nav-item price price-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#price" class="nav-link" data-toggle="tab">Price</a></li>
+              <li class="nav-item sale sale-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#sale" class="nav-link" data-toggle="tab">Sale Items</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="funds">
+                <div class="option-combo funds" id="funds" role="tabpanel">
+                  <div class="filter option-set" data-filter-group="funds">
+                    <a class="funds funds1" id="funds1" data-filter-value=".funds1"><label class="funds" for="funds1">Fund 1</label></a>
+                    <a class="funds funds2" id="funds2" data-filter-value=".funds2" ><label class="funds" for="funds2">Fund 2</label></a>
+                  </div>
+                </div>
+              </div>
+                <div class="option-combo state tab-pane" id="state">
+                  <div class="filter option-set" data-filter-group="state">
+                    <a class="state state_IL" id="state_IL" data-filter-value=".state_IL"><label class="state" for="state_IL">IL</label></a>
+                    <a class="state state_IN" id="state_IN" data-filter-value=".state_IN"><label class="state" for="state_IN">IN</label></a>
+                    <a class="state state_KY" id="state_KY" data-filter-value=".state_KY"><label class="state" for="state_KY">KY</label></a>
+                    <a class="state state_MI" id="state_MI" data-filter-value=".state_MI"><label class="state" for="state_MI">MI</label></a>
+                    <a class="state state_MN" id="state_MN" data-filter-value=".state_MN"><label class="state" for="state_MN">MN</label></a>
+                    <a class="state state_MO" id="state_MO" data-filter-value=".state_MO"><label class="state" for="state_MO">MO</label></a>
+                    <a class="state state_NE" id="state_NE" data-filter-value=".state_NE"><label class="state" for="state_NE">NE</label></a>
+                    <a class="state state_OH" id="state_OH" data-filter-value=".state_OH"><label class="state" for="state_OH">OH</label></a>
+                    <a class="state state_PA" id="state_PA" data-filter-value=".state_PA"><label class="state" for="state_PA">PA</label></a>
+                    <a class="state state_WI" id="state_WI" data-filter-value=".state_WI"><label class="state" for="state_WI">WI</label></a>
+                  </div>
+              </div>
+              <div class="option-combo business tab-pane" id="business">
+                  <div class="filter option-set" data-filter-group="business">
+                    <a class="business business_B2B" id="business_B2B" data-filter-value=".business_B2B"><label class="business" for="business_B2B">B2B</label></a>
+                    <a class="business business_B2C" id="business_B2C" data-filter-value=".business_B2C"><label class="business" for="business_B2C">B2C</label></a>
+                  </div>
+                </div>
+                <div class="option-combo industry tab-pane" id="industry">
+                  <div class="filter option-set" data-filter-group="industry">
+                    <a class="industry industry_analytics" id="industry_analytics" data-filter-value=".industry_analytics"><label class="industry" for="industry_analytics">Analytics, Big Data & IOT</label></a>
+                    <a class="industry industry_apps" id="industry_apps" data-filter-value=".industry_apps"><label class="industry" for="industry_apps">Consumer Apps</label></a>
+                    <a class="industry industry_ecommerce" id="industry_ecommerce" data-filter-value=".industry_ecommerce"><label class="industry" for="industry_ecommerce">Ecommerce</label></a>
+                    <a class="industry industry_education" id="industry_education" data-filter-value=".industry_education"><label class="industry" for="industry_education">Education, Government & Law</label></a>
+                    <a class="industry industry_enterprise" id="industry_enterprise" data-filter-value=".industry_enterprise"><label class="industry" for="industry_enterprise">Enterprise Software</label></a>
+                    <a class="industry industry_entertainment" id="industry_entertainment" data-filter-value=".industry_entertainment"><label class="industry" for="industry_entertainment">Entertainment, Media & Sports</label></a>
+                    <a class="industry industry_finance" id="industry_finance" data-filter-value=".industry_finance"><label class="industry" for="industry_finance">Finance & Banking</label></a>
+                    <a class="industry industry_food" id="industry_food" data-filter-value=".industry_food"><label class="industry" for="industry_food">Food & Beverage</label></a>
+                    <a class="industry industry_healthcare" id="industry_healthcare" data-filter-value=".industry_healthcare"><label class="industry" for="industry_healthcare">Healthcare</label></a>
+                    <a class="industry industry_other" id="industry_other" data-filter-value=".industry_other"><label class="industry" for="industry_other">Other</label></a>
+                    <a class="industry industry_realestate" id="industry_realestate" data-filter-value=".industry_realestate"><label class="industry" for="industry_realestate">Real Estate</label></a>
+                    <a class="industry industry_transportation" id="industry_transportation" data-filter-value=".industry_transportation"><label class="industry" for="industry_transportation">Transportation & Logistics</label></a>
+                  </div>
+                </div>
+                <div class="option-combo subject tab-pane" id="subject">
+                  <div class="filter option-set" data-filter-group="subject">
+                    <a class="subject subject-abstract" id="subject-abstract" data-filter-value=".subject-abstract"><label class="subject" for="subject-abstract">abstract</label></a>
+                    <a class="subject subject-figurative" id="subject-figurative" data-filter-value=".subject-figurative"><label class="subject" for="subject-figurative">figurative</label></a>
+                    <a class="subject subject-landscape" id="subject-landscape" data-filter-value=".subject-landscape"><label class="subject" for="subject-landscape">landscape</label></a>
+                    <a class="subject subject-floral" id="subject-floral" data-filter-value=".subject-floral"><label class="subject" for="subject-floral">floral</label></a>
+                    <a class="subject subject-architectural" id="subject-architectural" data-filter-value=".subject-architectural"><label class="subject" for="subject-architectural">architectural</label></a>
+                  </div>
+                </div>
+                
+                <div class="option-combo subject tab-pane" id="price">
+                  <div class="filter option-set" data-filter-group="price">
+                    <a class="price price-below-150" id="price-below-150" data-filter-value=".price-below-150"><label class="price" for="price-below-150">&lt; $150</label></a>
+                    <a class="price price-150-499" id="price-150-499" data-filter-value=".price-150-499"><label class="price" for="price-150-499">$150-$499</label></a>
+                    <a class="price price-500-999" id="price-500-999" data-filter-value=".price-500-999"><label class="price" for="price-500-999">$500-$999</label></a>
+                    <a class="price price-1000-1500" id="price-1000-1500" data-filter-value=".price-1000-1500"><label class="price" for="price-1000-1500">$1000-$1500</label></a>
+                    <a class="price price-above-1500" id="price-above-1500" data-filter-value=".price-above-1500"><label class="price" for="price-above-1500">$1500+</label></a>
+                  </div>
+                </div>
+                
+                <div class="option-combo sale tab-pane" id="sale">
+                  <div class="filter option-set" data-filter-group="sale">
+                    <a class="sale sale-on" id="sale-on" data-filter-value=".sale-on"><label class="sale" for="sale-on">on sale</label></a>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="container filter-display-container">
+          <p id="filter-display"><span class="filter-label data-counter pull-right"> </span></p>
+          <!-- <p id="filter-display"><span class="filter-label data-counter pull-right">Displaying all&nbsp;20&nbsp;artworks</span></p> -->
+          <!-- <p id="filter-counter"></p> -->
+        </div>
+        <hr>
+      <div id="filter-container" style="position: relative; overflow: hidden; height: 2205px; width: 909px;" class="isotope">
+        <div id="art">
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state_IL business-red industry_enterprise subject-abstract price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 384px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state_IL business-red industry_enterprise subject-figurative price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 233px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state_IL business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 1072px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state1 business_B2C industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 1847px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state1 business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 775px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state1 business-red industry_enterprise subject-floral price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 1729px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state1 business-yellow industry_enterprise subject-figurative sale-on price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 1432px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state1 business-red industry_enterprise subject-figurative price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 0px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state1 business_B2B business_B2C industry_enterprise subject-architectural price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 0px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state1 business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 635px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state1 business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state_MI business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 1519px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state1 business-red industry_education subject-landscape price-150-499 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 1023px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state1 business-red industry_enterprise subject-architectural price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 1908px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state1 business-red industry_entertainment sale subject-floral price-500-999 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 1532px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state1 business-red industry_enterprise subject-abstract price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 1143px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds1 state1 business-red industry_ecommerce subject-landscape price-1000-1500 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 1277px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds2 state1 business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(303px, 398px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds3 state_KY business-red industry_enterprise subject-landscape price-below-150 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 837px, 0px);">
+          </a>
+          <a href="http://everyonelovessharing.com/misc/isotopedemo/work">
+            <img class="item funds4 state_IN business-red industry_enterprise subject-figurative price-above-1500 isotope-item" src="http://via.placeholder.com/200x100" style="position: absolute; left: 0px; top: 0px; transform: translate3d(606px, 598px, 0px);">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+</div>
+<!-- /.container -->
+</footer>
+
+<!-- js stuff --> 
+<!-- <script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<script src="./Isotope Combination Filter Demo_files/jquery-1.10.2.min.js"></script>
+<script src="./Isotope Combination Filter Demo_files/bootstrap.min.js"></script>
+
+<script src="./Isotope Combination Filter Demo_files/holder.js"></script>
+<script src="./Isotope Combination Filter Demo_files/jquery.isotope.min.js"></script>
+<script src="./Isotope Combination Filter Demo_files/spin.min.js"></script>
+<script src="./Isotope Combination Filter Demo_files/jquery.spin.js"></script>
+
+
+<script>
+  $.Isotope.prototype._getCenteredMasonryColumns = function() {
+      this.width = this.element.width();
+      var parentWidth = this.element.parent().width();
+      var colW = this.options.masonry && this.options.masonry.columnWidth || // i.e. options.masonry && options.masonry.columnWidth
+      this.$filteredAtoms.outerWidth(true) || // or use the industry of the first item
+      parentWidth; // if there's no items, use industry of container
+      var cols = Math.floor(parentWidth / colW);
+      cols = Math.max(cols, 1);
+      this.masonry.cols = cols; // i.e. this.masonry.cols = ....
+      this.masonry.columnWidth = colW; // i.e. this.masonry.columnWidth = ...
+  };
+  $.Isotope.prototype._masonryReset = function() {
+      this.masonry = {}; // layout-specific props
+      this._getCenteredMasonryColumns(); // FIXME shouldn't have to call this again
+      var i = this.masonry.cols;
+      this.masonry.colYs = [];
+          while (i--) {
+          this.masonry.colYs.push(0);
+      }
+  };
+  $.Isotope.prototype._masonryResizeChanged = function() {
+      var prevColCount = this.masonry.cols;
+      this._getCenteredMasonryColumns(); // get updated colCount
+      return (this.masonry.cols !== prevColCount);
+  };
+  $.Isotope.prototype._masonryGetContainerSize = function() {
+      var unusedCols = 0,
+      i = this.masonry.cols;
+          while (--i) { // count unused columns
+          if (this.masonry.colYs[i] !== 0) {
+              break;
+          }
+          unusedCols++;
+      }
+      return {
+          height: Math.max.apply(Math, this.masonry.colYs),
+          width: (this.masonry.cols - unusedCols) * this.masonry.columnWidth // fit container to columns that have been used;
+      };
+  };
+  var $container;
+  var filters = {};
+  $(function(){
+      $container = $('#filter-container');
+    var $filterDisplay = $('#filter-display');
+      $container.imagesLoaded( function(){
+      $container.isotope({
+          itemSelector : '.item',
+          sortBy : 'random'
+      });
+    });
+    var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
+    $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying all&nbsp;'+numItemsDisp+'&nbsp;portfolios</span>' );
+    var group = '';
+      // filter on click
+      $('.filter a').click(function(){
+        // we can gtfo directly if filter disabled
+        if ($(this).hasClass('disabled') ){
+          return false;
+        }
+        var $this = $(this);
+        var $optionSet = $(this).parents('.option-set');
+      group = $optionSet.attr('data-filter-group');
+      // store filter value in object
+      var filterGroup = filters[ group ];
+        if ( !filterGroup ) {
+        filterGroup = filters[ group ] = [];
+      }
+        var isAll = $this.hasClass('all');
+      // reset filter group
+      if ( isAll ) {
+        Array.prototype.remove = function(from, to) {
+          var rest = this.slice((to || from) + 1 || this.length);
+          this.length = from < 0 ? this.length + from : from;
+          return this.push.apply(this, rest);
+        };
+        filters[ group ].remove(0,-1)
+      }
+        var index = $.inArray($this.attr('data-filter-value'), filterGroup );
+        if ( !isAll && index === -1 ) {
+            // push filter to group
+            filters[ group ].push($this.attr('data-filter-value') );
+        }
+        else if ( !isAll ) {
+          // remove filter from group
+          filters[ group ].splice( index, 1 );
+      }
+      // class toggling
+      if ($this.hasClass('active') ) {
+        $this.removeClass('active');
+      }
+      else {
+        $this.addClass('active');
+      }
+      // let's do some filtering :>
+      var comboFilter = getComboFilter( filters );
+        $container.isotope({ filter: comboFilter });
+        // gotta check and set those disabled filters:
+      var $that = $(this);
+      // funds
+      $('a.funds:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('funds') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
+      // state
+      $('a.state:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('state') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
+      // business
+      $('a.business:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('business') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
+      // industry
+      $('a.industry:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('industry') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
+      // subject
+      $('a.subject:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('subject') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
+      // price
+      $('a.price:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('price') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
+      // sale
+      $('a.sale:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('sale') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
+      // update filter display
+        var arrLbl = [];
+        arrLbl = comboFilter.split('.');
+        // before iterating we empty previous display vals
+        $filterDisplay.empty();
+      // clone method for filter display
+      var clone = 'clone';
+      var cloneId = 0; // because cloning an id attr just wrong :>
+      $('a.active').each(function() {
+        cloneId++;
+        $(this).clone().appendTo($filterDisplay).attr('id',clone+cloneId).addClass('clone');
+      });
+      $('a.clone').on('click', function() {
+        var that = $(this);
+        var parent = that.attr('data-filter-value');
+        $('div.filter').find(parent).each(function() {
+          $(this).trigger('click');
+        });
+      });
+      // resolves any outstanding issues with disableds
+      // TODO: Find a way around using indexOf this way. Lots of unneccesary overhead.
+      if ( comboFilter.indexOf('state') == -1 
+        && comboFilter.indexOf('business') == -1 
+        && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
+        && comboFilter.indexOf('funds') > 0 ){
+            $('a.funds:not(.clone)').removeClass('disabled');
+        }
+      if ( comboFilter.indexOf('funds') == -1 
+        && comboFilter.indexOf('business') == -1 
+        && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
+        && comboFilter.indexOf('state') > 0 ){
+            $('a.state:not(.clone)').removeClass('disabled');
+        }
+      if ( comboFilter.indexOf('funds') == -1 
+        && comboFilter.indexOf('state') == -1 
+        && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
+        && comboFilter.indexOf('business') > 0 ){
+            $('a.business:not(.clone)').removeClass('disabled');
+        }
+      if ( comboFilter.indexOf('funds') == -1 
+        && comboFilter.indexOf('state') == -1 
+        && comboFilter.indexOf('business') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
+        && comboFilter.indexOf('industry') > 0 ){
+            $('a.industry:not(.clone)').removeClass('disabled');
+        }
+        if ( comboFilter.indexOf('funds') == -1 
+        && comboFilter.indexOf('state') == -1 
+        && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('business') == -1 
+        && comboFilter.indexOf('price') == -1 
+        && comboFilter.indexOf('sale') == -1 
+        && comboFilter.indexOf('subject') > 0 ){
+            $('a.subject:not(.clone)').removeClass('disabled');
+        }
+        if ( comboFilter.indexOf('funds') == -1 
+        && comboFilter.indexOf('state') == -1 
+        && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('business') == -1 
+        && comboFilter.indexOf('subject') == -1 
+        && comboFilter.indexOf('sale') == -1 
+        && comboFilter.indexOf('price') > 0 ){
+            $('a.price:not(.clone)').removeClass('disabled');
+        }
+      // filter display count
+      var numItemsHidden = $('img.item.isotope-hidden').length;
+      var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
+      var numItemsVisible = $('img.item:not(.isotope-hidden)').length;
+      var activeCheck = $('a.active').size();
+      if(numItemsHidden != 0 && numItemsDisp != 1) {
+        // clear filter
+        
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;works&nbsp;&nbsp;</span>' );
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+      }
+      else if (numItemsHidden != 0 && numItemsDisp === 1) {
+        
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+' work&nbsp;&nbsp;</span>' );
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+      }
+      else if (numItemsHidden === 0 && activeCheck > 0) {
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying all portfolios ('+numItemsDisp+')&nbsp;&nbsp;</span>' );
+      }
+      else if (numItemsHidden === 0 && activeCheck === 0) {
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying all&nbsp;'+numItemsDisp+'&nbsp;portfolios</span>' );
+      }
+      else{ // strictly fall-back - this should never get triggered 
+
+        $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;works&nbsp;&nbsp;</span>' );
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+        //console.log("else was triggered"); // <-- uncomment for debugging
+      }
+     });
+  });
+  function getComboFilter( filters ) {
+    var i = 0;
+    var comboFilters = [];
+    var message = [];
+    for ( var prop in filters ) {
+      message.push( filters[ prop ].join(' ') );
+        var filterGroup = filters[ prop ];
+        // skip to next filter group if it doesn't have any values
+        if ( !filterGroup.length ) {
+            continue;
+        }
+        if ( i === 0 ) {
+          // copy to new array
+            comboFilters = filterGroup.slice(0);
+        } 
+        else {
+        var filterSelectors = [];
+            // copy to fresh array
+        var groupCombo = comboFilters.slice(0); // [ A, B ]
+        // merge filter Groups
+        for (var k=0, len3 = filterGroup.length; k < len3; k++) {
+          for (var j=0, len2 = groupCombo.length; j < len2; j++) {
+            filterSelectors.push( filterGroup[k]+groupCombo[j] ); // [ 1, 2 ]
+          }
+        }
+        // apply filter selectors to combo filters for next group
+        comboFilters = filterSelectors;
+        }
+      i++;
+    }
+    comboFilters.sort();
+      var comboFilter = comboFilters.join(', ');
+    return comboFilter;
+  }
+  function clearAll(){
+    $('a.active').trigger('click');
+    $('#filter-display').empty();
+    var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
+    $('#filter-display').append( '<span class="filter-label data-counter pull-right">Displaying all&nbsp;'+numItemsDisp+'&nbsp;portfolios</span>' );
+  }
+</script>
+
+</body>
+</html>

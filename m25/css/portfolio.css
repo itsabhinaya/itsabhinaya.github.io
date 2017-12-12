@@ -1,0 +1,156 @@
+  #options-wrap.affix {
+    top: 51px;
+    width: 100%;
+  }
+  #options-wrap {
+    z-index: 999999;
+  }
+  #options {
+    background-color: #fff;
+    width: 100%;
+    padding-top: 20px;
+  }
+  #filter-container {
+    margin: 0 auto;
+    padding: 0;
+  }
+  #filters .item {
+    margin: 10px;
+    float: left;
+  }
+  #filters .item img {
+    display: block;
+    max-width: 100%;
+  }
+
+  /*#filters .item:hover img {*/
+  img:focus, img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+
+  #filters p {
+    margin: 0;
+  }
+  #filters #filter-display, 
+  #filter-counter {
+    font-industry: 18px;
+    /*padding: 0.5em;*/
+    color: #666;
+  }
+  div.filter-display-container {
+    display: block;
+    min-height: 45px;
+    max-height: 45px;
+    overflow: hidden;
+    padding: 0px;
+
+  }
+  .tab-pane {
+    padding-top: 20px;
+  }
+  /* Start: Recommended Isotope styles */
+  /**** Isotope Filtering ****/
+  .isotope-item {
+    z-index: 2;
+  }
+  .isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+  }
+  /**** Isotope CSS3 transitions ****/
+  .isotope,
+  .isotope .isotope-item {
+    -webkit-transition-duration: 0.1s;
+       -moz-transition-duration: 0.1s;
+         -o-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+  }
+  .isotope {
+    -webkit-transition-property: height, width;
+       -moz-transition-property: height, width;
+         -o-transition-property: height, width;
+            transition-property: height, width;
+  }
+  .isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+       -moz-transition-property:    -moz-transform, opacity;
+         -o-transition-property:         top, left, opacity;
+            transition-property:         transform, opacity;
+  }
+  /**** disabling Isotope CSS3 transitions ****/
+  .isotope.no-transition,
+  .isotope.no-transition .isotope-item,
+  .isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+       -moz-transition-duration: 0s;
+         -o-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+  /* End: Recommended Isotope styles */
+  a{
+    color: red;
+  }
+  
+  a.funds:hover, label.funds:hover, 
+  a.state:hover, label.state:hover, 
+  a.industry:hover, label.industry:hover, 
+  a.business:hover, label.business:hover{cursor: hand !important; cursor: pointer !important;}
+  a.funds, a.state, a.industry, a.business, a.clone {
+    padding: 5px; 
+    }
+    label.funds, label.state, label.business, 
+    label.industry{
+      margin-top: 5px; 
+      margin-bottom: 5px;
+    }
+    
+
+    a.disabled, 
+    a.disabled:hover, 
+    a.disabled:active {
+      color: gray;
+      text-decoration: line-through !important;
+    }
+
+    .data-counter {
+      float: right;
+    }
+     #reset-filters {
+      float: left;
+    }
+
+    #reset-filters:hover {
+      cursor: hand !important;
+      cursor: pointer !important;
+    }
+    #myTab .active a {
+      background-color: #e66432 !important;
+      color: white;
+    }
+    #myTab a {
+      color: black;
+    }
+
+    .btn-outline-warning {
+    color: black;
+    background-color: transparent;
+    background-image: none;
+    border-color: #e66432;
+}
+
+    .btn-outline-warning:hover {
+    color: white;
+    background-color: #e66432;
+    border-color: #e66432;
+}
+
+
+.btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active,
+.show > .btn-outline-warning.dropdown-toggle {
+  color: #fff;
+  background-color: #e66432;
+  border-color: #e66432;
+  box-shadow: 0 0 0 0.2rem #e66432;
+
+}

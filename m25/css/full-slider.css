@@ -1,0 +1,125 @@
+/*html, body {
+  min-width: 1000px;
+} */
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption {
+    top: 45%;
+    bottom: auto;
+}
+
+
+section {
+    padding-top: 80px;
+    margin-top: -70px;
+}
+
+
+.team-item img{
+    height: 200px;
+    width: 200px;
+}
+
+.advisors-item img{
+    height: 150px;
+    width: 150px;
+}
+
+.sectionTitle{
+  display: inline;
+  border-bottom: 5px solid #e66432;
+  text-align: center;
+  /*padding-left: 50%; */
+  margin: 0 auto;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.icon-twitter {
+    color: #55ACEE;
+}
+.icon-medium {
+    color: black;
+}
+
+.icon-orange {
+    color: #e66432;
+}
+
+.icon-red {
+    color: #8f0014;
+}
+
+.icon-gray {
+    color: #888888;
+}
+
+
+.datamaps-legend{
+  position: static;
+  font-size: 50px;
+}
+
+.map_container iframe{
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+.advisors-item img{
+    height: 50px;
+    width: 50px;
+}
+
+ .map_container iframe{
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+  }
+  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+ .map_container iframe{
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+  }
+}
+
+/*// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+*/
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  .container-size{
+    max-width: 1000px;
+    margin-left: 20%;
+  }
+ .map_container iframe{
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+  }
+}
+
+
