@@ -14,6 +14,18 @@ function showModal(id) {
     };
     
 
+var typed = new Typed('#typed', {
+  strings: ["Invest in Midwest", "A Diverse Portfolio", "Reinventing VC"],    
+  typeSpeed: 30,
+  backSpeed: 30,
+  startDelay: 500,
+  loop: true,
+  loopCount: Infinity,
+  shuffle: true
+  });
+
+
+
 var team = [
     {name: "Victor Gutwein", title: "Managing Director & Board Member" ,desc: "Victor grew up in northwestern Indiana before moving to Chicago to study economics at the University of Chicago. Victor has a passionate history with startups, including a vending machine business and kick scooter company, along with being on the board of UChicago’s first student-run venture fund. A Kauffman Fellow (Class 22) and former leader in Hyde Park Angels, Victor founded M25 in 2015 and quickly grew it to become one of the most active venture firms in the region. Victor lives with his wife on the South Side of Chicago and loves staying active with running, biking, swimming, backpacking and any team sport you’ll let him join. If he can’t convince you to break a sweat with him though, he’ll usually succeed in getting you to try out a Euro-style board game (like Settlers of Catan) with his friends." ,twitter: "https://twitter.com/lalayak" ,medium: "https://medium.com/@lalayak" ,prev: "teamModal6" ,current: "teamModal1" ,next: "teamModal2" ,img: "img/team/victor.jpg"},
 {name: "Mike Asem", title: "Director" ,desc: "While earning his B.A. at Purdue University, Mike championed The Anvil, which is now the largest student-run coworking space and startup incubator in the world. While at Purdue, Mike was also a Student Fellow for Chicago Ventures, and was the first and only student to be named OnePurdue Scholar for making the largest impact to the Purdue community by a single student. After graduating, Mike led business development at a nanotech startup born out of Purdue. Most recently, Mike served as Director of Collaborative Relationships for the Purdue Foundry, where he supported business development and talent related activities for startups in the Foundry’s portfolio. Aside from his passion for working with startups, Mike can often be found making fruit wine, rooting for Chicago sports, and hunting down great sushi." ,twitter: "https://twitter.com/DMikeAsem" ,medium: "https://medium.com/@dmikeasem" ,prev: "teamModal1" ,current: "teamModal2" ,next: "teamModal3" ,img: "img/team/mike.jpg"},

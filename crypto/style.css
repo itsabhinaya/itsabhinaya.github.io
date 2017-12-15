@@ -26,9 +26,9 @@ text-align: center;
 
 .btn.sharp {
   border-radius:0;
-    border: 3px solid black;
+  border: 3px solid black;
   background-color: #fdd900;
-color: black;
+  color: black;
 }
 
 #footer_small_text{
