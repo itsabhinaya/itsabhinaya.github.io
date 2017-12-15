@@ -19,7 +19,7 @@
 
 section {
     padding-top: 80px;
-    margin-top: -70px;
+    /*margin-top: -70px;*/
 }
 
 
@@ -77,6 +77,63 @@ section {
   margin: 0 auto;
   display: block;
 }
+
+
+.team_overlay{
+  background-color: rgba(252, 251, 227, 0.2);
+}
+.team_color {
+  background-image: linear-gradient(-45deg, #cdf9ff, #c3fbf9, #75d5e3,#75d5e3);
+  /*background-image: url('../img/animation/window.png');*/
+  /*background-image: url('../img/animation/window.png'), linear-gradient(-45deg, #cdf9ff, #c3fbf9, #acf5fb, #75d5e3);*/
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+
+
+
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
+
+
 
 
 // Small devices (landscape phones, 576px and up)
