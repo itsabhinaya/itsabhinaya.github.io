@@ -8202,7 +8202,7 @@ AFRAME.registerComponent('arjs-anchor', {
  				arProfile.defaultMarkerParameters.patternUrl = _this.data.patternUrl;
  				arProfile.defaultMarkerParameters.markersAreaEnabled = false
   			}else {
-				console.assert( this.data.preset === '', 'illegal preset value '+this.data.preset)
+				console.assert( _this.data.preset === '', 'illegal preset value '+_this.data.preset)
 			}		
 
 			//////////////////////////////////////////////////////////////////////////////
