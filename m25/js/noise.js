@@ -9,7 +9,7 @@ window.requestAnimationFrame = (function(){
             window.oRequestAnimationFrame      ||
             window.msRequestAnimationFrame     ||
             function (callback) {
-                window.setTimeout(callback, 1000 / 60);
+                window.setTimeout(callback, 6000 / 60);
             };
 })();
 
@@ -18,10 +18,10 @@ window.requestAnimationFrame = (function(){
 
 var Configs = {
     backgroundColor: '#eee9e9',
-    particleNum: 1000,
-    step: 3,
+    particleNum: 200,
+    step: 1,
     base: 500,
-    zInc: 0.0002
+    zInc: 0.0001
 };
 
 
@@ -111,7 +111,7 @@ function getNoise(x, y, z) {
 function initParticle(p) {
     p.x = p.pastX = screenWidth * Math.random();
     p.y = p.pastY = screenHeight * Math.random();
-    p.color.h = hueBase + Math.atan2(centerY - p.y, centerX - p.x) * 180 / Math.PI;
+    p.color.h = hueBase + Math.atan2(centerY - p.y, centerX - p.x) * 100 / Math.PI;
     p.color.s = 1;
     p.color.l = 0.5;
     p.color.a = 0;
