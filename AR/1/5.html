@@ -8,7 +8,7 @@
 <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-	<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a>
+	<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">ArrrR.js</a>
 </div>
 	<!-- <a-scene embedded arjs='sourceType: video; sourceUrl:../../data/videos/headtracking.mp4;'> -->
 	<a-scene embedded arjs='sourceType: webcam'>
@@ -18,11 +18,11 @@
 	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
 
 		<a-assets>
-			<a-asset-item id="assetAframe" src="models/untitled.fbx"></a-asset-item>
+			<a-asset-item id="assetAframe" src="models/tinker.stl"></a-asset-item>
 		</a-assets>
 
 		<!-- <a-marker type='unknown'> -->
-		<a-entity fbx-model="src: #assetAframe"></a-entity>
+		<a-entity stl-model="src: #assetAframe" rotation='-45 0 0'scale='0.5 0.5 0.5'></a-entity>
 
 		<!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
 		<a-marker-camera preset='custom' url='models/marker/ar.patt'></a-marker-camera>
