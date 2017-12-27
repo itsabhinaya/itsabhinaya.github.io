@@ -7,6 +7,7 @@ $(function(){
      });
  });
 
+$('[data-toggle="tooltip"]').tooltip(); 
 
 function showModal(id) {
       $(".modal").modal('hide');

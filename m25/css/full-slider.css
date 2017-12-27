@@ -22,7 +22,7 @@ canvas {
 }
 
 .canvas_out{
-  background-color:rgba(255,250,250,.4);
+  background-color:rgba(255,255,255,.4);
     width:80%;
     height:80%;
     position:absolute;
@@ -199,7 +199,9 @@ section {
 }
 
 
-
+.categories_invest i{
+  padding: 1vw 3vw;
+}
 
 
 
