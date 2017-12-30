@@ -34,10 +34,16 @@ font-family: 'Oxygen', sans-serif;
 
 .fa-2x{
     font-size: 9vw !important;
+    color: #888888;
+}
+
+.color_two{
+    color: #e66432;
 }
 
 @media (min-width: 992px) { 
 	.fa-2x{
-	    font-size: 5.5vw !important;
+	    font-size: 3.5vw !important;
 	}
+
 }

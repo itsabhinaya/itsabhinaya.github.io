@@ -200,10 +200,29 @@ section {
 
 
 .categories_invest i{
-  padding: 1vw 3vw;
+  padding: 1vw 2vw;
 }
 
+.categories_invest p{
+  color: black;
+  font-size: 1.3vw;
+  font-family: 'Oxygen', sans-serif;
+  padding-top: .5vw;
+}
 
+.stage {
+  width: 50vw;
+  /*height: 100vw*/
+}
+@media (max-width: 991px) { 
+.categories_invest p{
+  font-size: 1.8vw;
+}
+  .stage {
+  width: 70vw;
+  /*height: 100vw*/
+}
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
@@ -218,6 +237,7 @@ section {
   margin: 0 auto;
   display: block;
   }
+
   }
 
 // Medium devices (tablets, 768px and up)

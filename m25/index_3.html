@@ -19,6 +19,8 @@
   <!-- <link href="css/hexagons.css" rel="stylesheet"> -->
   <link href="vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
   <script src="vendor/typed/typed.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+
 
 
 
@@ -153,7 +155,8 @@
           <h1 class="font-weight-bold sectionTitle">Scope</h1>
         </div>
         <div class="container-fluid text-center "> 
-          <h4 class="font-weight-bold" style= "margin-top:1rem;" >Where We Invest</h4>
+          <h4 class="font-weight-bold" style= "margin-top:1rem;" >Where We Invest In</h4>
+          <h6>As much as we love San Francisco, we will only consider investing in Midwest-headquartered companies for a variety of strategic and practical reasons.</h6>
         </div>
         <div class="col center-block text-center pt-4">
           <span><i class= "fa fa-square icon-red"></i> Where we invest  </span>
@@ -166,59 +169,91 @@
           <iframe src="https://www.google.com/maps/d/embed?mid=1GaSUmLrVxo0C8XGKXXxirjU3lbb1iEO4" frameBorder="0"></iframe>        
           <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1GaSUmLrVxo0C8XGKXXxirjU3lbb1iEO4" width="60%" height="500" frameBorder="0" style="padding-left: 20%"></iframe>         -->
         </div>
-      </div>
 
         <div class="container-fluid text-center "> 
           <h4 class="font-weight-bold" style= "margin-top:1rem;" >What We Invest In</h4>
+          <h6>We will consider investing in almost any industry. Here’s a sampling of some we’ve already invested in:</h6>
           <!-- <img src="img/section/stage.png" width="640" height="523"> -->
           <!-- <img src="img/section/industry.png" width="640" height="523"> -->
 
           <div class="row">
             <div class="categories_invest container-fluid text-center"> 
-              <i class="fa fa-dashboard fa-2x" data-toggle="tooltip" title="Analytics"></i>
-              <i class="fa fa-beer fa-2x" data-toggle="tooltip" title="Beer"></i>
-              <i class="fa fa-database fa-2x" data-toggle="tooltip" title="Big Data"></i>
-              <i class="fa fa-users fa-2x" data-toggle="tooltip" title="Consumer Apps"></i>
+              <i class="fa fa-dashboard fa-2x" data-toggle="tooltip" title="Analytics"><p>Analytics</p></i>
+              <i class="fa fa-beer fa-2x color_two" data-toggle="tooltip" title="Beverage"><p>Beverage</p></i>
+              <i class="fa fa-database fa-2x" data-toggle="tooltip" title="Big Data"><p>Big Data</p></i>
+              <i class="fa fa-users fa-2x color_two" data-toggle="tooltip" title="Consumer Apps"><p>Consumer Apps</p></i>
             </div>
           </div>
 
           <div class="row">
             <div class="categories_invest container-fluid text-center"> 
-              <i class="fa fa-shopping-cart fa-2x" data-toggle="tooltip" title="Ecommerce"></i>
-              <i class="fa fa-graduation-cap fa-2x" data-toggle="tooltip" title="Education"></i>
-              <i class="fa fa-building fa-2x" data-toggle="tooltip" title="Enterprise Software"></i>
-              <i class="fa fa-eye fa-2x" data-toggle="tooltip" title="Entertainment"></i>
+              <i class="fa fa-shopping-cart fa-2x color_two" data-toggle="tooltip" title="Ecommerce"><p>Ecommerce</p></i>
+              <i class="fa fa-graduation-cap fa-2x" data-toggle="tooltip" title="Education"><p>Education</p></i>
+              <i class="fa fa-building fa-2x color_two" data-toggle="tooltip" title="Enterprise Software"><p>Enterprise Software</p></i>
+              <i class="fa fa-eye fa-2x" data-toggle="tooltip" title="Entertainment"><p>Entertainment</p></i>
             </div>
           </div>
 
           <div class="row">
             <div class="categories_invest container-fluid text-center"> 
-              <i class="fa fa-bank fa-2x" data-toggle="tooltip" title="Finance & Banking"></i>
-              <i class="fa fa-cutlery fa-2x" data-toggle="tooltip" title="Food"></i>
-              <i class="fa fa-id-card fa-2x" data-toggle="tooltip" title="Government"></i>
-              <i class="fa fa-user-md fa-2x" data-toggle="tooltip" title="Healthcare"></i>
+              <i class="fa fa-bank fa-2x" data-toggle="tooltip" title="Finance & Banking"><p>Finance & Banking</p></i>
+              <i class="fa fa-cutlery fa-2x color_two" data-toggle="tooltip" title="Food"><p>Food</p></i>
+              <i class="fa fa-id-card fa-2x" data-toggle="tooltip" title="Government"><p>Government</p></i>
+              <i class="fa fa-user-md fa-2x color_two" data-toggle="tooltip" title="Healthcare"><p>Healthcare</p></i>
             </div>
           </div>
 
           <div class="row">
             <div class="categories_invest container-fluid text-center"> 
-              <i class="fa fa-connectdevelop fa-2x" data-toggle="tooltip" title="IOT"></i>
-              <i class="fa fa-gavel fa-2x" data-toggle="tooltip" title="Law"></i>
-              <i class="fa fa-bullhorn fa-2x" data-toggle="tooltip" title="Marketing"></i>
-              <i class="fa fa-television fa-2x" data-toggle="tooltip" title="Media"></i>
+              <i class="fa fa-connectdevelop fa-2x color_two" data-toggle="tooltip" title="IOT"><p>IOT</p></i>
+              <i class="fa fa-gavel fa-2x" data-toggle="tooltip" title="Law"><p>Law</p></i>
+              <i class="fa fa-bullhorn fa-2x color_two" data-toggle="tooltip" title="Marketing"><p>Marketing</p></i>
+              <i class="fa fa-television fa-2x" data-toggle="tooltip" title="Media"><p>Media</p></i>
             </div>
           </div>
 
           <div class="row">
             <div class="categories_invest container-fluid text-center"> 
-              <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Real Estate"></i>
-              <i class="fa fa-futbol-o fa-2x" data-toggle="tooltip" title="Sports"></i>
-              <i class="fa fa-truck fa-2x" data-toggle="tooltip" title="Transportation & Logistics"></i>
+              <i class="fa fa-home fa-2x" data-toggle="tooltip" title="Real Estate"><p>Real Estate</p></i>
+              <i class="fa fa-futbol-o fa-2x color_two" data-toggle="tooltip" title="Sports"><p>Sports</p></i>
+              <i class="fa fa-truck fa-2x" data-toggle="tooltip" title="Transportation & Logistics"><p>Logistics</p></i>
             </div>
           </div>
-          
-
         </div>
+
+        <div class="container-fluid text-center "> 
+          <h4 class="font-weight-bold" style= "margin-top:1rem;" >When We Invest In</h4>
+          <h6>M25 invests in the “Seed Stage.” Everyone has a different definition of “Seed Stage,” so this is how we define it:</h6>
+
+          <!-- <svg>
+           <image class="stage" xlink:href="img/stage/stage.svg">
+          </svg> -->
+          <img class="stage" src="img/stage/stage.png" alt="Mountain View">
+        </div>
+
+        <div class="container-fluid text-center "> 
+          <h4 class="font-weight-bold" style= "margin-top:1rem;" >What we look at</h4>
+          <h6>After the initial meeting, we put companies through our rigorous scorecard analysis. We score the following variables as objectively as possible. While they are all important, some are more important than others.</h6>
+
+          <!-- <svg>
+           <image class="stage" xlink:href="img/stage/stage.svg">
+          </svg> -->
+
+          <div id="analysis"> </div>
+          <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "mkrj9"
+    }], "*")
+  }
+</script>
+        </div>
+              </div>
+
+
+
     </section>
 
 
@@ -238,6 +273,8 @@
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/index.js"></script>
+<script src='js/analysis.js'></script>
+
 
 
 </body>
