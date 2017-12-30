@@ -43,7 +43,7 @@ var root = {
      ]
     },
     {
-     "name": "Business",
+     "name": "Business Plan",
      "children": [
       {"name": "Business Plan", "size": 1}
      ]
@@ -54,9 +54,9 @@ var root = {
 };
 
 
+var size_c = 300
 
-
-var diameter = 500,
+var diameter = size_c,
     format = d3.format(",d"),
     color = d3.scale.ordinal().range(["#e66432", "#e87346","#eb835a","#ed926f", "#f0a284","#f2b198", "#f5c1ad"]);
 
@@ -66,10 +66,10 @@ var bubble = d3.layout.pack()
     .padding(0);
 
 var svg = d3.select("#analysis").append("svg")
-    .attr("viewBox","0 0 500 500")
+    .attr("viewBox",("0 0 " + size_c+" "+size_c +" "))
     .attr("perserveAspectRatio","xMinYMid")
-    .attr("width", diameter)
-    .attr("height", diameter)
+    .attr("width", diameter*2)
+    .attr("height", diameter*2)
     .attr("class", "bubble");
 
 //d3.json("flare.json", function(error, root) {
@@ -115,13 +115,20 @@ function classes(root) {
 
 //d3.select(self.frameElement).style("height", diameter + "px");
 
+
 var chart = $(".bubble"),
     aspect = chart.width() / chart.height(),
     container = chart.parent();
+
+
 $(window).on("resize", function() {
     var targetWidth = container.width();
-    chart.attr("width", targetWidth/2);
-    chart.attr("height", Math.round(targetWidth*.5 / aspect));
+    var target_size = Math.round(targetWidth*.4 / aspect);
+    if (target_size < 324) {
+      target_size = 324;
+    }
+    chart.attr("width", targetWidth);
+    chart.attr("height", target_size);
 }).trigger("resize");
 
 });//]]> 

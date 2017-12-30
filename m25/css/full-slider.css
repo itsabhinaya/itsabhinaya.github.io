@@ -214,6 +214,11 @@ section {
   width: 50vw;
   /*height: 100vw*/
 }
+
+/*.bubble{
+  width: 300px;
+  height: 300px;
+}*/
 @media (max-width: 991px) { 
 .categories_invest p{
   font-size: 1.8vw;
@@ -223,6 +228,7 @@ section {
   /*height: 100vw*/
 }
 }
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
@@ -249,6 +255,11 @@ section {
   margin: 0 auto;
   display: block;
   }
+
+/*.bubble{
+  width: 500px;
+  height: 500px;
+}*/
 }
 
 /*// Large devices (desktops, 992px and up)
