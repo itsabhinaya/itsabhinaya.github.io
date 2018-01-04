@@ -1,6 +1,55 @@
 /*html, body {
   min-width: 1000px;
 } */
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+.bg_image {
+
+  /*background:transparent url('../img/animation/map.gif'); */
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 0px;
+  /*background-size: ;*/
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    /* The image used */
+/*    background-image: url("../img/animation/map.gif");
+
+    /* Full height */
+    /*height: 95vh; */
+
+/*     Center and scale the image nicely 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../img/animation/map.gif');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -147,7 +196,7 @@ section {
 
 
 .team_overlay{
-  background-color: rgba(252, 251, 227, 0.2);
+  background-color: rgba(255, 255, 255, .9);
 }
 .team_color {
   background-image: linear-gradient(-45deg, #cdf9ff, #c3fbf9, #75d5e3,#75d5e3);

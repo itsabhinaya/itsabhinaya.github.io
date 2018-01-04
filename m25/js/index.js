@@ -6,7 +6,6 @@ $(function(){
          navMain.collapse('hide');
      });
  });
-
 $('[data-toggle="tooltip"]').tooltip(); 
 
 function showModal(id) {
