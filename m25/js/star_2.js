@@ -122,7 +122,7 @@ function start() {
     function update() {
         if (!paused) {
             context.clearRect(0, 0, width, height);
-            context.fillStyle = "#CEBA78";
+            context.fillStyle = "black";
             context.fillRect(0, 0, width, height);
             context.fill();
 
@@ -179,7 +179,7 @@ function start() {
     }
 
     function drawStar(star) {
-        context.fillStyle = "rgb(0, 0, 0)";
+        context.fillStyle = "rgb(255, 255, 255)";
         context.beginPath();
         context.arc(star.x, star.y, star.radius, 0, Math.PI * 2, false);
         context.fill();
@@ -191,7 +191,7 @@ function start() {
             currentTrailLength = (maxTrailLength * p.trailLengthDelta),
             pos = lineToAngle(x, y, -currentTrailLength, p.getHeading());
 
-        context.fillStyle = "rgba(1, 1, 1, " + p.opacity + ")";
+        context.fillStyle = "rgba(255, 255, 255, " + p.opacity + ")";
         // context.beginPath();
         // context.arc(x, y, p.radius, 0, Math.PI * 2, false);
         // context.fill();
@@ -218,7 +218,7 @@ function start() {
         context.fill();
 
         //trail
-        context.fillStyle = "rgba(1, 1,1, " + p.opacity + ")";
+        context.fillStyle = "rgba(255, 127,80, " + p.opacity + ")";
         context.beginPath();
         context.moveTo(x - 1, y - 1);
         context.lineTo(pos.x, pos.y);
