@@ -9,7 +9,7 @@ var root = {
     {
      "name": "Team",
      "children": [
-      {"name": "Team", "size": 4}
+      {"name": "Team", "size": 5}
      ]
     },
     {
@@ -27,7 +27,7 @@ var root = {
     {
      "name": "Competition",
      "children": [
-      {"name": "Competition", "size": 3}
+      {"name": "Product", "size": 3}
      ]
     },
     {
