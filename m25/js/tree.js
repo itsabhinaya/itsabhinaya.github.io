@@ -6,7 +6,7 @@
 	var ctx = canvas.getContext('2d')
 	canvas.width = window.innerWidth
 	canvas.height = window.innerHeight
-    ctx.globalCompositeOperation = 'lighter';
+    ctx.globalCompositeOperation = 'color';
 
 	var drawTree = function (ctx, startX, startY, length, angle ,depth, branchWidth) {
 		var rand = Math.random, newDepth,
@@ -52,13 +52,13 @@
 		step = 0
 		canvas.width = window.innerWidth
 		canvas.height = window.innerHeight
-    	ctx.globalCompositeOperation = 'lighter';
+    	ctx.globalCompositeOperation = 'color';
 		ctx.clearRect(0, 0, window.innerWidth, window.innerHeight)
 		drawTree(ctx, ~~(window.innerWidth/2), ~~(window.innerHeight/1.02), 60, -Math.PI/2, depth, branchWidth)
 	}
 
 	var regrow = function () {
-		if (step < 65534) return
+		if (step < 10) return
 		init()
 	}
 

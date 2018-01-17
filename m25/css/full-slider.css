@@ -61,6 +61,7 @@
 }
 .home_canvas {
     height: 100vh;
+    width:100%;
 
     background: black;
 }
@@ -71,7 +72,7 @@ canvas {
 }
 
 .canvas_out{
-  background-color:rgba(255,255,255,.4);
+  background-color:rgba(255,255,255,0);
     width:80%;
     height:80%;
     position:absolute;
@@ -79,6 +80,7 @@ canvas {
     top:10%;
     margin:0;
 }
+
 .name_font{
   font-size: 800%;
 }
@@ -108,7 +110,8 @@ canvas {
 }
 
 #typed{
-  color:#121922;
+  color:#8f0014;
+  /*color: white;*/
     font-size: 200%;
 
 }
