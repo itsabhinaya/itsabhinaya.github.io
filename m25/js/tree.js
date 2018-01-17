@@ -62,7 +62,7 @@
 		init()
 	}
 
-	document.querySelector('body').addEventListener('click', function (e) {
+	document.querySelector('.treecanvas').addEventListener('click', function (e) {
 		regrow()
 	})
 
