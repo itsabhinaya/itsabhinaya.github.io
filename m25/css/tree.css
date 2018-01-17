@@ -1,0 +1,26 @@
+.treecanvas{
+    margin: 0; padding: 0; 
+    /*background:linear-gradient(360deg, #e56420, #37bbde);*/
+    overflow:hidden;
+    background-color: black;
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    background-blend-mode: hard-light;
+    animation: hue-rotate 10s linear infinite;
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}

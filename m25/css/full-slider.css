@@ -62,7 +62,7 @@
 .home_canvas {
     height: 100vh;
 
-    background: darkgreen;
+    background: black;
 }
 canvas {
     position: absolute;
