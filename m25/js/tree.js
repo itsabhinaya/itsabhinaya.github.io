@@ -1,6 +1,6 @@
-;void function () {
+void function () {
 
-	var depth = 16 , branchWidth = 12, step = 0
+	var depth = 11 , branchWidth = 12, step = 0
 	var newDepthPub, depthPub
 	var canvas = document.getElementById('mycanvas')
 	var ctx = canvas.getContext('2d')
@@ -35,16 +35,20 @@
 
 		subBranches = maxBranch -1
 		branchWidth *= .7
+			console.log("sldfjhlksdjflk;sjdlkfjsdfsdfsdf");
+			console.log(subBranches);
+			console.log(maxBranch);
 
 		for (var i = 0; i < subBranches; i++) {
-			newAngle = angle + rand()*maxAngle - maxAngle*.5
-			newLength = length * (.7 + rand()*.3)
+			newAngle = angle + rand()*maxAngle - maxAngle*.4
+			newLength = length * (.9 + rand()*.3)
+			console.log(step);
 			setTimeout(function () {
 				drawTree(ctx, endX, endY, newLength, newAngle, newDepth, branchWidth)
 				newDepthPub = newDepth
 				depthPub = depth
 				step++;
-			},100)
+			},10)
 		}
 	}
 
@@ -54,10 +58,12 @@
 		canvas.height = window.innerHeight
     	ctx.globalCompositeOperation = 'color';
 		ctx.clearRect(0, 0, window.innerWidth, window.innerHeight)
+		console.log("inside the init");
 		drawTree(ctx, ~~(window.innerWidth/2), ~~(window.innerHeight/1.02), 60, -Math.PI/2, depth, branchWidth)
 	}
 
 	var regrow = function () {
+		console.log("inside the regrow");
 		if (step < 10) return
 		init()
 	}
@@ -67,6 +73,8 @@
 	})
 
 	document.addEventListener('DOMContentLoaded',function(){
+				console.log("inside the initial event");
+
 		init()
 	},false);
 

@@ -63,7 +63,7 @@
     height: 100vh;
     width:100%;
 
-    background: black;
+    background: white;
 }
 canvas {
     position: absolute;
@@ -119,6 +119,10 @@ canvas {
       font-size: 200%;
 
   color: #707070;
+}
+
+.icon_center{
+  margin: auto;
 }
 
 .sharp {
