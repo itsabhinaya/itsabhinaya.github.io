@@ -35,11 +35,11 @@ font-family: 'Oxygen', sans-serif;
 
 .fa-2x{
     font-size: 9vw !important;
-    color: #888888;
+    color: #e66432;
 }
 
 .color_two{
-    color: #e66432;
+    color: #8f0014;
 }
 
 @media (min-width: 992px) { 
