@@ -38,8 +38,20 @@ font-family: 'Oxygen', sans-serif;
     color: #e66432;
 }
 
+.fa:hover {
+    opacity: 0.7;
+}
+
 .color_two{
     color: #8f0014;
+}
+
+.home-link{
+	color: #8f0014;
+}
+.home-link:hover{
+	color: #e66432;
+	text-decoration: none;
 }
 
 @media (min-width: 992px) { 

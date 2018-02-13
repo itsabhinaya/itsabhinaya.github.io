@@ -37,7 +37,7 @@ function showModal(id) {
     
 
 var typed = new Typed('#typed', {
-  strings: ["Invest in Midwest", "A Diverse Portfolio", "Reinventing VC"],    
+  strings: ["A Diverse Portfolio", "Reinventing VC"],    
   typeSpeed: 30,
   backSpeed: 30,
   startDelay: 500,

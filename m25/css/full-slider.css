@@ -79,6 +79,7 @@ canvas {
     left:10%;
     top:10%;
     margin:0;
+    bottom: 0px;
 }
 
 .name_font{
@@ -146,7 +147,7 @@ a, .link_color:link {
     bottom: auto;
 }
 
-
+.carousel-indicators li { visibility: hidden; }
 section {
     padding-top: 80px;
     /*margin-top: -70px;*/
@@ -172,9 +173,7 @@ section {
 }
 
 
-.fa:hover {
-    opacity: 0.7;
-}
+
 
 .icon-twitter {
     color: #55ACEE;
