@@ -37,9 +37,9 @@ function showModal(id) {
     
 
 var typed = new Typed('#typed', {
-  strings: ["A Diverse Portfolio", "Reinventing VC"],    
-  typeSpeed: 30,
-  backSpeed: 30,
+  strings: ["Investing in Chicago, IL.", "Investing in Indianapolis,IN.","Investing in West Lafayette, IN.","Investing in Milwaukee, WI.","Investing in Pittsburgh, PA.","Investing in Grand Rapids, MI.", "Investing in Cincinnati, OH.",],    
+  typeSpeed: 50,
+  backSpeed: 50,
   startDelay: 500,
   loop: true,
   loopCount: Infinity,
