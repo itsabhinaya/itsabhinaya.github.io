@@ -152,10 +152,32 @@ function getAdvisorDetails(advisor) {
 
 }
 function showAdvisors(advisorsDetails) {
+  console.log("before");
 	document.querySelector(".advisors-thumb").innerHTML += advisorsDetails;
+    console.log("after");
+
 }
 advisors.map(getAdvisorDetails).forEach(showAdvisors);
 
+
+var latestInvest = portfolio.slice(0,4);
+
+function getLatestInvestDetails(investment) {
+  return `<a href="${investment.url}" target="_blank">
+              <img class="item ${investment.class} isotope-item" src="img/portfolio/${investment.img}.jpg" style="left: 0px; top: 0px;">
+            </a>`;
+
+}
+
+function showLatestInvest(latestInvestDetails) {
+    console.log("lat before");
+
+  document.querySelector(".latest-thumb").innerHTML += latestInvestDetails;
+      console.log("lat after");
+
+}
+
+latestInvest.map(getLatestInvestDetails).forEach(showLatestInvest);
 
 
 
