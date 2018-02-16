@@ -405,7 +405,7 @@
         <script type="text/javascript">var submitted=false;</script>
 
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://www.google.com';}"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();}"></iframe>
 
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
         onsubmit="submitted=true;">
@@ -425,7 +425,9 @@
 
         <input type="submit" value="Send" />
         </form>
-
+<div id="form_sub">
+  <h3>Thank you for submitting your request.</h3>
+</div>
 
 <!-- 
         <script type="text/javascript">var submitted=false;</script>
