@@ -164,7 +164,7 @@ var latestInvest = portfolio.slice(0,4);
 
 function getLatestInvestDetails(investment) {
   return `<a href="${investment.url}" target="_blank">
-              <img class="item ${investment.class} isotope-item" src="img/portfolio/${investment.img}.jpg" style="left: 0px; top: 0px;">
+              <img class="item ${investment.class} isotope-item" src="img/portfolio/${investment.img}.jpg" style="left: 0px; top: 0px; padding-left: 15px;">
             </a>`;
 
 }
