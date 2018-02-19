@@ -6,8 +6,12 @@ $(function(){
          navMain.collapse('hide');
      });
  });
+
+
+
 $('#form_sub').hide();
 $('[data-toggle="tooltip"]').tooltip(); 
+
 
 $("a").on('click', function(event) {
 

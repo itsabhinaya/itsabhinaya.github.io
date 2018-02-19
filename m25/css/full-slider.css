@@ -228,9 +228,15 @@ section {
 }
 
 
-.blog_title, a, .link_color:link{
-  color: black;
+a{
+  color: #e66432;
 }
+
+a:hover{
+  color: #8f0014;
+  text-decoration: none;
+}
+
 .blog_img{
   padding-bottom: 5px;
 }
@@ -285,6 +291,11 @@ section {
 
 .stage {
   width: 50vw;
+  /*height: 100vw*/
+}
+
+.analysis {
+  width: 25vw;
   /*height: 100vw*/
 }
 

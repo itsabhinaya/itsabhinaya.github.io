@@ -200,7 +200,7 @@
               <a class="nav-link" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Blog">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -294,7 +294,7 @@
 
 
                           <div class="row map_container pt-4">
-                            <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1GaSUmLrVxo0C8XGKXXxirjU3lbb1iEO4" frameBorder="0"></iframe>         -->
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1GaSUmLrVxo0C8XGKXXxirjU3lbb1iEO4" frameBorder="0"></iframe>        
                             <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1GaSUmLrVxo0C8XGKXXxirjU3lbb1iEO4" width="60%" height="500" frameBorder="0" style="padding-left: 20%"></iframe>         -->
                           </div>
 
@@ -361,6 +361,8 @@
                             <h4 class="font-weight-bold" style= "margin-top:1rem;" >What we look at</h4>
                             <h6>After the initial meeting, we put companies through our rigorous scorecard analysis. We score the following variables as objectively as possible. While they are all important, some are more important than others.</h6>
                             <!-- <div id="analysis"> </div> -->
+                            <img class="analysis" src="img/section/analysis.png" alt="Mountain View">
+
                           </div>
                           <script>
               // tell the embed parent frame the height of the content
@@ -382,7 +384,7 @@
           </div>
 
           <div class="card-deck">
-            <div class="row justify-content-center pt-4" id="m25Blog"></div>
+            <div class="row justify-content-center blog_title pt-4" id="m25Blog"></div>
           </div>
           <div class="row justify-content-center py-2">
             <div class="col">
@@ -397,37 +399,53 @@
       <section id="contact" class="px-4">
         <div class="col">
           <div class="container-fluid text-center"> 
-            <h1 class="font-weight-bold sectionTitle">ontact</h1>
+            <h1 class="font-weight-bold sectionTitle">Contact</h1>
           </div>
-        </div class="row">
+          <div class="row pt-4">
+            <p>FOUNDERS: Please fill out the form below. Include as much detail as possible on your company, business plan, funding round ask, and other relevant information. Keep in mind, we do require there to be some form of market traction, as we do not invest in ideas or prototypes. We usually get back to you within 48 hours.</p>
 
+            <p>INVESTORS: We only work with accredited investors that know one of the <a href="file:///Users/abhinaya/Desktop/itsabhinaya.github.io/m25/index.html#team">four board members</a>. Please reach out to one of them if you are interested in hearing more about our investment strategy/philosophy, portfolio companies, or future funds.</p>
+          </div>
+          <!-- <div class="row"> -->
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();}"></iframe>
+            <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();}"></iframe> -->
 
-        <script type="text/javascript">var submitted=false;</script>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
+            onsubmit="submitted=true;">
 
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Name*</label>
+                <input name="entry.2102735960" type="text" class="form-control" placeholder="Jane Doe" required />
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();}"></iframe>
+              </div>
 
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
-        onsubmit="submitted=true;">
+              <div class="form-group col-md-6">
+                <label>Email*</label>
+                <input name="entry.1781413360" type="email" class="form-control" placeholder="you@company.com" required />
+              </div>
+              
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input name="entry.986364660" type="text" class="form-control" placeholder=""/>
+            </div>
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea name="entry.2126718973" class="form-control" rows="3" placeholder=""/></textarea>
+            </div>
 
-        <label>Your Name</label>
-        <input name="entry.2102735960" type="text" placeholder="Name" />
-        <br>
-        <label>Email</label>
-        <input name="entry.1781413360" type="email" placeholder="Email"/>
-        <br>
-        <label>Subject</label>
-        <input name="entry.986364660" type="text" placeholder="Email"/>
-        <br>
-        <label>Your Message</label>
-        <input name="entry.2126718973" type="text" placeholder="Email"/>
-        <br>
+            <button type="submit" class="btn btn-m25">Submit</button>
+            <p>* required</p>
+          </form>
+          <div class="row pt-4">
 
-        <input type="submit" value="Send" />
-        </form>
-<div id="form_sub">
-  <h3>Thank you for submitting your request.</h3>
-</div>
+            <div id="form_sub">
+              <h4>Your message was sent successfully.</h4>
+            </div>
+          </div>
+        </div>
 
 <!-- 
         <script type="text/javascript">var submitted=false;</script>
@@ -450,7 +468,7 @@
 
         <input type="submit" value="Send" />
         </form>
- -->
+      -->
 
 
       <div>
@@ -460,31 +478,31 @@
 
 
 
-      </div>
-    </div>
+  </div>
+</div>
 
 
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+  </div>
+  <!-- /.container -->
+</footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.min.js'></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.min.js'></script>
 
-    <script src="js/portcos.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/blog.js"></script>
-    <!-- <script src='js/analysis.js'></script> -->
+<script src="js/portcos.js"></script>
+<script src="js/index.js"></script>
+<script src="js/blog.js"></script>
+<!-- <script src='js/analysis.js'></script> -->
 
 
 
-  </body>
+</body>
 
-  </html>
+</html>
