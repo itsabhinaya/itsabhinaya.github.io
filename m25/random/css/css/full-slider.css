@@ -15,7 +15,7 @@
 }
 
 .logo_img img{
-  width: 60%;
+  width: 100%;
     height: auto;
 }
 
@@ -24,13 +24,40 @@
     height: auto;
 }
 .bg_image {
+
+  /*background:transparent url('../img/animation/map.gif'); */
   background-size: cover;
   background-attachment: fixed;
   margin-top: 0px;
+  /*background-size: ;*/
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    /* The image used */
+/*    background-image: url("../img/animation/map.gif");
+
+    /* Full height */
+    /*height: 95vh; */
+
+/*     Center and scale the image nicely 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
+.parallax {
+    /* The image used */
+    background-image: url('../img/animation/map.gif');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .carousel-item {
   height: 100vh;
@@ -95,11 +122,12 @@ canvas {
 #typed{
   color:#8f0014;
   /*color: white;*/
-    font-size: 2.5vw;
+    font-size: 4vw;
 
 }
 .typed-cursor {
-  font-size: 2.5vw;
+      font-size: 4vw;
+
   color: #707070;
 }
 

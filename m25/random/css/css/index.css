@@ -1,0 +1,63 @@
+body{
+font-family: 'Oxygen', sans-serif;
+}
+
+#myNavbar{
+  background-color: white;
+  border-bottom: 3px solid #e66432;
+
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #8f0014;
+}
+
+.btn-m25 { 
+	color: white; 
+	background-color: #e66432;
+
+}
+
+.btn-m25:hover { 
+	color: white; 
+	background-color: #8f0014; 
+}
+
+.btn-gray{
+	color: white; 
+	background-color: #888888;
+}
+
+
+.btn-gray:hover { 
+	color: white; 
+	background-color: #888888; 
+}
+
+.fa-2x{
+    font-size: 9vw !important;
+    color: #e66432;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.color_two{
+    color: #8f0014;
+}
+
+.home-link{
+	color: #8f0014;
+	font-size: 150%;
+}
+.home-link:hover{
+	color: #e66432;
+	text-decoration: none;
+}
+
+@media (min-width: 992px) { 
+	.fa-2x{
+	    font-size: 3.5vw !important;
+	}
+
+}
