@@ -23,15 +23,15 @@ $(function () {
 				output += '<a class = "" href="'+ item.link + '"><img class="card-img-top" src="' + src + '" alt="Card image cap"><div class="card-block pt-2 px-1">';
 				output += '<h5 class="card-title">' + "<span class = 'color_two'>&#8627; </span>"+item.title + '</a></h5>';
 				// output += '</div></div></div></div>';
-				var today = new Date();
-				var date = new Date(item.pubDate).toISOString().slice(0, 10);
+				// var today = new Date();
+				// var date = new Date(item.pubDate).toISOString().slice(0, 10);
 
-				var date_diff_indays = function(date1, date2) {
-					dt1 = new Date(date1);
-					dt2 = new Date(date2);
-					return Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
-				}
-				output += '<h6 class="name_two">'+date_diff_indays(date,today)+' days ago</h6>'
+				// var date_diff_indays = function(date1, date2) {
+				// 	dt1 = new Date(date1);
+				// 	dt2 = new Date(date2);
+				// 	return Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
+				// }
+				// output += '<h6 class="name_two">'+date_diff_indays(date,today)+' days ago</h6>'
 				output += '</div></div>';
 				return k < 2;
 			});
