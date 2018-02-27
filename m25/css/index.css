@@ -46,14 +46,6 @@ font-family: 'Oxygen', sans-serif;
     color: #8f0014;
 }
 
-.home-link{
-	color: #8f0014;
-	font-size: 150%;
-}
-.home-link:hover{
-	color: #e66432;
-	text-decoration: none;
-}
 
 @media (min-width: 992px) { 
 	.fa-2x{
