@@ -1,4 +1,9 @@
 var portfolio = [
+
+{url: "https://www.ensodata.io/?ref=M25", class: "state_WI funds2 business_B2B industry_healthcare" ,img: "EnsoData"},
+{url: "https://upsie.com/?ref=M25", class: "state_MN funds2 business_B2C industry_finance" ,img: "Upsie"},
+{url: "https://www.theminte.com/?ref=M25", class: "state_IL funds2 business_B2B industry_realestate" ,img: "TheMinte"},
+{url: "https://www.mysuperdispatch.com/?ref=M25", class: "state_MO funds2 business_B2B business_B2C industry_transportation" ,img: "SuperDispatch"},
 {url: "https://www.safechain.io/?ref=M25", class: "state_OH funds2 business_B2B industry_finance  " ,img: "SafeChain"},
 {url: "https://www.bizzycoffee.com/?ref=M25", class: "state_MN funds2 business_B2C industry_food industry_other " ,img: "BizzyCoffee"},
 {url: "https://hippomanager.com/?ref=M25", class: "state_KY funds2 business_B2B  industry_enterprise " ,img: "HippoManager"},
@@ -57,7 +62,6 @@ var portfolio = [
 {url: "https://www.glidera.io/?ref=M25", class: "state_IL funds1 business_B2C industry_finance  " ,img: "Glidera"},
 {url: "https://mimirhq.com/?ref=M25", class: "state_IN funds1 business_B2B business_B2C industry_education  " ,img: "Mimir"},
 {url: "https://www.app-press.com/?ref=M25", class: "state_IN funds1 business_B2B industry_enterprise  " ,img: "AppPress"}
-
 ];
 
 

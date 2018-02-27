@@ -30,6 +30,9 @@
   text-decoration: none;
 }
 
+.card {
+border: none;
+}
 
 .bg_image {
   background-size: cover;
@@ -240,7 +243,7 @@ a:hover{
 }
 
 .stage {
-  width: 50vw;
+  width: 40vw;
   /*height: 100vw*/
 }
 
@@ -277,8 +280,14 @@ a:hover{
     #typed, .typed-cursor {
   font-size: 4vw;
 }
-
-
+.stage {
+  width: 80vw;
+  /*height: 100vw*/
+}
+.analysis {
+  width: 60vw;
+  /*height: 100vw*/
+}
 
   }
 
@@ -299,6 +308,16 @@ a:hover{
     #typed, .typed-cursor {
   font-size: 4vw;
 }
+.stage {
+  width: 80vw;
+  /*height: 100vw*/
+}
+
+.analysis {
+  width: 60vw;
+  /*height: 100vw*/
+}
+
   }
 
   /*// Medium devices (tablets, 768px and up)*/
@@ -310,7 +329,14 @@ a:hover{
     margin: 0 auto;
     display: block;
   }
+    .categories_invest p{
+    font-size: 1vw;
+  }
 
+.analysis {
+  width: 40vw;
+  /*height: 100vw*/
+}
 
 /*.bubble{
   width: 500px;
@@ -327,10 +353,7 @@ a:hover{
   .categories_invest p{
     font-size: 1.8vw;
   }
-  .stage {
-    width: 70vw;
-  height: 100vw
-}
+
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
