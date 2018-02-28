@@ -60,7 +60,7 @@ function showModal(id) {
     };
     
 
-var typpped = new Typed('#typred', {
+var typpped = new Typed('#typed', {
   strings: ["Investing in Chicago, IL.", "Investing in Indianapolis, IN.", "Investing in West Lafayette, IN.", "Investing in Milwaukee, WI.", "Investing in Pittsburgh, PA.", "Investing in Grand Rapids, MI.", "Investing in Cincinnati, OH."],    
   stringsElement: null,
   typeSpeed: 50,

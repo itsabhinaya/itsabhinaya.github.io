@@ -20,6 +20,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 120px;
+  font-family: 'Oxygen', sans-serif;
 }
 footer {
   position: absolute;
@@ -31,179 +32,211 @@ footer {
 }
 
 
-  #options-wrap.affix {
-    top: 51px;
-    width: 100%;
+#options-wrap.affix {
+  top: 45px;
+  width: 100%;
+}
+#options-wrap {
+  z-index: 999999;
+}
+#options {
+  background-color: #fff;
+  width: 100%;
+  padding-top: 20px;
+}
+#filter-container {
+  margin: 0 auto;
+  padding: 0;
+}
+#filters .item {
+  margin: 10px;
+  float: left;
+}
+#filters .item img {
+  display: block;
+  max-width: 100%;
+}
+
+/*#filters .item:hover img {*/
+  img:focus, img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
   }
-  #options-wrap {
-    z-index: 999999;
+
+  #filters p {
+    margin: 0;
   }
-  #options {
-    background-color: #fff;
-    width: 100%;
-    padding-top: 20px;
+  #filters #filter-display, 
+  #filter-counter {
+    font-size: 15px;
+    /*padding: 0.5em;*/
+    color: #666;
   }
-  #filter-container {
-    margin: 0 auto;
-    padding: 0;
+  .tab-content{
+    border-bottom: 1px solid #ddd;
   }
-  #filters .item {
-    margin: 10px;
-    float: left;
-  }
-  #filters .item img {
+  div.filter-display-container {
     display: block;
-    max-width: 100%;
-  }
+/*      min-height: 45px;
+max-height: 45px;*/
+overflow: hidden;
+padding: 0px;
+/*color: red;*/
+color: red !important; 
 
-  /*#filters .item:hover img {*/
-    img:focus, img:hover {
-      opacity: 0.5;
-      filter: alpha(opacity=50);
+}
+.tab-pane {
+  padding-top: 5px;
+}
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property:    -moz-transform, opacity;
+  -o-transition-property:         top, left, opacity;
+  transition-property:         transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+a.funds:hover, label.funds:hover, 
+a.state:hover, label.state:hover, 
+a.industry:hover, label.industry:hover, 
+a.business:hover, label.business:hover{
+  cursor: hand !important; cursor: pointer !important;
+}
+
+
+a.funds, a.state, a.industry, a.business, a.clone {
+  padding: 5px; 
+}
+label.funds, label.state, label.business, 
+label.industry{
+ /*     margin-top: 5px; 
+ margin-bottom: 5px;*/
+}
+
+
+a.disabled, 
+a.disabled:hover, 
+a.disabled:active {
+  color: gray;
+  text-decoration: line-through !important;
+}
+a{
+  color: #8f0014;
+}
+
+.data-counter {
+  float: right;
+}
+#reset-filters {
+  float: left;
+}
+
+#reset-filters:hover {
+  cursor: hand !important;
+  cursor: pointer !important;
+}
+#myTab .active a {
+  background-color: #e66432 !important;
+  color: white;
+}
+#myTab a {
+  color: black;
+}
+
+.btn-outline-warning {
+  color: black;
+  background-color: transparent;
+  background-image: none;
+  border-color: #e66432;
+}
+
+.btn-outline-warning:hover {
+  color: white;
+  background-color: #e66432;
+  border-color: #e66432;
+}
+
+
+.btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active,
+.show > .btn-outline-warning.dropdown-toggle {
+  color: #fff;
+  background-color: #e66432;
+  border-color: #e66432;
+  box-shadow: 0 0 0 0.2rem #e66432;
+
+}
+
+/*label{
+  display: inherit;
+  }*/
+  @media (max-width: 767px){
+
+/*    .option-set a{
+      font-size: 10px;
+    }*/
+    label.funds, label.state, label.business, label.industry, .option-set a, #filters #filter-display, #filter-counter,.filter-btn {
+      font-size: .75rem;
     }
 
-    #filters p {
-      margin: 0;
-    }
-    #filters #filter-display, 
+/*    #filters #filter-display, 
     #filter-counter {
-      font-industry: 18px;
-      /*padding: 0.5em;*/
-      color: #666;
+      font-size: 10px;
     }
-    div.filter-display-container {
-      display: block;
-      min-height: 45px;
-      max-height: 45px;
-      overflow: hidden;
-      padding: 0px;
+    .filter-btn{
+      font-size: 10px;
+    }*/
+#myTab a{
+  font-size: .9rem;
+  }
+}
 
-    }
-    .tab-pane {
-      padding-top: 5px;
-    }
-    /* Start: Recommended Isotope styles */
-    /**** Isotope Filtering ****/
-    .isotope-item {
-      z-index: 2;
-    }
-    .isotope-hidden.isotope-item {
-      pointer-events: none;
-      z-index: 1;
-    }
-    /**** Isotope CSS3 transitions ****/
-    .isotope,
-    .isotope .isotope-item {
-      -webkit-transition-duration: 0.1s;
-      -moz-transition-duration: 0.1s;
-      -o-transition-duration: 0.1s;
-      transition-duration: 0.1s;
-    }
-    .isotope {
-      -webkit-transition-property: height, width;
-      -moz-transition-property: height, width;
-      -o-transition-property: height, width;
-      transition-property: height, width;
-    }
-    .isotope .isotope-item {
-      -webkit-transition-property: -webkit-transform, opacity;
-      -moz-transition-property:    -moz-transform, opacity;
-      -o-transition-property:         top, left, opacity;
-      transition-property:         transform, opacity;
-    }
-    /**** disabling Isotope CSS3 transitions ****/
-    .isotope.no-transition,
-    .isotope.no-transition .isotope-item,
-    .isotope .isotope-item.no-transition {
-      -webkit-transition-duration: 0s;
-      -moz-transition-duration: 0s;
-      -o-transition-duration: 0s;
-      transition-duration: 0s;
-    }
-    /* End: Recommended Isotope styles */
-    a.funds:hover, label.funds:hover, 
-    a.state:hover, label.state:hover, 
-    a.industry:hover, label.industry:hover, 
-    a.business:hover, label.business:hover{cursor: hand !important; cursor: pointer !important;}
-    a.funds, a.state, a.industry, a.business, a.clone {
-      padding: 5px; 
-    }
-    label.funds, label.state, label.business, 
-    label.industry{
-      margin-top: 5px; 
-      margin-bottom: 5px;
-    }
-    
-
-    a.disabled, 
-    a.disabled:hover, 
-    a.disabled:active {
-      color: gray;
-      text-decoration: line-through !important;
-    }
-    a{
-      color: #8f0014;
-    }
-
-    .data-counter {
-      float: right;
-    }
-    #reset-filters {
-      float: left;
-    }
-
-    #reset-filters:hover {
-      cursor: hand !important;
-      cursor: pointer !important;
-    }
-    #myTab .active a {
-      background-color: #e66432 !important;
-      color: white;
-    }
-    #myTab a {
-      color: black;
-    }
-
-    .btn-outline-warning {
-      color: black;
-      background-color: transparent;
-      background-image: none;
-      border-color: #e66432;
-    }
-
-    .btn-outline-warning:hover {
-      color: white;
-      background-color: #e66432;
-      border-color: #e66432;
-    }
-
-
-    .btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active,
-    .show > .btn-outline-warning.dropdown-toggle {
-      color: #fff;
-      background-color: #e66432;
-      border-color: #e66432;
-      box-shadow: 0 0 0 0.2rem #e66432;
-
-    }
-
-
-  </style>
-  <style type="text/css"></style><style id="holderjs-style" type="text/css"></style></head>
-  <body class="" id="" data-gr-c-s-loaded="true" style="" data-spy="scroll" data-target="#myNavbar" data-offset="80">
-    <!-- Navigation -->
-    <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container ">
-        <a class="navbar-brand" href="index.html">    
-          <img src="img/M25_Logo.png" width="50" height="50" alt="M25 Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#home">Home<a>
+</style>
+<style type="text/css"></style><style id="holderjs-style" type="text/css"></style></head>
+<body class="" id="" data-gr-c-s-loaded="true" style="" data-spy="scroll" data-target="#myNavbar" data-offset="80">
+  <!-- Navigation -->
+  <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container ">
+      <a class="navbar-brand" href="index.html">    
+        <img src="img/M25_Logo.png" width="50" height="50" alt="M25 Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#home">Home<a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html#team">Team</a>
@@ -302,16 +335,16 @@ footer {
             <a href="https://www.app-press.com/" target="_blank">
               <img class="item funds2 business_B2B state_IL industry_enterprise isotope-item" src="img/portfolio/PageVault.jpg" style="position: absolute; left: 0px; top: 0px;">
             </a> -->
+          </div>
         </div>
       </div>
-    </div>
 
 
       <!-- Footer -->
       <footer class="navbar-default navbar-fixed-bottom py-5 bg-dark">
         <div class="container">
           <p class="m-0 text-center text-white">&copy; M25 2018</p>
-       </div>
+        </div>
         <!-- /.container -->
       </footer>
 
@@ -322,9 +355,9 @@ footer {
       <script src="vendor/isotope/jquery.isotope.min.js"></script>
       <script src="vendor/isotope/spin.min.js"></script>
       <script src="vendor/isotope/jquery.spin.js"></script>
-        <script src="js/portcos.js"></script>
+      <script src="js/portcos.js"></script>
 
-  <script src='js/portfolio.js'></script>
+      <script src='js/portfolio.js'></script>
 
 
       <script>
@@ -380,6 +413,15 @@ footer {
         });
         var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
         $filterDisplay.append( '<span class="filter-label data-counter pull-right">&nbsp;'+numItemsDisp+'&nbsp;Portcos</span>' );
+
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+
+
+
+
+
+
+
         var group = '';
       // filter on click
       $('.filter a').click(function(){
@@ -583,6 +625,8 @@ if ( comboFilter.indexOf('funds') == -1
       }
       else if (numItemsHidden === 0 && activeCheck === 0) {
         $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Portcos</span>' );
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+
       }
       else{ // strictly fall-back - this should never get triggered 
 
@@ -631,6 +675,7 @@ function getComboFilter( filters ) {
     $('#filter-display').empty();
     var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
     $('#filter-display').append( '<span class="filter-label data-counter pull-right">&nbsp;'+numItemsDisp+'&nbsp;Portcos</span>' );
+        $('#filter-display').append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
   }
 </script>
 

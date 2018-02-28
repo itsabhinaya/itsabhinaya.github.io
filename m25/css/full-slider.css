@@ -235,8 +235,8 @@ a:hover{
 /*// Extra small devices (landscape phones, 576px and below)*/
   @media (min-width: 0px) and (max-width: 576px) {
     .home-link img{
-      width: 60%;
-      height: 60%;
+      width: 40%;
+      height: 40%;
     }
     .home-link{
       font-size: 180%;
@@ -311,7 +311,7 @@ a:hover{
 
 
 /*// Large devices (desktops, 992px and up)*/
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
 
   .categories_invest p{
     font-size: 1.8vw;
@@ -321,7 +321,7 @@ a:hover{
   height: 75%;
 }
 
-}
+}*/
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
