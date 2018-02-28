@@ -59,17 +59,32 @@ function showModal(id) {
       $("#" + id).modal();
     };
     
+  //  "Investing in West Lafayette, IN.", "Investing in Milwaukee, WI.", "Investing in Pittsburgh, PA.", "Investing in Grand Rapids, MI.", "Investing in Cincinnati, OH."],    
 
-var typpped = new Typed('#typed', {
-  strings: ["Investing in Chicago, IL.", "Investing in Indianapolis, IN.", "Investing in West Lafayette, IN.", "Investing in Milwaukee, WI.", "Investing in Pittsburgh, PA.", "Investing in Grand Rapids, MI.", "Investing in Cincinnati, OH."],    
-  stringsElement: null,
-  typeSpeed: 50,
-  backSpeed: 50,
-  startDelay: 500,
-  loop: true,
-  loopCount: Infinity,
-  shuffle: true
-  });
+var instance = new TypeIt('#typed', {
+     strings: ["Chicago, IL.", "Milwaukee, WI.", "Indianapolis, IN.", "Pittsburgh, PA.", "Grand Rapids, MI.", "Cincinnati, OH.", "West Lafayette, IN."],
+     speed: 90,
+     deleteSpeed: 50,
+     breakLines: false,
+     autoStart: false,
+     loop: true,
+     loopDelay: 60,
+     cursorSpeed: 0,
+     lifeLike: true
+     // other options
+});
+
+// var typpped = new Typed('#typed', {
+//   strings: ["Chicago, IL.", "Indianapolis, IN."],    
+//   stringsElement: null,
+//   typeSpeed: 50,
+//   backSpeed: 50,
+//   smartBackspace: true,
+//   startDelay: 500,
+//   loopCount: false, 
+//   shuffle: true
+//   });
+
 
 // var typed = new Typed('#typed', {
 //     stringsElement: '#typed-strings'

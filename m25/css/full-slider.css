@@ -90,14 +90,14 @@ canvas {
   background-color: seagreen;
 }
 
-#typed{
+#typed, .typing{
   color:#8f0014;
   font-size: 2.5vw;
 
 }
-.typed-cursor {
+.ti-cursor {
   font-size: 2.5vw;
-  color: #707070;
+  color: #707070 !important;
 }
 
 .icon_center{
@@ -246,7 +246,7 @@ a:hover{
 
     }
 
-    #typed, .typed-cursor {
+    #typed,.typing, .ti-cursor {
       font-size: 4vw;
     }
     .stage {
@@ -271,7 +271,7 @@ a:hover{
       margin: 0 auto;
       display: block;
     }
-    #typed, .typed-cursor {
+    #typed, .typing, .ti-cursor {
       font-size: 4vw;
     }
     .stage {
