@@ -250,12 +250,6 @@ a:hover{
   }
 }
 
-#about {
-    background-image: url('http://lorempixel.com/g/500/500/');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 /*// Extra small devices (landscape phones, 576px and below)*/
   @media (min-width: 0px) and (max-width: 576px) {
@@ -277,6 +271,11 @@ a:hover{
     .analysis {
       width: 60vw;
     }
+
+/*    .team-item img{
+      width: 50%;
+      height: 50%;
+    }*/
 
   }
 
