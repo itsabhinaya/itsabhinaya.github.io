@@ -60,8 +60,9 @@ function showModal(id) {
     };
     
 
-var typed = new Typed('#typed', {
-  strings: ["Investing in Chicago, IL.", "Investing in Indianapolis, IN.","Investing in West Lafayette, IN.","Investing in Milwaukee, WI.","Investing in Pittsburgh, PA.","Investing in Grand Rapids, MI.", "Investing in Cincinnati, OH."],    
+var typpped = new Typed('#typred', {
+  strings: ["Investing in Chicago, IL.", "Investing in Indianapolis, IN.", "Investing in West Lafayette, IN.", "Investing in Milwaukee, WI.", "Investing in Pittsburgh, PA.", "Investing in Grand Rapids, MI.", "Investing in Cincinnati, OH."],    
+  stringsElement: null,
   typeSpeed: 50,
   backSpeed: 50,
   startDelay: 500,
@@ -70,6 +71,9 @@ var typed = new Typed('#typed', {
   shuffle: true
   });
 
+// var typed = new Typed('#typed', {
+//     stringsElement: '#typed-strings'
+//   });
 
 
 var team = [

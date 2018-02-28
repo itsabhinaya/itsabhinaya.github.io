@@ -5,10 +5,7 @@ function getportfolioDetails(portfolio) {
 
 }
 function showportfolio(portfolioDetails) {
-	  console.log("p before");
-
 	document.querySelector(".portco-thumb").innerHTML += portfolioDetails;
-		  console.log("p after");
 
 }
 portfolio.map(getportfolioDetails).forEach(showportfolio);
