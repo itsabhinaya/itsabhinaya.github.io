@@ -16,10 +16,10 @@
   text-decoration: none;
 }
 
-.card {
-  border: none;
+/*.card {
+  border-bottom: 1px solid;
 }
-
+*/
 .bg_image {
   background-size: cover;
   background-attachment: fixed;

@@ -21,7 +21,8 @@ $(function () {
 				var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
 				var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
 				output += '<a class = "" href="'+ item.link + '"><img class="card-img-top" src="' + src + '" alt="Card image cap"><div class="card-block pt-2 px-1">';
-				output += '<h5 class="card-title">' + "<span class = 'color_two'>&#8627; </span>"+item.title + '</a></h5>';
+				output += '<h5 class="card-title">' +item.title + '</a></h5>';
+				// output += '<h5 class="card-title">' + "<span class = 'color_two'>&#8627; </span>"+item.title + '</a></h5>';
 				// output += '</div></div></div></div>';
 				// var today = new Date();
 				// var date = new Date(item.pubDate).toISOString().slice(0, 10);
