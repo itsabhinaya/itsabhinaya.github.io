@@ -162,7 +162,7 @@ section {
   color: #e66432;
 }
 
-.icon-red {
+.icon_red {
   color: #8f0014;
 }
 
@@ -170,6 +170,9 @@ section {
   color: #888888;
 }
 
+.icon_white{
+  color: white;
+}
 
 .datamaps-legend{
   position: static;

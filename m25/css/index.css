@@ -34,7 +34,7 @@ font-family: 'Oxygen', sans-serif;
 }
 
 .fa-2x{
-    font-size: 6vw;
+    font-size: 7vw;
     color: #e66432;
 }
 
@@ -43,6 +43,9 @@ font-family: 'Oxygen', sans-serif;
     color: #8f0014;
 }
 
+.home_icon{
+	font-size: 3rem;
+}
 
 @media (min-width: 992px) { 
 	.fa-2x{
