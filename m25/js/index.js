@@ -203,10 +203,7 @@ function getAdvisorDetails(advisor) {
 
 }
 function showAdvisors(advisorsDetails) {
-  console.log("before");
 	document.querySelector(".advisors-thumb").innerHTML += advisorsDetails;
-    console.log("after");
-
 }
 advisors.map(getAdvisorDetails).forEach(showAdvisors);
 
@@ -221,11 +218,7 @@ function getLatestInvestDetails(investment) {
 }
 
 function showLatestInvest(latestInvestDetails) {
-    console.log("lat before");
-
   document.querySelector(".latest-thumb").innerHTML += latestInvestDetails;
-      console.log("lat after");
-
 }
 
 latestInvest.map(getLatestInvestDetails).forEach(showLatestInvest);
