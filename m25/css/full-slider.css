@@ -258,6 +258,9 @@ a:hover{
       width: 40%;
       height: 40%;
     }
+    .home-link{
+      font-size: 100%;
+    }
     .home_nav{
       width: 50% !important;
 
@@ -272,6 +275,11 @@ a:hover{
     .analysis {
       width: 60vw;
     }
+    .logo_img img {
+    width: 90%;
+    height: auto;
+}
+
 
   }
 
