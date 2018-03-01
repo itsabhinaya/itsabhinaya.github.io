@@ -62,7 +62,7 @@ function showModal(id) {
   //  "Investing in West Lafayette, IN.", "Investing in Milwaukee, WI.", "Investing in Pittsburgh, PA.", "Investing in Grand Rapids, MI.", "Investing in Cincinnati, OH."],    
 
 var instance = new TypeIt('#typed', {
-     strings: ["Chicago, IL.", "Milwaukee, WI.", "Indianapolis, IN.", "Pittsburgh, PA.", "Grand Rapids, MI.", "Cincinnati, OH.", "West Lafayette, IN."],
+     strings: ["Kansas City, MO.", "Milwaukee, WI.", "Indianapolis, IN.", "Pittsburgh, PA.", "Grand Rapids, MI.", "Cincinnati, OH.", "West Lafayette, IN.", "Chicago, IL.", "Minneapolis, MN.", "Cleveland, OH.", "Detroit, MI.", "Lexington, KY.", "St. Louis, MO.", "Madison, WI.", "Ann Arbor, MI.", "Columbus, OH.", "Bloomington, IN.", "Lincoln, NE.", "Champaign-Urbana, IL."],
      speed: 90,
      deleteSpeed: 50,
      breakLines: false,
