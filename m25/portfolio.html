@@ -8,347 +8,326 @@
 
   <style type="text/css">
 
-/*  .art-thumb img{
-border:1px solid #021a40;
-}*/
 
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 120px;
-  font-family: 'Oxygen', sans-serif;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
-
-#options-wrap.affix {
-  top: 45px;
-  width: 100%;
-}
-#options-wrap {
-  z-index: 999999;
-}
-#options {
-  background-color: #fff;
-  width: 100%;
-  padding-top: 20px;
-}
-#filter-container {
-  margin: 0 auto;
-  padding: 0;
-}
-#filters .item {
-  margin: 10px;
-  float: left;
-}
-#filters .item img {
-  display: block;
-  max-width: 100%;
-}
-
-/*#filters .item:hover img {*/
-  img:focus, img:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    margin-bottom: 120px;
+    font-family: 'Oxygen', sans-serif;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
   }
 
-  #filters p {
-    margin: 0;
+
+  #options-wrap.affix {
+    top: 45px;
+    width: 100%;
   }
-  #filters #filter-display, 
-  #filter-counter {
-    font-size: 15px;
-    /*padding: 0.5em;*/
-    color: #666;
+  #options-wrap {
+    z-index: 999999;
   }
-  .tab-content{
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 5px;
+  #options {
+    background-color: #fff;
+    width: 100%;
+    padding-top: 20px;
   }
-  div.filter-display-container {
+  #filter-container {
+    margin: 0 auto;
+    padding: 0;
+  }
+  #filters .item {
+    margin: 10px;
+    float: left;
+  }
+  #filters .item img {
     display: block;
-/*      min-height: 45px;
-max-height: 45px;*/
-overflow: hidden;
-padding: 0px;
-/*color: red;*/
-color: red !important; 
+    max-width: 100%;
+  }
 
-}
-.tab-pane {
-  padding-top: 5px;
-}
-/* Start: Recommended Isotope styles */
-/**** Isotope Filtering ****/
-.isotope-item {
-  z-index: 2;
-}
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-/**** Isotope CSS3 transitions ****/
-.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.1s;
-  -moz-transition-duration: 0.1s;
-  -o-transition-duration: 0.1s;
-  transition-duration: 0.1s;
-}
-.isotope {
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  -o-transition-property: height, width;
-  transition-property: height, width;
-}
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property:    -moz-transform, opacity;
-  -o-transition-property:         top, left, opacity;
-  transition-property:         transform, opacity;
-}
-/**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
-}
-/* End: Recommended Isotope styles */
-a.funds:hover, label.funds:hover, 
-a.state:hover, label.state:hover, 
-a.industry:hover, label.industry:hover, 
-a.business:hover, label.business:hover{
-  cursor: hand !important; cursor: pointer !important;
-}
-
-
-a.funds, a.state, a.industry, a.business, a.clone {
-  padding: 5px; 
-}
-label.funds, label.state, label.business, 
-label.industry{
- /*     margin-top: 5px; 
- margin-bottom: 5px;*/
-}
-
-
-a.disabled, 
-a.disabled:hover, 
-a.disabled:active {
-  color: gray;
-  text-decoration: line-through !important;
-}
-a{
-  color: #8f0014;
-}
-
-a:hover{
-  color: #e66432;
-}
-
-.data-counter {
-  float: right;
-}
-#reset-filters {
-  float: left;
-}
-
-#reset-filters:hover {
-  cursor: hand !important;
-  cursor: pointer !important;
-}
-#myTab .active a {
-  background-color: #e66432 !important;
-  color: white;
-}
-#myTab a {
-  color: black;
-}
-
-.btn-outline-warning {
-  color: black;
-  background-color: transparent;
-  background-image: none;
-  border-color: #e66432;
-  /*padding: 5px;*/
-}
-
-.btn-outline-warning:hover {
-  color: white;
-  background-color: #e66432;
-  border-color: #e66432;
-}
-
-
-.btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active,
-.show > .btn-outline-warning.dropdown-toggle {
-  color: #fff;
-  background-color: #e66432;
-  border-color: #e66432;
-  box-shadow: 0 0 0 0.2rem #e66432;
-
-}
-/*label{
-  display: inherit;
-  }*/
-  @media (max-width: 767px){
-
-/*    .option-set a{
-      font-size: 10px;
-    }*/
-    label.funds, label.state, label.business, label.industry, .option-set a, #filters #filter-display, #filter-counter,.filter-btn {
-      font-size: .75rem;
+  /*#filters .item:hover img {*/
+    img:focus, img:hover {
+      opacity: 0.5;
+      filter: alpha(opacity=50);
     }
 
-/*    #filters #filter-display, 
+    #filters p {
+      margin: 0;
+    }
+    #filters #filter-display, 
     #filter-counter {
-      font-size: 10px;
+      font-size: 15px;
+      /*padding: 0.5em;*/
+      color: #666;
     }
-    .filter-btn{
-      font-size: 10px;
-    }*/
-#myTab a{
-  font-size: .9rem;
-  }
-  .item{
-    width: 100px;
-    height: 50px;
+    .tab-content{
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 5px;
+    }
+    div.filter-display-container {
+      display: block;
+      /*min-height: 45px;
+      max-height: 45px;*/
+      overflow: hidden;
+      padding: 0px;
+      /*color: red;*/
+      color: red !important; 
 
-  }
+    }
+    .tab-pane {
+      padding-top: 5px;
+    }
+    /* Start: Recommended Isotope styles */
+    /**** Isotope Filtering ****/
+    .isotope-item {
+      z-index: 2;
+    }
+    .isotope-hidden.isotope-item {
+      pointer-events: none;
+      z-index: 1;
+    }
+    /**** Isotope CSS3 transitions ****/
+    .isotope,
+    .isotope .isotope-item {
+      -webkit-transition-duration: 0.1s;
+      -moz-transition-duration: 0.1s;
+      -o-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+    }
+    .isotope {
+      -webkit-transition-property: height, width;
+      -moz-transition-property: height, width;
+      -o-transition-property: height, width;
+      transition-property: height, width;
+    }
+    .isotope .isotope-item {
+      -webkit-transition-property: -webkit-transform, opacity;
+      -moz-transition-property:    -moz-transform, opacity;
+      -o-transition-property:         top, left, opacity;
+      transition-property:         transform, opacity;
+    }
+    /**** disabling Isotope CSS3 transitions ****/
+    .isotope.no-transition,
+    .isotope.no-transition .isotope-item,
+    .isotope .isotope-item.no-transition {
+      -webkit-transition-duration: 0s;
+      -moz-transition-duration: 0s;
+      -o-transition-duration: 0s;
+      transition-duration: 0s;
+    }
+    /* End: Recommended Isotope styles */
+    a.funds:hover, label.funds:hover, 
+    a.state:hover, label.state:hover, 
+    a.industry:hover, label.industry:hover, 
+    a.business:hover, label.business:hover{
+      cursor: hand !important; cursor: pointer !important;
+    }
+
+
+    a.funds, a.state, a.industry, a.business, a.clone {
+      padding: 5px; 
+    }
+    label.funds, label.state, label.business, 
+    label.industry{
+      /*     margin-top: 5px; 
+      margin-bottom: 5px;*/
+    }
+
+
+    a.disabled, 
+    a.disabled:hover, 
+    a.disabled:active {
+      color: gray;
+      text-decoration: line-through !important;
+    }
+    a{
+      color: #8f0014;
+    }
+
+    a:hover{
+      color: #e66432;
+    }
+
+    .data-counter {
+      float: right;
+    }
+    #reset-filters {
+      float: left;
+    }
+
+    #reset-filters:hover {
+      cursor: hand !important;
+      cursor: pointer !important;
+    }
+    #myTab .active a {
+      background-color: #e66432 !important;
+      color: white;
+    }
+    #myTab a {
+      color: black;
+    }
+
+    .btn-outline-warning {
+      color: black;
+      background-color: transparent;
+      background-image: none;
+      border-color: #e66432;
+      /*padding: 5px;*/
+    }
+
+    .btn-outline-warning:hover {
+      color: white;
+      background-color: #e66432;
+      border-color: #e66432;
+    }
+section {
+  padding-top: 40px;
 }
 
-</style>
-<style type="text/css"></style><style id="holderjs-style" type="text/css"></style></head>
-<body class="" id="" data-gr-c-s-loaded="true" style="" data-spy="scroll" data-target="#myNavbar" data-offset="80">
-  <!-- Navigation -->
-  <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container ">
-      <a class="navbar-brand" href="index.html">    
-        <img src="img/M25_Logo.png" width="50" height="50" alt="M25 Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#home">Home<a>
-            </li>
+    .btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active,
+    .show > .btn-outline-warning.dropdown-toggle {
+      color: #fff;
+      background-color: #e66432;
+      border-color: #e66432;
+      box-shadow: 0 0 0 0.2rem #e66432;
 
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#about">About</a>
-            </li>
-                        <li class="nav-item">
-              <a class="nav-link" href="index.html#team">Team</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html" style="color: #8f0014;">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#scope">Scope</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    }
+      @media (max-width: 767px){
 
-    <div class="container" style="margin-top: 55px"> 
-      <div id="filters" style="background-color: #fff; position: relative;">
-        <div id="options-wrap">
-          <div id="options">
-            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-              <li class="nav-item active industry industry-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#industry" class="nav-link" data-toggle="tab">Industry</a></li>
-              <li class="nav-item business business-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#business" class="nav-link" data-toggle="tab">Business</a></li>
-              <li class="nav-item state state-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#state" class="nav-link" data-toggle="tab">States</a></li>
-              <li class="nav-item funds funds-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#funds" class="nav-link" data-toggle="tab" >Funds</a></li>
+      label.funds, label.state, label.business, label.industry, .option-set a, #filters #filter-display, #filter-counter,.filter-btn {
+        font-size: .75rem;
+      }
+      #myTab a{
+        font-size: .9rem;
+      }
+      .item{
+        width: 100px;
+        height: 50px;
+
+      }
+    }
+
+  </style>
+  <style type="text/css"></style><style id="holderjs-style" type="text/css"></style></head>
+  <body class="" id="" data-gr-c-s-loaded="true" style="" data-spy="scroll" data-target="#myNavbar" data-offset="80">
+    <!-- Navigation -->
+    <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container ">
+        <a class="navbar-brand" href="index.html">    
+          <img src="img/M25_Logo.png" width="50" height="50" alt="M25 Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home<a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#team">Team</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html" style="color: #8f0014;">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#scope">Scope</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contact">Contact</a>
+              </li>
             </ul>
-            <div class="tab-content text-center">
-              <div class="tab-pane fade show" id="funds">
-                <div class="option-combo funds" id="funds" role="tabpanel">
-                  <div class="filter option-set" data-filter-group="funds">
-                    <a class="funds funds1" id="funds1" data-filter-value=".funds1"><label class="funds" for="funds1">Fund 1</label></a>
-                    <a class="funds funds2" id="funds2" data-filter-value=".funds2" ><label class="funds" for="funds2">Fund 2</label></a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container" style="margin-top: 55px"> 
+        <section id="portfolio" class="px-3">                    
+        <div id="filters" style="background-color: #fff; position: relative;">
+          <div class="container-fluid text-center"> 
+                      <h1 class="font-weight-bold sectionTitle">Portfolio</h1>
+                    </div>
+          <div id="options-wrap">
+            <div id="options">
+              <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item active industry industry-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#industry" class="nav-link" data-toggle="tab">Industry</a></li>
+                <li class="nav-item business business-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#business" class="nav-link" data-toggle="tab">Business</a></li>
+                <li class="nav-item state state-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#state" class="nav-link" data-toggle="tab">States</a></li>
+                <li class="nav-item funds funds-nav"><a href="http://everyonelovessharing.com/misc/isotopedemo/#funds" class="nav-link" data-toggle="tab" >Funds</a></li>
+              </ul>
+              <div class="tab-content text-center">
+                <div class="tab-pane fade show" id="funds">
+                  <div class="option-combo funds" id="funds" role="tabpanel">
+                    <div class="filter option-set" data-filter-group="funds">
+                      <a class="funds funds1" id="funds1" data-filter-value=".funds1"><label class="funds" for="funds1">Fund 1</label></a>
+                      <a class="funds funds2" id="funds2" data-filter-value=".funds2" ><label class="funds" for="funds2">Fund 2</label></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="option-combo state tab-pane" id="state">
-                <div class="filter option-set" data-filter-group="state">
-                  <a class="state state_IL" id="state_IL" data-filter-value=".state_IL"><label class="state" for="state_IL">IL</label></a>
-                  <a class="state state_IN" id="state_IN" data-filter-value=".state_IN"><label class="state" for="state_IN">IN</label></a>
-                  <a class="state state_KY" id="state_KY" data-filter-value=".state_KY"><label class="state" for="state_KY">KY</label></a>
-                  <a class="state state_MI" id="state_MI" data-filter-value=".state_MI"><label class="state" for="state_MI">MI</label></a>
-                  <a class="state state_MN" id="state_MN" data-filter-value=".state_MN"><label class="state" for="state_MN">MN</label></a>
-                  <a class="state state_MO" id="state_MO" data-filter-value=".state_MO"><label class="state" for="state_MO">MO</label></a>
-                  <a class="state state_NE" id="state_NE" data-filter-value=".state_NE"><label class="state" for="state_NE">NE</label></a>
-                  <a class="state state_OH" id="state_OH" data-filter-value=".state_OH"><label class="state" for="state_OH">OH</label></a>
-                  <a class="state state_PA" id="state_PA" data-filter-value=".state_PA"><label class="state" for="state_PA">PA</label></a>
-                  <a class="state state_WI" id="state_WI" data-filter-value=".state_WI"><label class="state" for="state_WI">WI</label></a>
+                <div class="option-combo state tab-pane" id="state">
+                  <div class="filter option-set" data-filter-group="state">
+                    <a class="state state_IL" id="state_IL" data-filter-value=".state_IL"><label class="state" for="state_IL">IL</label></a>
+                    <a class="state state_IN" id="state_IN" data-filter-value=".state_IN"><label class="state" for="state_IN">IN</label></a>
+                    <a class="state state_KY" id="state_KY" data-filter-value=".state_KY"><label class="state" for="state_KY">KY</label></a>
+                    <a class="state state_MI" id="state_MI" data-filter-value=".state_MI"><label class="state" for="state_MI">MI</label></a>
+                    <a class="state state_MN" id="state_MN" data-filter-value=".state_MN"><label class="state" for="state_MN">MN</label></a>
+                    <a class="state state_MO" id="state_MO" data-filter-value=".state_MO"><label class="state" for="state_MO">MO</label></a>
+                    <a class="state state_NE" id="state_NE" data-filter-value=".state_NE"><label class="state" for="state_NE">NE</label></a>
+                    <a class="state state_OH" id="state_OH" data-filter-value=".state_OH"><label class="state" for="state_OH">OH</label></a>
+                    <a class="state state_PA" id="state_PA" data-filter-value=".state_PA"><label class="state" for="state_PA">PA</label></a>
+                    <a class="state state_WI" id="state_WI" data-filter-value=".state_WI"><label class="state" for="state_WI">WI</label></a>
+                  </div>
                 </div>
-              </div>
-              <div class="option-combo business tab-pane" id="business">
-                <div class="filter option-set" data-filter-group="business">
-                  <a class="business business_B2B" id="business_B2B" data-filter-value=".business_B2B"><label class="business" for="business_B2B">B2B</label></a>
-                  <a class="business business_B2C" id="business_B2C" data-filter-value=".business_B2C"><label class="business" for="business_B2C">B2C</label></a>
+                <div class="option-combo business tab-pane" id="business">
+                  <div class="filter option-set" data-filter-group="business">
+                    <a class="business business_B2B" id="business_B2B" data-filter-value=".business_B2B"><label class="business" for="business_B2B">B2B</label></a>
+                    <a class="business business_B2C" id="business_B2C" data-filter-value=".business_B2C"><label class="business" for="business_B2C">B2C</label></a>
+                  </div>
                 </div>
-              </div>
-              <div class="option-combo industry tab-pane active" id="industry">
-                <div class="filter option-set" data-filter-group="industry">
-                  <a class="industry industry_analytics" id="industry_analytics" data-filter-value=".industry_analytics"><label class="industry" for="industry_analytics">Analytics, Big Data & IOT</label></a>
-                  <a class="industry industry_apps" id="industry_apps" data-filter-value=".industry_apps"><label class="industry" for="industry_apps">Consumer Apps</label></a>
-                  <a class="industry industry_ecommerce" id="industry_ecommerce" data-filter-value=".industry_ecommerce"><label class="industry" for="industry_ecommerce">Ecommerce</label></a>
-                  <a class="industry industry_education" id="industry_education" data-filter-value=".industry_education"><label class="industry" for="industry_education">Education, Government & Law</label></a>
-                  <a class="industry industry_enterprise" id="industry_enterprise" data-filter-value=".industry_enterprise"><label class="industry" for="industry_enterprise">Enterprise</label></a>
-                  <a class="industry industry_entertainment" id="industry_entertainment" data-filter-value=".industry_entertainment"><label class="industry" for="industry_entertainment">Entertainment, Media & Sports</label></a>
-                  <a class="industry industry_finance" id="industry_finance" data-filter-value=".industry_finance"><label class="industry" for="industry_finance">Finance & Banking</label></a>
-                  <a class="industry industry_food" id="industry_food" data-filter-value=".industry_food"><label class="industry" for="industry_food">Food & Beverage</label></a>
-                  <a class="industry industry_healthcare" id="industry_healthcare" data-filter-value=".industry_healthcare"><label class="industry" for="industry_healthcare">Healthcare</label></a>
-                  <a class="industry industry_other" id="industry_other" data-filter-value=".industry_other"><label class="industry" for="industry_other">Other</label></a>
-                  <a class="industry industry_realestate" id="industry_realestate" data-filter-value=".industry_realestate"><label class="industry" for="industry_realestate">Real Estate</label></a>
-                  <a class="industry industry_transportation" id="industry_transportation" data-filter-value=".industry_transportation"><label class="industry" for="industry_transportation">Transportation & Logistics</label></a>
+                <div class="option-combo industry tab-pane active" id="industry">
+                  <div class="filter option-set" data-filter-group="industry">
+                    <a class="industry industry_analytics" id="industry_analytics" data-filter-value=".industry_analytics"><label class="industry" for="industry_analytics">Analytics, Big Data & IOT</label></a>
+                    <a class="industry industry_apps" id="industry_apps" data-filter-value=".industry_apps"><label class="industry" for="industry_apps">Consumer Apps</label></a>
+                    <a class="industry industry_ecommerce" id="industry_ecommerce" data-filter-value=".industry_ecommerce"><label class="industry" for="industry_ecommerce">Ecommerce</label></a>
+                    <a class="industry industry_education" id="industry_education" data-filter-value=".industry_education"><label class="industry" for="industry_education">Education, Government & Law</label></a>
+                    <a class="industry industry_enterprise" id="industry_enterprise" data-filter-value=".industry_enterprise"><label class="industry" for="industry_enterprise">Enterprise</label></a>
+                    <a class="industry industry_entertainment" id="industry_entertainment" data-filter-value=".industry_entertainment"><label class="industry" for="industry_entertainment">Entertainment, Media & Sports</label></a>
+                    <a class="industry industry_finance" id="industry_finance" data-filter-value=".industry_finance"><label class="industry" for="industry_finance">Finance & Banking</label></a>
+                    <a class="industry industry_food" id="industry_food" data-filter-value=".industry_food"><label class="industry" for="industry_food">Food & Beverage</label></a>
+                    <a class="industry industry_healthcare" id="industry_healthcare" data-filter-value=".industry_healthcare"><label class="industry" for="industry_healthcare">Healthcare</label></a>
+                    <a class="industry industry_other" id="industry_other" data-filter-value=".industry_other"><label class="industry" for="industry_other">Other</label></a>
+                    <a class="industry industry_realestate" id="industry_realestate" data-filter-value=".industry_realestate"><label class="industry" for="industry_realestate">Real Estate</label></a>
+                    <a class="industry industry_transportation" id="industry_transportation" data-filter-value=".industry_transportation"><label class="industry" for="industry_transportation">Transportation & Logistics</label></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- <hr> -->
-        <div class="container filter-display-container">
-          <p id="filter-display"><span class="filter-label data-counter pull-right"> </span></p>
-          <!-- <p id="filter-display"><span class="filter-label data-counter pull-right">Displaying all&nbsp;20&nbsp;artworks</span></p> -->
-          <!-- <p id="filter-counter"></p> -->
-        </div>
-        <hr>
-        <div id="filter-container" style="position: relative; overflow: hidden; height: 2205px; width: 909px;" class="isotope">
-          <div class="portco-thumb"></div>
-
-<!--             <a href="https://www.app-press.com/" target="_blank">
-              <img class="item funds1 business_B2B state_IN industry_enterprise isotope-item" src="img/portfolio/AppPress.jpg" style="position: absolute; left: 0px; top: 0px;">
-            </a>
-            <a href="https://www.app-press.com/" target="_blank">
-              <img class="item funds2 business_B2B state_IL industry_enterprise isotope-item" src="img/portfolio/PageVault.jpg" style="position: absolute; left: 0px; top: 0px;">
-            </a> -->
+          <!-- <hr> -->
+          <div class="container filter-display-container">
+            <p id="filter-display"><span class="filter-label data-counter pull-right"> </span></p>
+          </div>
+          <hr>
+          <div id="filter-container" style="position: relative; overflow: hidden; height: 2205px; width: 909px;" class="isotope">
+            <div class="portco-thumb"></div>
           </div>
         </div>
+    </section>
       </div>
 
 
@@ -687,7 +666,7 @@ function getComboFilter( filters ) {
     $('#filter-display').empty();
     var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
     $('#filter-display').append( '<span class="filter-label data-counter pull-right">&nbsp;'+numItemsDisp+'&nbsp;Companies</span>' );
-        $('#filter-display').append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+    $('#filter-display').append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
   }
 </script>
 

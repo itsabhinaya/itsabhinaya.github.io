@@ -39,6 +39,19 @@ font-family: 'Oxygen', sans-serif;
 }
 
 
+
+
+.sectionTitle{
+  display: inline;
+  border-bottom: 5px solid #e66432;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.font-weight-bold{
+  margin-top: 32px !important;
+}
+
 .color_two{
     color: #8f0014;
 }

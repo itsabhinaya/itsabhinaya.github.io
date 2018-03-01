@@ -50,9 +50,7 @@ canvas {
   top: 0;
   left: 0;
 }
-.font-weight-bold{
-  margin-top: 32px !important;
-}
+
 
 .canvas_out{
   background-color:rgba(255,255,255,0);
@@ -79,12 +77,6 @@ canvas {
   color: #707070;
 }
 
-.name_border{
-  display: inline;
-  border-bottom: 10px solid #e66432;
-  text-align: center;
-  margin: 0 auto;
-}
 .white_background{
   background-color: white;
 }
@@ -129,9 +121,6 @@ canvas {
 }
 
 .carousel-indicators li { visibility: hidden; }
-section {
-  padding-top: 80px;
-}
 
 
 .team-item img{
@@ -144,13 +133,9 @@ section {
   width: 150px;
 }
 
-.sectionTitle{
-  display: inline;
-  border-bottom: 5px solid #e66432;
-  text-align: center;
-  margin: 0 auto;
+section {
+  padding-top: 80px;
 }
-
 
 
 
